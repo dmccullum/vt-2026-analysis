@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Share card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  /* Source for docs/share/og.png (1200x630). Rendered by scripts/share_card.sh. */
+  :root { --ink: #050505; --ink2: #3c3c3c; --muted: #6f6f6f; --line: #e6e6e5; --panel2: #f7f7f5; --rep: #b4332b; --dem: #3d5ff5; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: #fff; color: var(--ink); font-family: 'DM Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .card { display: grid; grid-template-columns: 1fr 380px; height: 630px; padding: 56px 64px 48px; gap: 40px; }
+  .kicker { display: flex; gap: 10px; align-items: center; font: 700 15px/1 'DM Sans'; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .tag { padding: 6px 10px; border-radius: 6px; background: var(--panel2); }
+  h1 { font: 400 66px/1.04 'DM Serif Display', Georgia, serif; letter-spacing: -.01em; margin: 26px 0 34px; }
+  .rows { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .row { display: grid; grid-template-columns: 150px 1fr; align-items: baseline; padding: 16px 22px; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .l { font: 700 14px 'DM Sans'; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .v { font: 700 28px/1.2 'DM Sans'; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+  .v small { font: 500 18px 'DM Sans'; color: var(--muted); letter-spacing: 0; }
+  .r { color: var(--rep); } .d { color: var(--dem); }
+  .foot { margin-top: 26px; font: 500 17px 'DM Sans'; color: var(--muted); }
+  .map { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .map svg { width: 340px; height: auto; }
+  .map .state { fill: var(--panel2); stroke: #b9b9b6; stroke-width: 1; }
+  .map .county { fill: none; stroke: #dcdcda; stroke-width: .8; }
+  .legend { display: flex; gap: 18px; margin-top: 10px; font: 600 14px 'DM Sans'; color: var(--muted); }
+  .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <div class="kicker"><span class="tag">Unofficial results</span><span>Vermont · Nov. 3, 2026</span></div>
+    <h1>Vermont's 2026 election: an analysis of the results</h1>
+    <div class="rows" id="rows"></div>
+    <div class="foot">dmccullum.github.io/vt-2026-analysis</div>
+  </div>
+  <div class="map"><svg id="map"></svg><div class="legend"><span><i style="background:var(--rep)"></i>Scott won town</span><span><i style="background:var(--dem)"></i>Janoo won town</span></div></div>
+</div>
+<script src="../vtmap.js"></script>
+<script src="../data.js"></script>
+<script>
+  const D = window.VT26, V = window.VT_MAP, NS = "http://www.w3.org/2000/svg";
+  const el = (t, a, p) => { const n = document.createElementNS(NS, t); for (const k in a) n.setAttribute(k, a[k]); p.appendChild(n); return n; };
+  const g = D.toplines.GOVERNOR, sc = g.find((c) => /SCOTT/.test(c.candidate)), ja = g.find((c) => /JANOO/.test(c.candidate));
+  const h = D.house.seats26, s = D.senate.seats26;
+  const ind = (n) => (n ? ` <small>· ${n} Ind.</small>` : "");
+  document.getElementById("rows").innerHTML = [
+    ["Governor", `<span class="r">Scott ${sc.pct.toFixed(1)}%</span> <small>·</small> <span class="d">Janoo ${ja.pct.toFixed(1)}%</span>`],
+    ["House", `<span class="d">${h.L} Dem./Prog.</span> <small>·</small> <span class="r">${h.R} Rep.</span>${ind(h.I)}`],
+    ["Senate", `<span class="d">${s.L} Dem./Prog.</span> <small>·</small> <span class="r">${s.R} Rep.</span>${ind(s.I)}`],
+  ].map(([l, v]) => `<div class="row"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("");
+  const svg = document.getElementById("map");
+  svg.setAttribute("viewBox", `-6 -6 ${V.w + 12} ${V.h + 12}`);
+  el("path", { d: V.state, class: "state" }, svg);
+  V.counties.forEach((c) => el("path", { d: c.d, class: "county" }, svg));
+  const pos = (n) => V.towns[n] || (n === "Essex Junction City" ? [V.towns["Essex"][0] + 6, V.towns["Essex"][1] + 4] : null);
+  D.towns.filter((t) => t.s26 != null).sort((a, b) => b.v - a.v).forEach((t) => {
+    const p = pos(t.n); if (!p) return;
+    const scott = t.s26 >= 0.5, m = Math.abs(t.s26 - 0.5);
+    el("circle", { cx: p[0], cy: p[1], r: Math.max(2.2, Math.min(9, Math.sqrt(t.v) / 9)), fill: scott ? "#b4332b" : "#3d5ff5", "fill-opacity": 0.3 + Math.min(1, m / 0.25) * 0.7, stroke: "#fff", "stroke-width": 0.6 }, svg);
+  });
+  document.fonts.ready.then(() => document.body.dataset.ready = "1");
+</script>
+</body>
+</html>
