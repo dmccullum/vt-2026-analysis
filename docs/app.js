@@ -166,42 +166,7 @@
     $("mapLede").innerHTML = `Scott's biggest losses were in the Upper Valley and central Vermont: towns with many college graduates where many Democrats had voted for him before. In Strafford he went from ${pct(strafford.s24, 0)} to ${pct(strafford.s26, 0)}. He held up best in Essex, Franklin, and Rutland counties. Even so, the smallest swing anywhere was ${(100 * minTownSwing).toFixed(0)} points.`;
   }
 
-  // ---------- scatter
-  const XS = { ba: ["College degree", (t) => t.ba, (v) => pct(v, 0)], inc: ["Income per person", (t) => t.inc, (v) => "$" + Math.round(v / 1000) + "k"],
-    den: ["Density (people / sq mi, log)", (t) => (t.den > 0 ? Math.log10(t.den) : null), (v) => Math.round(10 ** v).toLocaleString()],
-    age: ["Median age", (t) => t.age, (v) => v.toFixed(0)], vt: ["Born in Vermont", (t) => t.vt, (v) => pct(v, 0)],
-    wfh: ["Work from home", (t) => t.wfh, (v) => pct(v, 0)], s24: ["Scott 2024 share", (t) => t.s24, (v) => pct(v, 0)] };
-  const YS = { swing: ["Shift toward Democrat (pts)", (t) => t.swing], janoo: ["Janoo share of Scott–Janoo vote", (t) => t.janoo], vsTicket: ["Janoo vs. other Democrats (pts)", (t) => t.vsTicket] };
-  function renderScatter() {
-    const xk = $("sx").value, yk = $("sy").value, [xl, xf, xfmt] = XS[xk], [yl, yf] = YS[yk];
-    const svg = $("scatter"), W = 760, H = 380, L = 52, R = 16, T = 12, B = 40;
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
-    const pts_ = towns.map((t) => ({ t, x: xf(t), y: yf(t), w: t.v })).filter((p) => p.x != null && p.y != null && isFinite(p.x));
-    const xsS = pts_.map((p) => p.x).sort((a, b) => a - b), ysS = pts_.map((p) => p.y).sort((a, b) => a - b);
-    const q = (a, f) => a[Math.floor(f * (a.length - 1))];
-    let x0 = q(xsS, 0), x1 = q(xsS, 1), y0 = q(ysS, 0.005), y1 = q(ysS, 0.995);
-    const px = (x1 - x0) * 0.04, py = (y1 - y0) * 0.06; x0 -= px; x1 += px; y0 -= py; y1 += py;
-    const sx = lin(x0, x1, L, W - R), sy = lin(y0, y1, H - B, T);
-    ticks(y0, y1, 5).forEach((v) => { el("line", { x1: L, x2: W - R, y1: sy(v), y2: sy(v), class: v === 0 ? "zero" : "grid" }, svg); el("text", { x: L - 8, y: sy(v) + 4, "text-anchor": "end" }, svg, (yk === "janoo" ? (100 * v).toFixed(0) + "%" : pts(v, 0))); });
-    ticks(x0, x1, 6).forEach((v) => el("text", { x: sx(v), y: H - B + 18, "text-anchor": "middle" }, svg, xfmt(v)));
-    el("text", { x: (L + W - R) / 2, y: H - 4, "text-anchor": "middle", class: "axis-l" }, svg, xl);
-    // weighted fit
-    const sw = pts_.reduce((a, p) => a + p.w, 0), mx = pts_.reduce((a, p) => a + p.w * p.x, 0) / sw, my = pts_.reduce((a, p) => a + p.w * p.y, 0) / sw;
-    let sxy = 0, sxx = 0, syy = 0; pts_.forEach((p) => { sxy += p.w * (p.x - mx) * (p.y - my); sxx += p.w * (p.x - mx) ** 2; syy += p.w * (p.y - my) ** 2; });
-    const b = sxy / sxx, r = sxy / Math.sqrt(sxx * syy);
-    const g = el("g", {}, svg), ink = css("--ink"), panel = css("--panel");
-    pts_.sort((a, b) => b.w - a.w).forEach((p) => {
-      if (p.y < y0 || p.y > y1) return;
-      const c = el("circle", { cx: sx(p.x), cy: sy(p.y), r: Math.max(2.5, Math.min(14, Math.sqrt(p.w) / 7)), fill: ink, "fill-opacity": 0.18, stroke: ink, "stroke-opacity": 0.45, "stroke-width": 1 }, g);
-      c.addEventListener("mousemove", (e) => { c.setAttribute("fill-opacity", 0.6); showTip(`<div class="tt-h"><b>${p.t.n}</b><span>${p.t.c || ""}</span></div>${row(xl, xfmt(p.x))}${row(yl, yk === "janoo" ? pct(p.y) : pts(p.y) + " pts")}${row("Votes", p.w.toLocaleString())}`, e); });
-      c.addEventListener("mouseleave", () => { c.setAttribute("fill-opacity", 0.18); hideTip(); });
-    });
-    el("line", { x1: sx(x0), x2: sx(x1), y1: sy(my + b * (x0 - mx)), y2: sy(my + b * (x1 - mx)), stroke: css("--accent"), "stroke-width": 2, "pointer-events": "none" }, svg);
-    $("scR").textContent = `correlation r = ${r.toFixed(2)}`;
-  }
-
   // ---------- Janoo by density, education, income
-  const TIER_L = { "1 Rural (<50)": "Rural", "2 Small town (50-200)": "Small town", "3 Suburban / large town (200-1000)": "Suburban", "4 Urban (1000+/sq mi)": "Urban" };
   function hbars(svgId, rows, metric, opts = {}) {
     const svg = $(svgId), W = 380, rowH = 26, L = Math.max(96, 8 + 6.2 * Math.max(...rows.map((r) => r.label.length))), R = 52, H = rows.length * rowH + 22;
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
@@ -222,32 +187,6 @@
     });
     el("text", { x: W - R, y: H - 4, "text-anchor": "end", class: "axis-l" }, svg, opts.axis || "");
   }
-  function renderGroups() {
-    const k = pressed("groupMetric").k;
-    const axis = { janoo: "share of Scott–Janoo vote", swing_to_dem: "points gained vs. 2024 Democrat", janoo_vs_ticket: "points vs. other Democrats" }[k];
-    const mk = (arr, lab) => arr.map((b, i) => ({ label: lab(b, i), v: b[k], b, towns: b.towns }));
-    hbars("clDensity", mk(bins("tier"), (b) => TIER_L[b.bin]), k, { axis });
-    const ql = (n) => (i) => ["Lowest", "2nd", "Middle", "4th", "Highest"][i];
-    hbars("clBA", mk(bins("ba_q"), (b, i) => ["Fewest grads", "2nd", "Middle", "4th", "Most grads"][i] + ` (${pct(b.ba, 0)})`), k, { axis });
-    hbars("clInc", mk(bins("inc_q"), (b, i) => ["Lowest", "2nd", "Middle", "4th", "Highest"][i] + ` ($${Math.round(b.inc / 1000)}k)`), k, { axis });
-    // cross: density tier x BA tercile, computed client-side from towns
-    const tierOrder = ["Rural (<50)", "Small town (50-200)", "Suburban / large town (200-1000)", "Urban (1000+/sq mi)"];
-    const tw = towns.filter((t) => t.ba != null && t.tier);
-    const sorted = tw.slice().sort((a, b) => a.ba - b.ba), tot = sorted.reduce((a, t) => a + t.v, 0);
-    let cum = 0; sorted.forEach((t) => { cum += t.v; t.baT = Math.min(3, Math.ceil((3 * cum) / tot)); });
-    const rows = [];
-    tierOrder.forEach((tr) => [1, 3].forEach((q) => {
-      const g = tw.filter((t) => t.tier === tr && t.baT === q); if (!g.length) return;
-      const w = g.reduce((a, t) => a + t.v, 0), avg = (f) => g.reduce((a, t) => a + t.v * f(t), 0) / w;
-      const b = { janoo: avg((t) => t.janoo), dem_gov_24: avg((t) => 1 - t.s24), swing_to_dem: avg((t) => t.swing), dem_ticket_26: avg((t) => 1 - t.e26), janoo_vs_ticket: avg((t) => t.vsTicket), turnout: avg((t) => t.to || 0), ba: avg((t) => t.ba), inc: avg((t) => t.inc || 0) };
-      rows.push({ label: `${TIER_L[Object.keys(TIER_L).find((x) => x.slice(2) === tr)]}, ${q === 1 ? "fewer" : "more"} grads`, v: b[k], b, towns: g.length, dim: q === 1 });
-    }));
-    hbars("clCross", rows, k, { axis });
-    $("groupNote").textContent = k === "janoo" ? "Janoo's share of the votes cast for Scott or Janoo." : k === "swing_to_dem" ? "Janoo's share minus Democrat Esther Charlestin's share in 2024." : "Janoo's share minus the average share for the Democratic or Progressive candidates in the six other statewide and federal races. Every group is negative because Scott still won some Democratic voters everywhere; closer to zero means Janoo ran closer to the rest of her ticket.";
-  }
-  const tb = bins("tier"), bq = bins("ba_q"), iq = bins("inc_q");
-  $("groupLede").innerHTML = `How Janoo's vote varied with town density, education, and income, measured three ways: her share of the vote, her gain over the 2024 Democrat, and how she ran compared with the other Democrats on the ballot. Her share rises steadily with education and density. Her gain was similar in rural towns (${pts(tb[0].swing_to_dem, 0)}) and cities (${pts(tb[3].swing_to_dem, 0)}), and larger in more-educated towns (${pts(bq[0].swing_to_dem, 0)} in the least-educated fifth, ${pts(bq[4].swing_to_dem, 0)} in the most). Compared with the other Democrats, she ran closest in the lowest-income towns (${pts(iq[0].janoo_vs_ticket, 0)}) and furthest behind in the highest-income towns (${pts(iq[4].janoo_vs_ticket, 0)}).`;
-
   // ---------- education relative to income
   function renderEduInc() {
     const E = D.eduinc; if (!E) return;
@@ -275,16 +214,15 @@
     });
     $("eiLegend").innerHTML = `<span><i style="background:var(--dem);border-radius:50%"></i>Janoo won the town (darker = bigger margin)</span><span><i style="background:var(--rep);border-radius:50%"></i>Scott won the town</span><span>Dot size = votes cast</span>`;
     const bins = E.bins, M = E.models;
-    $("eiLede").innerHTML = `College share and income usually rise together, so towns with similar education can still differ a lot in income. The dashed line marks the college share that is typical for a town's income. Towns to its right have more graduates than their income would predict; the largest are ${E.bins[4].examples.slice(0, 2).join(", ")}, and ${E.bins[4].examples[2]}. This one measure, education relative to income, explains ${Math.round(100 * M.janoo.gap_r2)}% of the town-to-town differences in Janoo's share, more than education alone. Comparing towns with the same education, each $10k more in income per person meant ${Math.abs(100 * M.janoo.inc10).toFixed(1)} points less for Janoo.`;
+    $("eiLede").innerHTML = `Education was the demographic that best tracked Janoo's vote, and it mattered most relative to income. The dashed line marks the college share typical for a town's income; towns to its right have more graduates than their income would predict, led by ${E.bins[4].examples.slice(0, 2).join(", ")}, and ${E.bins[4].examples[2]}. Janoo's share rises from ${pct(E.bins[0].janoo, 0)} in towns furthest left of the line to ${pct(E.bins[4].janoo, 0)} furthest right. This one measure accounts for ${Math.round(100 * M.janoo.gap_r2)}% of the town-to-town differences in her share, more than education (${D.controls ? Math.round(100 * D.controls.models.janoo["Education only"].r2) : "–"}%), density (${D.controls ? Math.round(100 * D.controls.models.janoo["Density only"].r2) : "–"}%), or income (${D.controls ? Math.round(100 * D.controls.models.janoo["Income only"].r2) : "–"}%) alone. Density adds little once education is accounted for: in the grid below, towns with similar shares of graduates moved by similar amounts whether rural or urban.`;
   }
   function renderEduIncBars() {
     const E = D.eduinc; if (!E) return;
-    const k = pressed("eiMetric").k, names = ["Education well below income", "Somewhat below", "About typical", "Somewhat above", "Education well above income"];
+    const k = "janoo", names = ["Education well below income", "Somewhat below", "About typical", "Somewhat above", "Education well above income"];
     const rows = E.bins.map((b, i) => ({ label: names[i], v: b[k], towns: b.towns, b: { janoo: b.janoo, dem_gov_24: b.janoo - b.swing, swing_to_dem: b.swing, dem_ticket_26: b.janoo - b.vs_ticket, janoo_vs_ticket: b.vs_ticket, turnout: 0, ba: b.ba, inc: b.inc }, dim: false }));
     hbars("eiBars", rows, k === "swing" ? "swing_to_dem" : k === "vs_ticket" ? "janoo_vs_ticket" : "janoo", { axis: { janoo: "share of Scott–Janoo vote", swing: "points gained vs. 2024 Democrat", vs_ticket: "points vs. other Democrats" }[k] });
     const ex = E.bins.map((b, i) => `${names[i].toLowerCase()}: ${b.examples.slice(0, 3).join(", ")}`);
-    $("eiNote").textContent = `Each group holds a fifth of the vote. Largest towns in each group, ${ex.join("; ")}. ` +
-      (k === "vs_ticket" ? "How far Janoo trailed the other Democrats barely changes across these groups; that gap follows income level itself, not the education–income mismatch." : "");
+    $("eiNote").textContent = `Each group holds a fifth of the vote. Her gain over the 2024 Democrat rose across the same groups, from ${pts(E.bins[0].swing, 0)} to ${pts(E.bins[4].swing, 0)}. Largest towns in the lowest group: ${E.bins[0].examples.slice(0, 3).join(", ")}; in the highest: ${E.bins[4].examples.slice(0, 3).join(", ")}.`;
   }
 
   // ---------- schools
@@ -304,7 +242,7 @@
     $("schTowns").innerHTML = `<tr><th class="l">Town</th><th>2024</th><th>2026</th><th>vs. trend</th></tr>` +
       Sx.closure_towns.map((c) => `<tr><td class="nm">${c.town}${c.enacted ? "" : ' <span class="pill">proposed</span>'}<div class="sub" style="font-weight:400">${/pre-K/.test(c.school) ? c.school : c.school.replace(/ \(\d+\)/g, "").split(";")[0]}</div></td><td class="r">${pct(c.s24, 0)}</td><td class="r">${pct(c.s26, 0)}</td><td>${pts(c.res)}</td></tr>`).join("");
     const ns = M.swing["no_school|controlled"], cl = M.swing["any_closure|controlled"], sm = M.swing["small_school|controlled"];
-    $("schLede").innerHTML = `The 2025 education law (Act 73) set minimum school sizes and encouraged consolidation, and several small schools closed or faced closure votes in 2025–26. If school changes affected the vote locally, towns with small or closing schools would show bigger shifts. They didn't, at least not measurably: towns with a closure voted or proposed shifted ${pts(cl.b)} points more than similar towns (range ${pts(cl.lo)} to ${pts(cl.hi)}), and towns with a school under 100 students ${pts(sm.b)}. The one clear difference runs the other way: towns with no public school of their own, which mostly pay tuition for students to attend school elsewhere, shifted ${Math.abs(100 * ns.b).toFixed(1)} points <i>less</i> toward Janoo than comparable towns.`;
+    $("schLede").innerHTML = `The 2025 education law (Act 73) set minimum school sizes and encouraged consolidation, and several small schools closed or faced closure votes in 2025–26. If school changes affected the vote locally, towns with small or closing schools would show bigger shifts. They didn't, at least not measurably: towns with a closure voted or proposed shifted about ${Math.abs(100 * cl.b).toFixed(1)} points more than similar towns, within the margin of error, and towns with a school under 100 students moved about the same as similar towns. The one clear difference runs the other way: towns with no public school of their own, which mostly pay tuition for students to attend school elsewhere, shifted ${Math.abs(100 * ns.b).toFixed(1)} points <i>less</i> toward Janoo than comparable towns.`;
     $("schNote").textContent = `School data: Agency of Education Redistricting Task Force data files and NCES 2024–25 enrollment (${Sx.n_small} towns have a public school under 100 students). Closures are hand-coded from AOE's closure list and news reports and may be incomplete; Essex Junction and Greensboro are grade reconfigurations rather than closures, and Marlboro is left out because of its governor reporting error. The Task Force did not adopt a district map, and town-level tax rate changes were not available, so neither is tested. In the Vermont Public / VSU poll (Sept. 2026), 41% said lowering property taxes mattered more than keeping local schools, 28% said keeping schools, and 29% said both equally; the "property taxes" answer was more common among people without a college degree (51% with high school or less, 31% with a bachelor's or more). School tax rates are the equalized district rates from the Vermont Department of Taxes (FY2025–FY2027); across towns they rose ${D.taxes ? Math.round(100 * D.taxes.state.dr_chg_25_26) : "–"}% on average for FY2026 and changed ${D.taxes ? pts(D.taxes.state.dr_chg_26_27, 0) : "–"}% for FY2027. This town-level test can\'t detect effects that were spread evenly across the state, and statewide tax increases were.`;
   }
 
@@ -317,8 +255,8 @@
   const MET = { swing: ["Gain vs. 2024 Democrat", (v) => pts(v)], janoo: ["Janoo's share", (v) => pct(v)], vs_ticket: ["Janoo vs. other Democrats", (v) => pts(v)] };
   function renderGrid() {
     const C = D.controls; if (!C) return;
-    const gk = pressed("gridPair").g, mk = pressed("gridMetric").k, G = GRID[gk], cells = C.grids[gk];
-    const svg = $("grid"), W = 600, L = 112, T = 40, cw = (W - L) / 3, ch = 64, H = T + 3 * ch + 8;
+    const gk = "den3_ba3", mk = "swing", G = GRID[gk], cells = C.grids[gk];
+    const svg = $("grid"), W = 440, L = 96, T = 40, cw = (W - L) / 3, ch = 64, H = T + 3 * ch + 8;
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
     const vals = Object.values(cells).map((c) => c[mk]), lo = Math.min(...vals), hi = Math.max(...vals);
     el("text", { x: L + 1.5 * cw, y: 12, "text-anchor": "middle", class: "axis-l" }, svg, G.cl + " →");
@@ -338,7 +276,7 @@
         hit.addEventListener("mouseleave", hideTip);
       });
     });
-    $("gridNote").textContent = `${MET[mk][0]}, vote-weighted average for the towns in each cell. Groups: density under 50 / 50–200 / over 200 people per sq mi; college and income groups each hold a third of the vote. Darker cells are higher. Cells with fewer than 5 towns are dashed and shouldn't be over-read.`;
+    $("gridNote").textContent = `Read across a row to compare towns of similar density with more or fewer graduates; read down a column to compare towns with similar education and different density. Density groups: under 50, 50–200, and over 200 people per square mile. Education groups each hold a third of the vote. Darker cells moved more. Cells with fewer than 5 towns are dashed.`;
   }
   function renderControls() {
     const C = D.controls; if (!C) return;
@@ -353,7 +291,6 @@
       vars.map(([v, l]) => `<tr><td class="nm">${l}</td>${cols.map(([k]) => cellHtml(M[k][spec][v])).join("")}</tr>`).join("");
     const s = M.swing[spec], t = M.vs_ticket[spec], g = C.grids.den3_ba3;
     const f1 = (x) => pts(x, 1);
-    $("ctlLede").innerHTML = `<b>What this shows.</b> Janoo's gain over the 2024 Democrat was driven by education, not density. Among towns with many graduates, rural ones moved ${f1(g["Rural|More grads"].swing)} and suburban/urban ones ${f1(g["Suburban/urban|More grads"].swing)}. Among towns with few graduates, rural ones moved ${f1(g["Rural|Fewer grads"].swing)} and suburban/urban ones ${f1(g["Suburban/urban|Fewer grads"].swing)}. Holding everything else fixed, ten more points of college graduates meant ${f1(s.ba10.b)} more points of gain. Income tells a different story: at the same education and density, Janoo ran further behind the rest of the Democratic ticket in richer towns (${f1(t.inc10.b)} per $10k). In other words, more Democrats in affluent towns kept voting for Scott.`;
   }
 
   // ---------- over time
@@ -470,10 +407,10 @@
   }
 
   // ---------- wire up
-  const renderAll = () => { renderOffices(); renderMap(pressed("mapMode").m); renderScatter(); renderGroups(); renderEduInc(); renderEduIncBars(); renderGrid(); renderControls(); renderSchools(); renderOvertime(); renderStrip(); renderHistory(); renderWar(); };
+  const renderAll = () => { renderOffices(); renderMap(pressed("mapMode").m); renderEduInc(); renderEduIncBars(); renderGrid(); renderControls(); renderSchools(); renderOvertime(); renderStrip(); renderHistory(); renderWar(); };
   seg("mapMode", (d) => renderMap(d.m));
-  seg("groupMetric", renderGroups); seg("gridPair", renderGrid); seg("eiMetric", renderEduIncBars); seg("gridMetric", renderGrid); seg("otGroup", renderOvertime); seg("warLevel", renderWar); seg("warSide", renderWar);
-  $("sx").addEventListener("change", renderScatter); $("sy").addEventListener("change", renderScatter);
+   seg("otGroup", renderOvertime); seg("warLevel", renderWar); seg("warSide", renderWar);
+  
   $("theme").addEventListener("click", () => {
     const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     const next = cur === "dark" ? "light" : "dark"; document.documentElement.dataset.theme = next;
