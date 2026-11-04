@@ -363,7 +363,7 @@
     const wrap = $("histWrap");
     wrap.innerHTML = `<div class="card chart" style="margin-top:12px"><h3>House seats won, 2000–2026</h3><svg id="hist"></svg><div class="legendrow"><span><i style="background:var(--dem)"></i>Democratic</span><span><i style="background:var(--prog)"></i>Progressive</span><span><i style="background:var(--ind)"></i>Independent / other</span><span><i style="background:var(--rep)"></i>Republican</span></div></div>
       <div class="card chart" style="margin-top:12px"><h3>Republican share of the governor's vote, same years</h3><svg id="histGov"></svg></div>
-      <p class="note">Seat counts before 2026 were compiled from Wikipedia and the Vermont party-strength table (some years come from a single source). 2008 Senate and 2010 House were not found. Legislators with fusion labels are counted under their first-listed party. The 2026 numbers come from this analysis and are unofficial.</p>`;
+      <p class="note">Seat counts before 2026 were compiled from Wikipedia, the Vermont party-strength table, and Ballotpedia (some years come from a single source). Legislators with fusion labels are counted under their first-listed party. The 2026 numbers come from this analysis and are unofficial.</p>`;
     const svg = $("hist"), W = 760, Hh = 220, L = 34, R = 10, T = 8, B = 22, n = rows.length, bw = (W - L - R) / n;
     svg.setAttribute("viewBox", `0 0 ${W} ${Hh}`);
     const y = lin(0, 150, Hh - B, T);
