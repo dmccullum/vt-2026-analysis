@@ -144,6 +144,14 @@
   details[open] > summary::after { transform: rotate(-135deg); }
   details.panel p, details.panel ul { margin: 0 16px 12px; font-size: var(--t-body); line-height: 1.55; color: var(--ink2); }
   details.panel[open] { padding-bottom: 6px; }
+  details.src { margin: 8px 0 0; }
+  details.src > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; padding: 4px 0; font: 600 var(--t-hint) var(--display); color: var(--muted); }
+  details.src > summary::-webkit-details-marker { display: none; }
+  details.src > summary::after { content: none; display: none; }
+  details.src > summary::before { content: ""; width: 6px; height: 6px; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: rotate(-45deg); transition: transform .15s; }
+  details.src[open] > summary::before { transform: rotate(45deg); }
+  details.src > summary:hover { color: var(--ink); }
+  details.src .note { margin: 4px 0 0; }
   footer { margin-top: 32px; font-size: var(--t-hint); color: var(--muted); }
 </style>
 </head>
@@ -216,7 +224,7 @@
       <table id="schTowns"></table>
     </div>
   </div>
-  <p class="note" id="schNote"></p>
+  <details class="src"><summary>Sources and notes</summary><p class="note" id="schNote"></p></details>
 
   <h2>Democratic share for governor, 2016–2026</h2>
   <p class="lede">Towns with more college graduates have voted more Democratic for governor since before Scott took office. That gap narrowed from 2018 through 2024 as Scott won over Democrats everywhere, and in 2026 it returned to about where it was in 2016. In the 2024 presidential race the gap was wider still. Towns are split into five groups with equal numbers of voters.</p>
@@ -240,7 +248,7 @@
     <table id="warTable"></table>
     <div style="padding:8px 8px 12px"><button class="morebtn" id="warMore" type="button"></button></div>
   </div>
-  <p class="note" id="warNote"></p>
+  <details class="src"><summary>How this is calculated</summary><p class="note" id="warNote"></p></details>
 
   <div class="two" style="margin-top:24px">
     <div class="card tablewrap" style="padding-top:12px"><h3 style="margin:4px 8px">2024 winners who lost</h3><table id="lostTable"></table><p class="note" style="margin:8px 8px 12px">"% of voters" is the share of voters who voted for the candidate. In districts with two or three seats each voter can choose more than one candidate, so a candidate can get a majority of voters and still finish out of the running.</p></div>
