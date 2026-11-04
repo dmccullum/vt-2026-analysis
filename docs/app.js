@@ -214,7 +214,7 @@
     });
     $("eiLegend").innerHTML = `<span><i style="background:var(--dem);border-radius:50%"></i>Janoo won the town (darker = bigger margin)</span><span><i style="background:var(--rep);border-radius:50%"></i>Scott won the town</span><span>Dot size = votes cast</span>`;
     const bins = E.bins, M = E.models;
-    $("eiLede").innerHTML = `Education was the demographic that best tracked Janoo's vote, and it mattered most relative to income. The dashed line marks the college share typical for a town's income; towns to its right have more graduates than their income would predict, led by ${E.bins[4].examples.slice(0, 2).join(", ")}, and ${E.bins[4].examples[2]}. Janoo's share rises from ${pct(E.bins[0].janoo, 0)} in towns furthest left of the line to ${pct(E.bins[4].janoo, 0)} furthest right. This one measure accounts for ${Math.round(100 * M.janoo.gap_r2)}% of the town-to-town differences in her share, more than education (${D.controls ? Math.round(100 * D.controls.models.janoo["Education only"].r2) : "–"}%), density (${D.controls ? Math.round(100 * D.controls.models.janoo["Density only"].r2) : "–"}%), or income (${D.controls ? Math.round(100 * D.controls.models.janoo["Income only"].r2) : "–"}%) alone. Density adds little once education is accounted for: in the grid below, towns with similar shares of graduates moved by similar amounts whether rural or urban.`;
+    $("eiLede").innerHTML = `Education was the demographic that best tracked Janoo's vote, and it mattered most relative to income. The dashed line marks the college share typical for a town's income; towns to its right have more graduates than their income would predict, led by ${E.bins[4].examples.slice(0, 2).join(", ")}, and ${E.bins[4].examples[2]}. Janoo's share rises from ${pct(E.bins[0].janoo, 0)} in towns furthest left of the line to ${pct(E.bins[4].janoo, 0)} furthest right. This one measure accounts for ${Math.round(100 * M.janoo.gap_r2)}% of the town-to-town differences in her share, more than education (${D.controls ? Math.round(100 * D.controls.models.janoo["Education only"].r2) : "–"}%), density (${D.controls ? Math.round(100 * D.controls.models.janoo["Density only"].r2) : "–"}%), or income (${D.controls ? Math.round(100 * D.controls.models.janoo["Income only"].r2) : "–"}%) alone. Income and density add little once education is accounted for: in the grid below, towns with similar shares of graduates moved by similar amounts at any income or density level.`;
   }
   function renderEduIncBars() {
     const E = D.eduinc; if (!E) return;
@@ -252,10 +252,10 @@
     inc3_ba3: { rows: ["Lower income", "Middle", "Higher income"], cols: ["Fewer grads", "Middle", "More grads"], rl: "Income per person", cl: "College graduates" },
     den3_inc3: { rows: ["Rural", "Small town", "Suburban/urban"], cols: ["Lower income", "Middle", "Higher income"], rl: "Density", cl: "Income per person" },
   };
-  const MET = { swing: ["Gain vs. 2024 Democrat", (v) => pts(v)], janoo: ["Janoo's share", (v) => pct(v)], vs_ticket: ["Janoo vs. other Democrats", (v) => pts(v)] };
+  const MET = { swing: ["Janoo's gain over the 2024 Democrat", (v) => pts(v)], janoo: ["Janoo's share", (v) => pct(v)], vs_ticket: ["Janoo vs. other Democrats", (v) => pts(v)] };
   function renderGrid() {
     const C = D.controls; if (!C) return;
-    const gk = pressed("gridPair").g, mk = "swing", G = GRID[gk], cells = C.grids[gk];
+    const gk = pressed("gridPair").g, mk = pressed("gridMetric").k, G = GRID[gk], cells = C.grids[gk];
     const svg = $("grid"), W = 440, L = 96, T = 40, cw = (W - L) / 3, ch = 64, H = T + 3 * ch + 8;
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
     const vals = Object.values(cells).map((c) => c[mk]), lo = Math.min(...vals), hi = Math.max(...vals);
@@ -270,7 +270,7 @@
         const x = L + j * cw + 2, y = T + i * ch + 2, f = (cell[mk] - lo) / (hi - lo || 1), few = cell.towns < 5;
         el("rect", { x, y, width: cw - 4, height: ch - 4, rx: 8, fill: accent, "fill-opacity": few ? 0.05 : 0.08 + 0.55 * f, stroke: css("--line"), "stroke-dasharray": few ? "3 3" : "none" }, svg);
         el("text", { x: x + (cw - 4) / 2, y: y + 28, "text-anchor": "middle", style: `font:700 17px var(--display);fill:${ink}` }, svg, MET[mk][1](cell[mk]));
-        el("text", { x: x + (cw - 4) / 2, y: y + 46, "text-anchor": "middle", style: "font-size:11px" }, svg, `${cell.towns} town${cell.towns === 1 ? "" : "s"}${few ? " · too few to compare" : ""}`);
+        el("text", { x: x + (cw - 4) / 2, y: y + 46, "text-anchor": "middle", style: "font-size:11px" }, svg, `${cell.towns} town${cell.towns === 1 ? "" : "s"}`);
         const hit = el("rect", { x, y, width: cw - 4, height: ch - 4, fill: "transparent" }, svg);
         hit.addEventListener("mousemove", (e) => showTip(`<div class="tt-h"><b>${r} · ${c}</b><span>${cell.towns} towns</span></div>${row("Janoo's share", pct(cell.janoo))}${row("Gain vs. 2024 Democrat", pts(cell.swing) + " pts")}${row("vs. other Democrats", pts(cell.vs_ticket) + " pts")}${row("College degree", pct(cell.ba, 0))}${row("Income per person", "$" + Math.round(cell.inc / 1000) + "k")}${row("People / sq mi", Math.round(cell.den).toLocaleString())}${row("Votes", cell.votes.toLocaleString())}`, e));
         hit.addEventListener("mouseleave", hideTip);
@@ -281,9 +281,9 @@
     const rowEff = G.cols.map((c) => val(G.rows[2], c) - val(G.rows[0], c)).filter(Number.isFinite);
     const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
     const lc = (x) => x.toLowerCase();
-    $("gridTitle").textContent = `Janoo's gain over the 2024 Democrat, by ${lc(G.rl)} and ${lc(G.cl)}`;
+    $("gridTitle").textContent = `${MET[mk][0]}, by ${lc(G.rl)} and ${lc(G.cl)}`;
     $("gridSpread").innerHTML = `Moving across a row (${lc(G.cl)}, lowest to highest group): <b>${pts(avg(colEff))} pts</b> on average. Moving down a column (${lc(G.rl)}, lowest to highest group): <b>${pts(avg(rowEff))} pts</b>. Cells with fewer than 5 towns are left out of these averages.`;
-    $("gridNote").textContent = `Each cell is the vote-weighted average for its towns. Density groups: under 50, 50–200, and over 200 people per square mile. Education and income groups each hold a third of the vote. Darker cells moved more. Cells with fewer than 5 towns are dashed.`;
+    $("gridNote").textContent = `Each cell is the vote-weighted average for its towns. Density groups: under 50, 50–200, and over 200 people per square mile. Education and income groups each hold a third of the vote. Darker cells are higher. Cells with fewer than 5 towns are dashed.`;
   }
   function renderControls() {
     const C = D.controls; if (!C) return;
@@ -415,7 +415,7 @@
 
   // ---------- wire up
   const renderAll = () => { renderOffices(); renderMap(pressed("mapMode").m); renderEduInc(); renderEduIncBars(); renderGrid(); renderControls(); renderSchools(); renderOvertime(); renderStrip(); renderHistory(); renderWar(); };
-  seg("mapMode", (d) => renderMap(d.m)); seg("gridPair", renderGrid);
+  seg("mapMode", (d) => renderMap(d.m)); seg("gridPair", renderGrid); seg("gridMetric", renderGrid);
    seg("otGroup", renderOvertime); seg("warLevel", renderWar); seg("warSide", renderWar);
   
   $("theme").addEventListener("click", () => {
