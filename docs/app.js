@@ -392,9 +392,12 @@
   }
 
   // ---------- WAR tables
+  let warExpanded = false;
   function renderWar() {
     const lvl = pressed("warLevel").l, sd = pressed("warSide").s, L = D[lvl];
-    const all = L.all.slice().sort((a, b) => (sd === "top" ? b.war - a.war : a.war - b.war)).slice(0, 12);
+    const ranked = L.all.slice().sort((a, b) => (sd === "top" ? b.war - a.war : a.war - b.war));
+    const all = warExpanded ? ranked : ranked.slice(0, 12);
+    $("warMore").textContent = warExpanded ? "Show top 12" : `Show all ${ranked.length} candidates`;
     const mx = Math.max(...L.all.map((c) => Math.abs(c.war)));
     $("warTable").innerHTML = `<tr><th class="l">Candidate</th><th class="l">District</th><th>% of voters</th><th>Expected</th><th>Above expected</th><th class="l"></th></tr>` +
       all.map((c) => {
@@ -402,7 +405,7 @@
         return `<tr><td class="nm">${c.candidate} ${pill(c.party)}${c.incumbent ? ' <span class="pill">inc.</span>' : ""}${c.incomplete ? ' <span class="pill warn">incomplete</span>' : ""}</td><td class="sub">${c.district}${c.vote_for > 1 ? ` · ${c.vote_for} seats` : ""}${c.won ? "" : " · lost"}</td><td>${pct(c.share)}</td><td>${pct(c.expected)}</td><td><b>${pts(c.war)}</b></td><td><div class="barcell"><div class="z"></div><div class="b" style="background:${col};${c.war >= 0 ? `left:50%;width:${w}%` : `right:50%;width:${w}%`}"></div></div></td></tr>`;
       }).join("");
     const m = L.model;
-    $("warNote").textContent = `${lvl === "house" ? "House" : "Senate"}: ${m.n} candidates${m.parts.single ? "; one-seat and multi-seat races are modeled separately" : ""}. The model explains ${Math.round(100 * m.r2)}% of the variation, and being an incumbent was worth about ${pts(m.incumbent)} points. "% of voters" is the share of the district's voters who voted for the candidate. In districts with two or three seats, voters can pick more than one candidate, so a candidate can run well ahead of expectations, with support from many voters who backed the other party's candidates too, and still finish out of the running. Differences under about 3 points are within normal variation.`;
+    $("warNote").textContent = `${lvl === "house" ? "House" : "Senate"}: ${m.n} candidates in contested races were modeled${m.parts.single ? ", with one-seat and multi-seat races modeled separately" : ""}; ${L.all.length} are listed, leaving out races with an independent candidate or more same-party candidates than seats. The model explains ${Math.round(100 * m.r2)}% of the variation, and being an incumbent was worth about ${pts(m.incumbent)} points. "% of voters" is the share of the district's voters who voted for the candidate. In districts with two or three seats, voters can pick more than one candidate, so a candidate can run well ahead of expectations, with support from many voters who backed the other party's candidates too, and still finish out of the running. Differences under about 3 points are within normal variation.`;
     $("mHn").textContent = D.house.model.n; $("mHr").textContent = D.house.model.r2; $("mSn").textContent = D.senate.model.n; $("mSr").textContent = D.senate.model.r2;
   }
   function renderLostClose() {
@@ -416,7 +419,7 @@
   // ---------- wire up
   const renderAll = () => { renderOffices(); renderMap(pressed("mapMode").m); renderEduInc(); renderEduIncBars(); renderGrid(); renderControls(); renderSchools(); renderOvertime(); renderStrip(); renderHistory(); renderWar(); };
   seg("mapMode", (d) => renderMap(d.m)); seg("gridPair", renderGrid); seg("gridMetric", renderGrid);
-   seg("otGroup", renderOvertime); seg("warLevel", renderWar); seg("warSide", renderWar);
+   seg("otGroup", renderOvertime); seg("warLevel", renderWar); $("warMore").addEventListener("click", () => { warExpanded = !warExpanded; renderWar(); if (!warExpanded) $("warTable").scrollIntoView({ block: "nearest" }); }); seg("warSide", renderWar);
   
   $("theme").addEventListener("click", () => {
     const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");

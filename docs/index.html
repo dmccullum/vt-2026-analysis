@@ -99,6 +99,8 @@
     .ctlrow .cl { width: auto; }
   }
   .seg button:hover { color: var(--ink); }
+  .morebtn { border: 1px solid var(--line); background: var(--panel); color: var(--ink2); border-radius: var(--r-ctl); height: 34px; padding: 0 14px; font: 700 var(--t-meta)/1 var(--display); cursor: pointer; }
+  .morebtn:hover { background: var(--panel2); color: var(--ink); }
   .seg button[aria-pressed="true"] { background: var(--primary); color: #fff; }
   select { height: 32px; padding: 0 8px; border: 1px solid var(--line); border-radius: var(--r-ctl); background: var(--bg); font: 600 var(--t-meta) var(--display); }
   .legendrow { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: var(--t-hint); color: var(--muted); margin: 6px 0 0; }
@@ -236,6 +238,7 @@
     <div class="controls" style="margin:4px 8px 8px"><div class="seg" id="warLevel"><button data-l="house" aria-pressed="true">House</button><button data-l="senate">Senate</button></div>
       <div class="seg" id="warSide"><button data-s="top" aria-pressed="true">Strongest</button><button data-s="bottom">Weakest</button></div></div>
     <table id="warTable"></table>
+    <div style="padding:8px 8px 12px"><button class="morebtn" id="warMore" type="button"></button></div>
   </div>
   <p class="note" id="warNote"></p>
 
