@@ -395,9 +395,10 @@
   let warExpanded = false;
   function renderWar() {
     const lvl = pressed("warLevel").l, sd = pressed("warSide").s, L = D[lvl];
-    const ranked = L.all.slice().sort((a, b) => (sd === "top" ? b.war - a.war : a.war - b.war));
+    const ranked = L.all.filter((c) => (sd === "top" ? c.war >= 0.0005 : c.war <= -0.0005))  /* at least ±0.1 pts as displayed */.sort((a, b) => (sd === "top" ? b.war - a.war : a.war - b.war));
     const all = warExpanded ? ranked : ranked.slice(0, 12);
-    $("warMore").textContent = warExpanded ? "Show top 12" : `Show all ${ranked.length} candidates`;
+    $("warMore").textContent = warExpanded ? "Show top 12" : `Show all ${ranked.length} ${sd === "top" ? "above" : "below"} expectations`;
+    $("warMore").style.display = ranked.length > 12 ? "" : "none";
     const mx = Math.max(...L.all.map((c) => Math.abs(c.war)));
     $("warTable").innerHTML = `<tr><th class="l">Candidate</th><th class="l">District</th><th>% of voters</th><th>Expected</th><th>Above expected</th><th class="l"></th></tr>` +
       all.map((c) => {
