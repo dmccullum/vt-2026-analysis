@@ -1,0 +1,32 @@
+expected BA = -4.108 + 0.424*ln(income)
+1 {'towns': 77, 'votes': 60587, 'janoo': 0.354, 'swing': 0.198, 'vs_ticket': -0.209, 'ba': 0.315, 'inc': 47126.783, 'gap': -0.135, 'age': 47.211, 'owner': 0.833, 'examples': ['Milton', 'Swanton', 'Georgia', 'Manchester']}
+2 {'towns': 44, 'votes': 63237, 'janoo': 0.403, 'swing': 0.221, 'vs_ticket': -0.221, 'ba': 0.382, 'inc': 46553.589, 'gap': -0.062, 'age': 44.751, 'owner': 0.774, 'examples': ['Colchester', 'Barre Town', 'Springfield', 'Waterbury']}
+3 {'towns': 58, 'votes': 61790, 'janoo': 0.443, 'swing': 0.233, 'vs_ticket': -0.207, 'ba': 0.438, 'inc': 47888.14, 'gap': -0.013, 'age': 46.937, 'owner': 0.783, 'examples': ['Williston', 'Rutland City', 'Saint Johnsbury', 'Hinesburg']}
+4 {'towns': 38, 'votes': 62165, 'janoo': 0.503, 'swing': 0.252, 'vs_ticket': -0.213, 'ba': 0.514, 'inc': 49503.301, 'gap': 0.048, 'age': 44.277, 'owner': 0.735, 'examples': ['Essex Town', 'Bennington', 'Brattleboro', 'Essex Junction City']}
+5 {'towns': 26, 'votes': 62125, 'janoo': 0.619, 'swing': 0.262, 'vs_ticket': -0.192, 'ba': 0.616, 'inc': 48058.351, 'gap': 0.159, 'age': 36.636, 'owner': 0.615, 'examples': ['Burlington', 'South Burlington', 'Montpelier', 'Middlebury']}
+{
+ "janoo": {
+  "ba10": 0.08848877369814334,
+  "inc10": -0.05636450402471619,
+  "gap10": 0.09373077765715293,
+  "gap10_lo": 0.0768219964080204,
+  "gap10_hi": 0.11063955890628546,
+  "gap_r2": 0.5603079356365246
+ },
+ "swing": {
+  "ba10": 0.025293412857373576,
+  "inc10": -0.01175054411700681,
+  "gap10": 0.021770585929762696,
+  "gap10_lo": 0.015448507131197114,
+  "gap10_hi": 0.028092664728328276,
+  "gap_r2": 0.2746174287325035
+ },
+ "vs_ticket": {
+  "ba10": 0.013111572732940531,
+  "inc10": -0.03092636573111282,
+  "gap10": 0.00767907700368238,
+  "gap10_lo": -0.001123536700160261,
+  "gap10_hi": 0.01648169070752502,
+  "gap_r2": 0.036103200124558144
+ }
+}

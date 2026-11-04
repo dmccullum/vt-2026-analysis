@@ -1,0 +1,26 @@
+unmatched: []
+vote-weighted avg district-rate change: {'dr_chg_25_26': 22.7, 'dr_chg_26_27': -3.4, 'dr_chg_25_27': 18.6}
+ q  towns  dr_chg  swing  cross_drop   s24   s26    ba
+ 1    102   0.096  0.227       0.153 0.797 0.571 0.424
+ 2     67   0.172  0.239       0.176 0.713 0.474 0.503
+ 3     72   0.289  0.235       0.160 0.788 0.553 0.438
+
+== swing (points per +10% rate change, or per +0.10 rate level)
+  dr_chg_25_26|raw             +0.13 [-0.69, +0.95] p=0.760 n=243
+  dr_chg_25_26|controlled      +0.29 [-0.26, +0.84] p=0.297 n=243
+  dr_chg_26_27|raw             +1.33 [-0.36, +3.01] p=0.124 n=241
+  dr_chg_26_27|controlled      +0.64 [-0.40, +1.68] p=0.227 n=241
+  dr_chg_25_27|raw             +0.37 [-0.31, +1.05] p=0.282 n=241
+  dr_chg_25_27|controlled      +0.34 [-0.12, +0.80] p=0.149 n=241
+  dr27|raw                     +0.49 [+0.13, +0.85] p=0.008 n=243
+  dr27|controlled              +0.13 [-0.09, +0.34] p=0.246 n=243
+
+== cross_drop (points per +10% rate change, or per +0.10 rate level)
+  dr_chg_25_26|raw             +0.05 [-0.99, +1.09] p=0.922 n=243
+  dr_chg_25_26|controlled      +0.24 [-0.29, +0.76] p=0.377 n=243
+  dr_chg_26_27|raw             +1.48 [-0.50, +3.46] p=0.143 n=241
+  dr_chg_26_27|controlled      +0.48 [-0.61, +1.57] p=0.392 n=241
+  dr_chg_25_27|raw             +0.36 [-0.48, +1.21] p=0.399 n=241
+  dr_chg_25_27|controlled      +0.28 [-0.20, +0.75] p=0.254 n=241
+  dr27|raw                     +0.55 [+0.13, +0.98] p=0.010 n=243
+  dr27|controlled              +0.05 [-0.14, +0.24] p=0.593 n=243

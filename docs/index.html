@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("vt-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<title>Vermont 2026 Election Analysis</title>
+<style>
+  /* Same tokens as vt-needle (DM Sans / DM Serif Display, ink on white, #3d5ff5 accent). */
+  :root {
+    --bg: #ffffff; --panel: #ffffff; --panel2: #f7f7f5; --ink: #050505; --ink2: #3c3c3c; --muted: #6f6f6f;
+    --line: #e6e6e5; --line-strong: #d4d4d2; --accent: #3d5ff5; --primary: #3d5ff5; --primary-hover: #2e4edf; --tint: #e9edff;
+    --rep: #b4332b; --dem: #3d5ff5; --prog: #2f8a5f; --ind: #8a8a88; --faint: #8a8a88;
+    --q1: #b9c6fc; --q2: #8a9ff9; --q3: #3d5ff5; --q4: #2a43c0; --q5: #172a80;
+    --r-tag: 6px; --r-ctl: 8px; --r-card: 12px;
+    --t-label: 11px; --t-hint: 12px; --t-meta: 13px; --t-body: 14px; --t-item: 15px; --t-card: 17px;
+    --display: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --serif: 'DM Serif Display', Georgia, serif; color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0f1115; --panel: #191c22; --panel2: #22262d; --ink: #f5f5f2; --ink2: #d4d6da; --muted: #b4b9c2;
+    --line: #343840; --line-strong: #454a53; --accent: #9aaaff; --tint: #202b54;
+    --rep: #ff8a80; --dem: #9aaaff; --prog: #6fd3a2; --ind: #9a9fa8; --faint: #7d838d;
+    --q1: #3a4890; --q2: #5468c8; --q3: #7c8ff2; --q4: #a9b6ff; --q5: #dbe1ff; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --panel: #191c22; --panel2: #22262d; --ink: #f5f5f2; --ink2: #d4d6da; --muted: #b4b9c2;
+    --line: #343840; --line-strong: #454a53; --accent: #9aaaff; --tint: #202b54;
+    --rep: #ff8a80; --dem: #9aaaff; --prog: #6fd3a2; --ind: #9a9fa8; --faint: #7d838d;
+    --q1: #3a4890; --q2: #5468c8; --q3: #7c8ff2; --q4: #a9b6ff; --q5: #dbe1ff; color-scheme: dark }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: var(--t-body)/1.45 var(--display); -webkit-font-smoothing: antialiased; }
+  button, select { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 16px 64px; }
+  a { color: var(--accent); }
+
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .kicker { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font: 700 var(--t-label)/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .tag { display: inline-flex; align-items: center; padding: 4px 8px; border-radius: var(--r-tag); background: var(--panel2); color: var(--muted); }
+  h1 { font: 400 clamp(30px, 6vw, 44px)/1.08 var(--serif); letter-spacing: -.01em; margin: 14px 0 6px; }
+  .stamp { font-size: var(--t-meta); color: var(--muted); margin-bottom: 20px; }
+  .iconbtn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--line); background: var(--panel); color: var(--muted); border-radius: var(--r-ctl); cursor: pointer; flex: none; }
+  .iconbtn:hover { background: var(--panel2); color: var(--ink); }
+
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 12px 0 24px; overflow: hidden; }
+  @media (max-width: 640px) { .stats { grid-template-columns: 1fr 1fr; } .stat:nth-child(2) { border-right: 0; } .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); } }
+  .stat { padding: 14px 16px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat .l { font: 700 var(--t-label) var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .stat .v { font: 700 20px/1.3 var(--display); font-variant-numeric: tabular-nums; margin-top: 4px; }
+  .stat .s { font-size: var(--t-hint); color: var(--muted); }
+  .r { color: var(--rep); } .d { color: var(--dem); } .p { color: var(--prog); }
+
+  h2 { font: 700 var(--t-card)/1.2 var(--display); letter-spacing: -.01em; margin: 40px 0 8px; }
+  h3 { font: 700 var(--t-label) var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  .lede { font-size: var(--t-item); line-height: 1.55; margin: 0 0 14px; color: var(--ink2); }
+  .lede b.d, .lede b.r, .lede b.p { font-weight: 700; }
+  .note { font-size: var(--t-meta); line-height: 1.5; color: var(--muted); margin: 8px 0 0; }
+  ol.findings { margin: 0; padding: 4px 16px 4px 40px; }
+  ol.findings li { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: var(--t-item); line-height: 1.5; color: var(--ink2); }
+  ol.findings li:last-child { border-bottom: 0; }
+  ol.findings li b { color: var(--ink); }
+
+  .chart { padding: 12px 12px 8px; position: relative; }
+  .chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+  svg text { fill: var(--muted); font: 500 11px var(--display); }
+  svg .grid { stroke: var(--line); stroke-width: 1; }
+  svg .zero { stroke: var(--line-strong); stroke-width: 1; }
+  svg .axis-l { font: 700 10px var(--display); letter-spacing: .08em; text-transform: uppercase; fill: var(--muted); }
+  svg .lab { fill: var(--ink2); font: 600 11px var(--display); }
+  svg .lab-strong { fill: var(--ink); font: 700 12px var(--display); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin: 0 0 8px; }
+  .controls .cl { font: 700 var(--t-label) var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .seg { display: inline-flex; flex-wrap: wrap; padding: 2px; border-radius: var(--r-ctl); background: var(--panel2); }
+  .seg button { border: 0; background: none; cursor: pointer; height: 28px; padding: 0 10px; border-radius: var(--r-tag); font: 700 var(--t-meta)/1 var(--display); color: var(--muted); }
+  .seg button:hover { color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--primary); color: #fff; }
+  select { height: 32px; padding: 0 8px; border: 1px solid var(--line); border-radius: var(--r-ctl); background: var(--bg); font: 600 var(--t-meta) var(--display); }
+  .legendrow { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: var(--t-hint); color: var(--muted); margin: 6px 0 0; }
+  .legendrow i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+
+  .tip { position: absolute; z-index: 5; pointer-events: none; min-width: 168px; max-width: 260px; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-ctl); box-shadow: 0 8px 24px rgba(0,0,0,.16); font-size: var(--t-meta); display: none; }
+  .tt-h { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+  .tt-h b { font-size: var(--t-body); } .tt-h span { color: var(--muted); font-size: var(--t-hint); }
+  .tt-r { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; font-variant-numeric: tabular-nums; }
+  .tt-r span { color: var(--muted); }
+
+  .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
+  @media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+  .map svg { max-width: 360px; margin: 0 auto; }
+  .map .state { fill: var(--panel2); stroke: var(--muted); stroke-width: 1; }
+  .map .county { fill: none; stroke: var(--line-strong); stroke-width: .8; }
+  .map .city { font: 600 9px var(--display); fill: var(--ink2); paint-order: stroke; stroke: var(--panel2); stroke-width: 3px; pointer-events: none; }
+  .map .ring { fill: none; stroke: var(--ink); stroke-width: 1.5; pointer-events: none; }
+
+  .tablewrap { overflow-x: auto; padding: 4px 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: var(--t-body); font-variant-numeric: tabular-nums; }
+  th { font: 700 var(--t-label) var(--display); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); text-align: right; padding: 10px 8px; border-bottom: 1px solid var(--line-strong); white-space: nowrap; }
+  th.l, td.l { text-align: left; }
+  td { padding: 8px 8px; border-bottom: 1px solid var(--line); text-align: right; }
+  tr:last-child td { border-bottom: 0; }
+  td.nm { font-weight: 600; text-align: left; }
+  td.sub { color: var(--muted); font-size: var(--t-meta); text-align: left; }
+  .pill { display: inline-block; padding: 2px 6px; border-radius: var(--r-tag); font: 700 10px/1.4 var(--display); letter-spacing: .04em; background: var(--panel2); color: var(--muted); }
+  .pill.r { background: color-mix(in srgb, var(--rep) 14%, transparent); color: var(--rep); }
+  .pill.d { background: color-mix(in srgb, var(--dem) 14%, transparent); color: var(--dem); }
+  .pill.p { background: color-mix(in srgb, var(--prog) 16%, transparent); color: var(--prog); }
+  .pill.warn { background: color-mix(in srgb, #c98a00 18%, transparent); color: #9a6a00; }
+  .barcell { position: relative; min-width: 120px; height: 14px; }
+  .barcell .z { position: absolute; top: -2px; bottom: -2px; left: 50%; width: 1px; background: var(--line-strong); }
+  .barcell .b { position: absolute; top: 3px; height: 8px; border-radius: 4px; }
+
+  details.panel { margin-top: 32px; }
+  details > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 14px 16px; font: 700 var(--t-item) var(--display); }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::after { content: ""; margin-left: auto; width: 8px; height: 8px; border: solid var(--muted); border-width: 0 1.6px 1.6px 0; transform: rotate(45deg); transition: transform .15s; }
+  details[open] > summary::after { transform: rotate(-135deg); }
+  details.panel p, details.panel ul { margin: 0 16px 12px; font-size: var(--t-body); line-height: 1.55; color: var(--ink2); }
+  details.panel[open] { padding-bottom: 6px; }
+  footer { margin-top: 32px; font-size: var(--t-hint); color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="topbar">
+    <div class="kicker"><span class="tag">Unofficial results</span><span>Vermont · Nov. 3, 2026</span></div>
+    <button class="iconbtn" id="theme" aria-label="Toggle dark mode" title="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  </div>
+  <h1>Vermont's 2026 election: an analysis of the results</h1>
+  <div class="stamp" id="stamp"></div>
+
+  <div class="card stats" id="stats"></div>
+
+  <h2>What stood out</h2>
+  <div class="card"><ol class="findings" id="findings"></ol></div>
+
+  <h2>Scott fell much further than other Republicans</h2>
+  <p class="lede">Every Republican running statewide lost ground from 2024, but Scott lost far more. The other Republicans dropped by 5 to 12 points, and the U.S. House race barely moved. In 2024 Scott ran <b id="x24"></b> ahead of the other Republicans on the ballot. This year he ran <b id="x26"></b> ahead, so about one voter in five still chose Scott and Democrats for the other offices.</p>
+  <div class="card chart"><h3>Republican candidate's share of the vote, 2024 and 2026</h3><svg id="offices"></svg>
+    <div class="legendrow"><span><i style="background:transparent;border:2px solid var(--rep);border-radius:50%"></i>2024</span><span><i style="background:var(--rep);border-radius:50%"></i>2026</span></div></div>
+
+  <h2>Where Scott lost ground</h2>
+  <p class="lede" id="mapLede"></p>
+  <div class="two">
+    <figure class="card chart map" style="margin:0">
+      <div class="controls"><div class="seg" id="mapMode">
+        <button data-m="swing" aria-pressed="true">Change since 2024</button><button data-m="res">vs. statewide trend</button><button data-m="cross">Scott vs. other Republicans</button></div></div>
+      <svg id="map"></svg>
+      <figcaption class="note" id="mapNote"></figcaption>
+    </figure>
+    <div class="card tablewrap" style="padding-top:12px"><h3 style="margin:4px 8px 4px">Biggest and smallest changes (towns with 400+ votes)</h3><table id="moverTable"></table></div>
+  </div>
+
+  <h2>What the biggest shifts had in common</h2>
+  <p class="lede">The towns that moved hardest toward Janoo had more college graduates, more people working from home, and higher 2024 turnout. Most of that overlaps with how Democratic a town already was. A near-uniform swing from each town's 2024 result explains 93% of the variation (R² 0.926), and adding eight demographic measures raises that only to 0.931. The one measure that clearly matters is second homes: towns with more seasonal housing held up slightly better for Scott.</p>
+  <div class="card chart">
+    <div class="controls">
+      <span class="cl">Y</span><select id="sy"><option value="swing">Shift toward the Democrat since 2024 (pts)</option><option value="janoo">Janoo's share of the Scott–Janoo vote</option><option value="vsTicket">Janoo vs. other Democrats on the ballot (pts)</option></select>
+      <span class="cl">X</span><select id="sx"><option value="ba">College degree (%)</option><option value="inc">Income per person</option><option value="den">Population density (log)</option><option value="age">Median age</option><option value="vt">Born in Vermont (%)</option><option value="wfh">Work from home (%)</option><option value="s24">Scott 2024 share</option></select>
+      <span class="note" id="scR" style="margin:0"></span>
+    </div>
+    <svg id="scatter"></svg>
+    <p class="note">One dot per town, sized by votes cast. The line is the trend across towns, weighting larger towns more; r measures how closely towns follow it (0 = not at all, 1 = perfectly).</p>
+  </div>
+
+  <h2>Janoo's vote by density, education, and income</h2>
+  <p class="lede" id="groupLede"></p>
+  <div class="card chart">
+    <div class="controls"><span class="cl">Measure</span><div class="seg" id="groupMetric">
+      <button data-k="janoo" aria-pressed="true">Janoo's share</button><button data-k="swing_to_dem">Gain vs. 2024 Democrat</button><button data-k="janoo_vs_ticket">vs. other Democrats</button></div></div>
+    <div class="two" style="gap:20px"><div><h3>By density</h3><svg id="clDensity"></svg></div><div><h3>By share of adults with a college degree</h3><svg id="clBA"></svg></div></div>
+    <div class="two" style="gap:20px;margin-top:12px"><div><h3>By income per person</h3><svg id="clInc"></svg></div><div><h3>By density and college degrees together</h3><svg id="clCross"></svg></div></div>
+    <p class="note" id="groupNote"></p>
+  </div>
+
+  <h2>Education relative to income</h2>
+  <p class="lede" id="eiLede"></p>
+  <div class="card chart">
+    <h3>Each town by college share and income per person, colored by Janoo's share</h3>
+    <svg id="eiScatter"></svg>
+    <div class="legendrow" id="eiLegend"></div>
+  </div>
+  <div class="card chart" style="margin-top:12px">
+    <div class="controls"><span class="cl">Measure</span><div class="seg" id="eiMetric"><button data-k="janoo" aria-pressed="true">Janoo's share</button><button data-k="swing">Gain vs. 2024 Democrat</button><button data-k="vs_ticket">vs. other Democrats</button></div></div>
+    <h3>Towns grouped by how far education outpaces income</h3>
+    <svg id="eiBars"></svg>
+    <p class="note" id="eiNote"></p>
+  </div>
+
+  <h2>Separating education, density, and income</h2>
+  <p class="lede">These three measures move together: Vermont's denser towns also tend to have more college graduates. The grid compares towns that match on one measure and differ on the other, for example rural towns with many graduates vs. suburban and urban towns with many graduates. Read across a row to see the effect of the column measure with the row measure held roughly constant.</p>
+  <div class="card chart">
+    <div class="controls">
+      <span class="cl">Compare</span><div class="seg" id="gridPair"><button data-g="den3_ba3" aria-pressed="true">Density × education</button><button data-g="inc3_ba3">Income × education</button><button data-g="den3_inc3">Density × income</button></div>
+      <span class="cl">Measure</span><div class="seg" id="gridMetric"><button data-k="swing" aria-pressed="true">Gain vs. 2024 Democrat</button><button data-k="janoo">Janoo's share</button><button data-k="vs_ticket">vs. other Democrats</button></div>
+    </div>
+    <svg id="grid"></svg>
+    <p class="note" id="gridNote"></p>
+  </div>
+  <div class="card tablewrap" style="margin-top:12px;padding-top:12px">
+    <h3 style="margin:4px 8px">Holding the other measures fixed</h3>
+    <table id="ctlTable"></table>
+    <p class="note" style="margin:8px 8px 12px">Each number is the estimated change, in percentage points, between towns that differ only in that one measure and match on the others (college share, density, income per person, median age, and share of second homes). Ranges are 95% confidence intervals. These are patterns across towns, not measurements of individual voters.</p>
+  </div>
+  <p class="lede" id="ctlLede" style="margin-top:14px"></p>
+
+  <h2>School closures, consolidation, and taxes</h2>
+  <p class="lede" id="schLede"></p>
+  <div class="card tablewrap" style="padding-top:12px">
+    <h3 style="margin:4px 8px">Towns grouped by their schools</h3>
+    <table id="schTable"></table>
+  </div>
+  <div class="two" style="margin-top:12px">
+    <div class="card tablewrap" style="padding-top:12px">
+      <h3 style="margin:4px 8px">Comparing otherwise similar towns</h3>
+      <table id="schCtl"></table>
+      <p class="note" style="margin:8px 8px 12px">Extra points of shift toward Janoo for towns with each feature, compared with towns that match on 2024 vote, college share, income, density, age, and second homes. Ranges are 95% confidence intervals; gray means no clear difference.</p>
+    </div>
+    <div class="card tablewrap" style="padding-top:12px">
+      <h3 style="margin:4px 8px">Towns with a closure voted or proposed</h3>
+      <table id="schTowns"></table>
+    </div>
+  </div>
+  <p class="note" id="schNote"></p>
+
+  <h2>Democratic share for governor, 2016–2026</h2>
+  <p class="lede">Towns with more college graduates have voted more Democratic for governor since before Scott took office. That gap narrowed from 2018 through 2024 as Scott won over Democrats everywhere, and in 2026 it returned to about where it was in 2016. In the 2024 presidential race the gap was wider still. Towns are split into five groups with equal numbers of voters.</p>
+  <div class="card chart">
+    <div class="controls"><span class="cl">Group towns by</span><div class="seg" id="otGroup"><button data-g="ba_q" aria-pressed="true">College degree</button><button data-g="tier">Density</button></div></div>
+    <svg id="overtime"></svg>
+    <div class="legendrow" id="otLegend"></div>
+  </div>
+
+  <h2>Governor vs. Legislature</h2>
+  <p class="lede" id="splitLede"></p>
+  <div class="card chart"><h3>House districts by Scott's share, colored by who won the seats</h3><svg id="strip"></svg>
+    <div class="legendrow"><span><i style="background:var(--dem)"></i>All seats Dem./Prog.</span><span><i style="background:var(--ind)"></i>Split or independent</span><span><i style="background:var(--rep)"></i>All seats Republican</span></div></div>
+  <div id="histWrap"></div>
+
+  <h2>Legislative candidates who ran ahead of or behind expectations</h2>
+  <p class="lede">Each candidate in a contested race is compared with what a typical candidate of the same party would be expected to get in that district. The expectation is based on how the district voted in the six statewide and federal races other than governor, whether the candidate was an incumbent, and how many candidates ran. The difference, in percentage points, is like a <b>wins above replacement (WAR)</b> score: positive means the candidate ran ahead of their party's usual showing. Races with an independent candidate, or with more Democrats or Republicans than seats, are left out because the comparison doesn't work for them.</p>
+  <div class="card tablewrap" style="padding-top:12px">
+    <div class="controls" style="margin:4px 8px 8px"><div class="seg" id="warLevel"><button data-l="house" aria-pressed="true">House</button><button data-l="senate">Senate</button></div>
+      <div class="seg" id="warSide"><button data-s="top" aria-pressed="true">Strongest</button><button data-s="bottom">Weakest</button></div></div>
+    <table id="warTable"></table>
+  </div>
+  <p class="note" id="warNote"></p>
+
+  <div class="two" style="margin-top:24px">
+    <div class="card tablewrap" style="padding-top:12px"><h3 style="margin:4px 8px">2024 winners who lost</h3><table id="lostTable"></table><p class="note" style="margin:8px 8px 12px">"% of voters" is the share of voters who voted for the candidate. In districts with two or three seats each voter can choose more than one candidate, so a candidate can get a majority of voters and still finish out of the running.</p></div>
+    <div class="card tablewrap" style="padding-top:12px"><h3 style="margin:4px 8px">Closest House races</h3><table id="closeTable"></table></div>
+  </div>
+
+  <details class="card panel">
+    <summary>Method and data notes</summary>
+    <p><b>Results.</b> The Vermont Secretary of State's unofficial election-night files (<span id="mSos"></span>, <span id="mTowns"></span> towns). SOS reports every race by town and House district, so the statewide races are added up exactly over each legislative district. Royalton, Stannard, and Washington had not reported. Races in districts that include those towns are flagged <span class="pill warn">incomplete</span>. Marlboro's governor return shows Scott at 0 votes and 129 "other write-in" votes, while the town's other races look normal. That looks like a reporting error, so Marlboro is left out of every governor comparison. 2024 results come from the SOS official 2024 files. Governor results from 2016 to 2022 come from the vt-needle baseline (OpenElections and the Vermont Election Archive).</p>
+    <p><b>Partisan lean.</b> For each town or district, the Republican share of the vote for Republican vs. Democratic or Progressive candidates in the races for Lt. Governor, Treasurer, Secretary of State, Auditor, Attorney General, and U.S. House, added together. This is the "other Republicans" and "other Democrats" benchmark used throughout. "Scott vs. other Republicans" is Scott's share of the Scott–Janoo vote minus that number. Shares labeled "two-candidate" leave out minor candidates.</p>
+    <p><b>Above expected (WAR).</b> For each contested Democratic, Progressive, or Republican legislative candidate, share = votes ÷ voters in the district. SOS's ballot count counts each seat, so it is divided by the number of seats. A regression weighted by district size predicts share from the party's partisan lean in the district, party, incumbency (won the same chamber in 2024, matched by name), and independents in the race. House one-seat and multi-seat races are modeled separately, because in multi-seat races voters choose several candidates; the multi-seat model also accounts for how many candidates each party ran. The Senate, with fewer races, uses one model with a multi-seat indicator. The score is actual minus predicted. House: n=<span id="mHn"></span>, R²=<span id="mHr"></span>. Senate: n=<span id="mSn"></span>, R²=<span id="mSr"></span>. Treat differences under about 3 points as noise.</p>
+    <p><b>Demographics.</b> 2020–2024 American Community Survey 5-year estimates for county subdivisions (Census table-based summary files) and land area from the 2024 Census Gazetteer. These are town-level averages. A pattern across towns does not show how individual voters behaved. There was no 2026 exit poll for Vermont. In the Vermont Public / Vermont State University poll (fielded Sept. 10–21, 732 likely voters), Janoo led 45–38 among likely voters with a bachelor's degree or more and Scott led 51–16 among those with high school or less, which fits the town pattern here.</p>
+    <p><b>Income.</b> Income is ACS per-capita income: total income in the town divided by all residents. It was chosen over median household income, which runs high in commuter towns with two-earner families (Milton $119k, Fairfax $129k ± $29k) and low where many people live alone or with roommates. It was also chosen over median earnings per worker, which counts part-time student jobs and puts Burlington at $26k. Per-capita income counts children, so towns with many families look somewhat poorer. All three measures give the same result: at the same education level, Janoo did better, gained more, and ran closer to the other Democrats in lower-income towns.</p>
+    <p><b>Quintiles.</b> Towns are ranked and split into five groups with equal shares of the 2026 governor vote. Density tiers: rural &lt;50 people per sq mi, small town 50–200, suburban or large town 200–1,000, urban 1,000+.</p>
+  </details>
+  <footer>Data and code: <a href="https://github.com/dmccullum/vt-2026-analysis">github.com/dmccullum/vt-2026-analysis</a></footer>
+</main>
+<div class="tip" id="tip"></div>
+<script src="vtmap.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

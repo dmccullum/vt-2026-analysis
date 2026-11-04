@@ -1,0 +1,222 @@
+{
+ "house": {
+  "n": 161,
+  "r2": 0.858,
+  "incumbent": 0.0488,
+  "parts": {
+   "single": {
+    "n": 70,
+    "r2": 0.873,
+    "incumbent": 0.0355
+   },
+   "multi": {
+    "n": 91,
+    "r2": 0.859,
+    "incumbent": 0.0591
+   }
+  }
+ },
+ "senate": {
+  "n": 47,
+  "r2": 0.855,
+  "incumbent": 0.0456,
+  "parts": {
+   "pooled": {
+    "n": 47,
+    "r2": 0.874,
+    "incumbent": 0.0456
+   }
+  }
+ },
+ "toplines": {
+  "ATTORNEY GENERAL": [
+   {
+    "candidate": "CHARITY R. CLARK",
+    "party": "DEMOCRATIC",
+    "votes": 199234,
+    "pct": 67.74
+   },
+   {
+    "candidate": "EDWIN HOWELL KEMON",
+    "party": "REPUBLICAN",
+    "votes": 94256,
+    "pct": 32.05
+   },
+   {
+    "candidate": "OTHER WRITE-IN",
+    "party": "WRITE-IN",
+    "votes": 596,
+    "pct": 0.2
+   },
+   {
+    "candidate": "ELIZABETH GRANT",
+    "party": "WRITE-IN",
+    "votes": 3,
+    "pct": 0.0
+   }
+  ],
+  "AUDITOR OF ACCOUNTS": [
+   {
+    "candidate": "TIM ASHE",
+    "party": "DEMOCRATIC",
+    "votes": 202210,
+    "pct": 69.11
+   },
+   {
+    "candidate": "IVAR KRONICK",
+    "party": "REPUBLICAN",
+    "votes": 89985,
+    "pct": 30.76
+   },
+   {
+    "candidate": "OTHER WRITE-IN",
+    "party": "WRITE-IN",
+    "votes": 364,
+    "pct": 0.12
+   },
+   {
+    "candidate": "ALLAN CHAMBERLAIN",
+    "party": "WRITE-IN",
+    "votes": 1,
+    "pct": 0.0
+   }
+  ],
+  "GOVERNOR": [
+   {
+    "candidate": "PHIL SCOTT",
+    "party": "REPUBLICAN",
+    "votes": 160813,
+    "pct": 52.38
+   },
+   {
+    "candidate": "AMANDA JANOO",
+    "party": "DEM/PROG",
+    "votes": 140665,
+    "pct": 45.81
+   },
+   {
+    "candidate": "BRIAN JUDD",
+    "party": "INDEPENDENT",
+    "votes": 2582,
+    "pct": 0.84
+   },
+   {
+    "candidate": "JUNE GOODBAND",
+    "party": "PEACE AND JUSTICE",
+    "votes": 1229,
+    "pct": 0.4
+   }
+  ],
+  "LIEUTENANT GOVERNOR": [
+   {
+    "candidate": "MOLLY GRAY",
+    "party": "DEMOCRATIC",
+    "votes": 189841,
+    "pct": 62.77
+   },
+   {
+    "candidate": "JOHN S. RODGERS",
+    "party": "REPUBLICAN",
+    "votes": 111885,
+    "pct": 37.0
+   },
+   {
+    "candidate": "OTHER WRITE-IN",
+    "party": "WRITE-IN",
+    "votes": 654,
+    "pct": 0.22
+   },
+   {
+    "candidate": "RYAN MCLAREN",
+    "party": "WRITE-IN",
+    "votes": 3,
+    "pct": 0.0
+   }
+  ],
+  "REPRESENTATIVE TO CONGRESS": [
+   {
+    "candidate": "BECCA BALINT",
+    "party": "DEMOCRATIC",
+    "votes": 197546,
+    "pct": 65.26
+   },
+   {
+    "candidate": "GERALD MALLOY",
+    "party": "REPUBLICAN",
+    "votes": 93351,
+    "pct": 30.84
+   },
+   {
+    "candidate": "SUZANNE \"SUZ\" SEYMOUR",
+    "party": "INDEPENDENT",
+    "votes": 4330,
+    "pct": 1.43
+   },
+   {
+    "candidate": "RYAN P. WALTON",
+    "party": "INDEPENDENT",
+    "votes": 2672,
+    "pct": 0.88
+   }
+  ],
+  "SECRETARY OF STATE": [
+   {
+    "candidate": "SARAH COPELAND HANZAS",
+    "party": "DEMOCRATIC",
+    "votes": 173655,
+    "pct": 59.21
+   },
+   {
+    "candidate": "H. BROOKE PAIGE",
+    "party": "REPUBLICAN",
+    "votes": 95453,
+    "pct": 32.55
+   },
+   {
+    "candidate": "RACHEL SHAW",
+    "party": "PROGRESSIVE",
+    "votes": 23844,
+    "pct": 8.13
+   },
+   {
+    "candidate": "OTHER WRITE-IN",
+    "party": "WRITE-IN",
+    "votes": 309,
+    "pct": 0.11
+   }
+  ],
+  "STATE TREASURER": [
+   {
+    "candidate": "MIKE PIECIAK",
+    "party": "DEMOCRATIC",
+    "votes": 184694,
+    "pct": 62.29
+   },
+   {
+    "candidate": "LYNN LAFLEUR",
+    "party": "REPUBLICAN",
+    "votes": 92150,
+    "pct": 31.08
+   },
+   {
+    "candidate": "ZACHARY HAMPL",
+    "party": "PROGRESSIVE",
+    "votes": 19099,
+    "pct": 6.44
+   },
+   {
+    "candidate": "OTHER WRITE-IN",
+    "party": "WRITE-IN",
+    "votes": 546,
+    "pct": 0.18
+   }
+  ]
+ },
+ "statewide": {
+  "scott_R2_26": 0.5344319589017248,
+  "scott_R2_24": 0.7710736544638592,
+  "env_R2_26": 0.32637789062386324,
+  "env_R2_24": 0.4019860665340601,
+  "pres_R2_24": 0.33589354564814944
+ }
+}

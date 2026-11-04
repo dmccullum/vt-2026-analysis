@@ -1,0 +1,92 @@
+
+M0 l24 only: R2=0.925 n=243
+{'Intercept': -1.113, 'l24': 0.99}
+
+M1 l24+demos: R2=0.930 n=243
+                            b     t
+Intercept              -1.037 -27.3
+l24                     0.927  32.0
+log_density_z           0.013   1.0
+pct_ba_plus_z          -0.035  -1.7
+inc10k_z                0.005   0.3
+median_age_z            0.002   0.2
+pct_seasonal_housing_z  0.040   2.9
+pct_born_in_vt_z        0.016   1.2
+pct_wfh_z              -0.002  -0.1
+turnout_z               0.001   0.0
+
+M2 env26 only: R2=0.894 n=243
+{'Intercept': 0.828, 'e26': 0.9}
+
+M3 env26+demos: R2=0.927 n=243
+                            b     t
+Intercept               0.961  33.7
+e26                     1.044  31.1
+log_density_z           0.071   5.3
+pct_ba_plus_z           0.028   1.3
+inc10k_z                0.081   5.1
+median_age_z           -0.003  -0.2
+pct_seasonal_housing_z  0.022   1.6
+pct_born_in_vt_z        0.013   0.9
+pct_wfh_z              -0.016  -1.3
+turnout_z               0.019   1.4
+
+M4 env26+l24+demos: R2=0.965 n=243
+                            b     t
+Intercept              -0.080  -1.2
+e26                     0.573  15.3
+l24                     0.529  15.9
+log_density_z           0.053   5.7
+pct_ba_plus_z           0.028   1.8
+inc10k_z                0.031   2.8
+median_age_z           -0.004  -0.5
+pct_seasonal_housing_z  0.022   2.2
+pct_born_in_vt_z       -0.007  -0.7
+pct_wfh_z              -0.002  -0.2
+turnout_z               0.014   1.4
+
+Scott held up best vs 2024 lean (>=400 votes):
+          town      county  gov_R2  gov_R2_24  scott_swing  crossover  crossover_24  pct_ba_plus  density  pct_born_in_vt  gov_total  resid_vs24
+119     MENDON     Rutland   0.717      0.851       -0.134      0.283         0.348        0.494   29.322           0.431      618.0       0.317
+243  WORCESTER  Washington   0.454      0.650       -0.196      0.219         0.366        0.530   21.553           0.569      466.0       0.316
+107  LEICESTER     Addison   0.695      0.841       -0.145      0.238         0.304        0.359   49.239           0.555      510.0       0.292
+16   BERKSHIRE    Franklin   0.800      0.903       -0.104      0.186         0.246        0.220   41.857           0.774      553.0       0.285
+240   WOODBURY  Washington   0.527      0.721       -0.194      0.158         0.284        0.489   17.469           0.431      509.0       0.281
+187   STAMFORD  Bennington   0.663      0.822       -0.158      0.152         0.219        0.340   24.391           0.143      410.0       0.279
+0      ADDISON     Addison   0.712      0.853       -0.141      0.201         0.287        0.402   28.254           0.588      750.0       0.277
+56      DORSET  Bennington   0.601      0.780       -0.179      0.262         0.407        0.721   44.161           0.325     1222.0       0.271
+26    BRIDPORT     Addison   0.707      0.851       -0.144      0.211         0.277        0.348   28.267           0.604      678.0       0.271
+145     PAWLET     Rutland   0.600      0.779       -0.179      0.180         0.289        0.375   34.543           0.452      760.0       0.270
+15      BENSON     Rutland   0.764      0.886       -0.122      0.174         0.239        0.326   17.867           0.562      462.0       0.260
+143     ORWELL     Addison   0.675      0.833       -0.158      0.190         0.287        0.221   27.404           0.599      670.0       0.255
+
+Worst:
+           town      county  gov_R2  gov_R2_24  scott_swing  crossover  crossover_24  pct_ba_plus  density  pct_born_in_vt  gov_total  resid_vs24
+191   STRAFFORD      Orange   0.253      0.647       -0.394      0.112         0.439        0.533   31.122           0.254      709.0      -0.568
+63       ELMORE    Lamoille   0.472      0.806       -0.333      0.184         0.423        0.478   24.763           0.459      545.0      -0.406
+52   CRAFTSBURY     Orleans   0.436      0.778       -0.342      0.173         0.416        0.462   34.667           0.501      647.0      -0.386
+127    MORETOWN  Washington   0.469      0.797       -0.329      0.215         0.468        0.581   38.576           0.492     1015.0      -0.369
+43      CHELSEA      Orange   0.596      0.861       -0.265      0.171         0.343        0.296   30.536           0.437      623.0      -0.303
+76       GLOVER     Orleans   0.606      0.865       -0.260      0.225         0.383        0.355   27.983           0.565      548.0      -0.299
+62         EDEN    Lamoille   0.672      0.895       -0.223      0.200         0.292        0.174   21.471           0.754      505.0      -0.288
+242   WOODSTOCK     Windsor   0.446      0.767       -0.321      0.223         0.452        0.529   68.714           0.131     1730.0      -0.281
+146     PEACHAM   Caledonia   0.430      0.753       -0.323      0.143         0.387        0.489   19.001           0.330      462.0      -0.270
+8       BARNARD     Windsor   0.447      0.765       -0.317      0.210         0.422        0.553   25.211           0.221      562.0      -0.265
+215   WATERFORD   Caledonia   0.637      0.877       -0.239      0.181         0.333        0.410   33.408           0.527      698.0      -0.264
+96    HYDE PARK    Lamoille   0.570      0.840       -0.270      0.217         0.391        0.346   79.637           0.663     1581.0      -0.244
+            scott26    s24  swing  env26  cross
+county                                         
+Windsor       0.469  0.731 -0.262  0.273  0.196
+Windham       0.452  0.713 -0.260  0.279  0.174
+Lamoille      0.558  0.817 -0.259  0.336  0.223
+Washington    0.496  0.744 -0.248  0.292  0.204
+Chittenden    0.470  0.715 -0.245  0.240  0.230
+Orange        0.561  0.797 -0.236  0.374  0.187
+Addison       0.513  0.749 -0.236  0.324  0.189
+Bennington    0.535  0.765 -0.230  0.349  0.186
+Caledonia     0.603  0.831 -0.228  0.418  0.185
+Grand Isle    0.645  0.845 -0.200  0.391  0.255
+Orleans       0.672  0.865 -0.193  0.476  0.195
+Franklin      0.685  0.869 -0.184  0.457  0.227
+Rutland       0.659  0.843 -0.184  0.449  0.210
+Essex         0.731  0.881 -0.150  0.537  0.194

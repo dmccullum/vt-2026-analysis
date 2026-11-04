@@ -1,0 +1,64 @@
+                                towns   votes     swing   cross26 cross_drop       res   scott24   scott26        ba         den
+Closure voted or proposed          13   13137   0.24525  0.199833   0.172111   0.00232  0.752908  0.507658  0.466403   50.551772
+Has a school under 100 students    45   25513  0.229307  0.189509   0.153793 -0.002892  0.796629  0.567322  0.409761   29.870028
+No public school in town           54   18143  0.195638  0.212574   0.120589  0.017522  0.823239  0.627601   0.38649   21.780505
+Only schools of 100+ students     131  253111  0.235597  0.210693   0.166093 -0.001418  0.762067   0.52647  0.461774  106.542945
+                                             towns     swing       res cross_drop
+Rural|Closure voted or proposed                 11  0.237451  0.003422   0.165112
+Rural|Has a school under 100 students           42  0.228267 -0.003747   0.155632
+Rural|No public school in town                  49  0.198497  0.019847   0.124142
+Rural|Only schools of 100+ students             46  0.228945 -0.004768   0.155194
+Small town|Has a school under 100 students       3  0.235732  0.002386   0.142432
+Small town|No public school in town              4  0.186403  0.008343   0.104348
+Small town|Only schools of 100+ students        63  0.231358 -0.005915    0.15567
+Suburban/urban|Only schools of 100+ students    22  0.241472  0.003723   0.178932
+
+== swing (points)
+  small_school|raw                 -0.42  [-2.12, +1.28]  p=0.628 n=243
+  small_school|controlled          -0.04  [-1.46, +1.37]  p=0.951 n=243
+  closure|raw                      +1.25  [-1.18, +3.68]  p=0.314 n=243
+  closure|controlled               +1.14  [-1.14, +3.42]  p=0.327 n=243
+  any_closure|raw                  +1.26  [-0.72, +3.25]  p=0.212 n=243
+  any_closure|controlled           +0.86  [-1.19, +2.92]  p=0.411 n=243
+  no_school|raw                    -3.98  [-5.72, -2.25]  p=0.000 n=243
+  no_school|controlled             -2.11  [-3.45, -0.78]  p=0.002 n=243
+  I(adm_change*10)|raw             -0.58  [-1.22, +0.06]  p=0.075 n=241
+  I(adm_change*10)|controlled      -0.11  [-0.55, +0.34]  p=0.634 n=241
+
+== cross_drop (points)
+  small_school|raw                 -0.83  [-2.72, +1.05]  p=0.387 n=243
+  small_school|controlled          +0.01  [-1.13, +1.14]  p=0.992 n=243
+  closure|raw                      +0.83  [-1.77, +3.42]  p=0.532 n=243
+  closure|controlled               +0.40  [-1.43, +2.24]  p=0.666 n=243
+  any_closure|raw                  +0.99  [-1.17, +3.14]  p=0.370 n=243
+  any_closure|controlled           +0.41  [-1.16, +1.99]  p=0.606 n=243
+  no_school|raw                    -4.47  [-6.67, -2.27]  p=0.000 n=243
+  no_school|controlled             -1.77  [-2.98, -0.55]  p=0.004 n=243
+  I(adm_change*10)|raw             -0.61  [-1.38, +0.15]  p=0.116 n=241
+  I(adm_change*10)|controlled      +0.01  [-0.39, +0.42]  p=0.945 n=241
+
+== res_pts (points)
+  small_school|raw                 +0.13  [-1.01, +1.28]  p=0.822 n=243
+  small_school|controlled          +0.04  [-1.22, +1.31]  p=0.946 n=243
+  closure|raw                      +0.63  [-0.63, +1.89]  p=0.324 n=243
+  closure|controlled               +0.25  [-1.25, +1.76]  p=0.741 n=243
+  any_closure|raw                  +0.27  [-1.00, +1.54]  p=0.675 n=243
+  any_closure|controlled           +0.16  [-1.28, +1.60]  p=0.829 n=243
+  no_school|raw                    +1.89  [+0.79, +2.99]  p=0.001 n=243
+  no_school|controlled             +1.69  [+0.38, +3.00]  p=0.011 n=243
+  I(adm_change*10)|raw             -0.00  [-0.42, +0.42]  p=0.990 n=241
+  I(adm_change*10)|controlled      +0.04  [-0.38, +0.46]  p=0.858 n=241
+               town  closure  contested  gov_R2_24  gov_R2  swing  res_pts  cross26  gov_total                                                                                                                                       school_names
+ESSEX JUNCTION CITY        1          0      0.735   0.474  0.261   -0.000    0.226     5254.0 Albert D. Lawton School (297); Hiawatha Elementary School (203); Summit Street School (305); Thomas Fleming School (197); Essex High School (1224)
+           DANVILLE        0          1      0.855   0.633  0.222   -0.023    0.220     1343.0                                                                                                                              Danville School (329)
+             CALAIS        0          1      0.641   0.376  0.264    0.009    0.133     1050.0                                                                                                                      Calais Elementary School (91)
+         STARKSBORO        0          1      0.790   0.509  0.281   -0.041    0.152      947.0                                                                                                                              Robinson School (121)
+           SHOREHAM        1          0      0.805   0.612  0.193    0.040    0.207      636.0                                                                                                                    Shoreham Elementary School (56)
+         NORTH HERO        1          0      0.836   0.635  0.201    0.013    0.269      628.0                                                                                                                             North Hero School (48)
+              DANBY        1          0      0.852   0.674  0.178    0.024    0.154      599.0                                                                                                                 Currier Memorial Union School (70)
+         SUNDERLAND        1          0      0.775   0.521  0.254   -0.006    0.177      570.0                                                                                                                  Sunderland Elementary School (58)
+            JAMAICA        1          0      0.761   0.468  0.292   -0.039    0.158      499.0                                                                                                                         Jamaica Village School (9)
+          WORCESTER        0          1      0.650   0.454  0.196    0.077    0.219      466.0                                                                                                                          Doty Memorial School (61)
+         GREENSBORO        1          0      0.730   0.450  0.280   -0.017    0.202      445.0                                                                                                                         Lakeview Union School (29)
+             RIPTON        1          0      0.592   0.348  0.243    0.027    0.145      364.0                                                                                                                      Ripton Elementary School (39)
+          READSBORO        1          0      0.742   0.573  0.169    0.090    0.117      336.0                                                                                                                   Readsboro Elementary School (38)

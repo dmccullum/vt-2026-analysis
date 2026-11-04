@@ -1,0 +1,307 @@
+SCHOOL_YEAR,SCH_NAME,LEA_NAME,ST_LEAID,ST_SCHID,NCESSCH,LCITY,LZIP,SY_STATUS_TEXT,UPDATED_STATUS_TEXT,SCH_TYPE_TEXT,CHARTER_TEXT,GSLO,GSHI,LEVEL,UNION
+2024-2025,Patricia A. Hannaford Career Center,Patricia Hannaford Career Center,VT-TE001,VT-TE001-VC001,500002100099,Middlebury,05753,Open,Open,Career and Technical School,Not applicable,09,12,High,
+2024-2025,Southwest Tech,Southwest Tech,VT-TE002,VT-TE002-VC009,500002200103,Bennington,05201,Open,Open,Career and Technical School,Not applicable,09,12,High,
+2024-2025,Samuel Morey Elementary School,Rivendell Interstate School District,VT-U146,VT-U146-PS106,500002400131,Fairlee,05045,Open,Open,Regular School,Not applicable,PK,05,Elementary,064
+2024-2025,Rivendell Academy,Rivendell Interstate School District,VT-U146,VT-U146-PI004,500002400180,Orford,03777,Open,Open,Regular School,Not applicable,06,12,High,064
+2024-2025,Westshire Elementary School,Rivendell Interstate School District,VT-U146,VT-U146-PS399,500002400250,West Fairlee,05083,Open,Open,Regular School,Not applicable,PK,05,Elementary,064
+2024-2025,River Valley Technical Center,River Valley Technical Center,VT-TE003,VT-TE003-VC016,500037100097,Springfield,05156,Open,Open,Career and Technical School,Not applicable,09,12,High,
+2024-2025,Barstow Memorial School,Barstow Unified Union School District #49,VT-U049,VT-U049-PS021,500039009274,Chittenden,05737,Open,Open,Regular School,Not applicable,PK,08,Elementary,036
+2024-2025,Otter Valley Union High School,Otter Valley Unified Union School District #53,VT-U053,VT-U053-PS219,500039200234,Brandon,05733,Open,Open,Regular School,Not applicable,07,12,High,036
+2024-2025,Lothrop School,Otter Valley Unified Union School District #53,VT-U053,VT-U053-PS165,500039200239,Pittsford,05763,Open,Open,Regular School,Not applicable,PK,06,Elementary,036
+2024-2025,Neshobe School,Otter Valley Unified Union School District #53,VT-U053,VT-U053-PS200,500039200411,Brandon,05733,Open,Open,Regular School,Not applicable,PK,06,Elementary,036
+2024-2025,Otter Creek Academy at Leicester Sudbury and Whiting,Otter Valley Unified Union School District #53,VT-U053,VT-U053-PS418,500039200544,Whiting,05778,Open,Open,Regular School,Not applicable,PK,06,Elementary,036
+2024-2025,Clarendon Elementary School,Mill River Unified Union School District #52,VT-U052,VT-U052-PS071,500039300086,North Clarendon,05759,Open,Open,Regular School,Not applicable,PK,06,Elementary,033
+2024-2025,Tinmouth Elementary School,Mill River Unified Union School District #52,VT-U052,VT-U052-PS300,500039300326,Tinmouth,05773,Open,Open,Regular School,Not applicable,PK,06,Elementary,033
+2024-2025,Mill River Union High School,Mill River Unified Union School District #52,VT-U052,VT-U052-PS183,500039300344,North Clarendon,05759,Open,Open,Regular School,Not applicable,07,12,High,033
+2024-2025,Wallingford Village School,Mill River Unified Union School District #52,VT-U052,VT-U052-PS317,500039300358,Wallingford,05773,Open,Open,Regular School,Not applicable,PK,06,Elementary,033
+2024-2025,Shrewsbury Mountain School,Mill River Unified Union School District #52,VT-U052,VT-U052-PS269,500039300446,Cuttingsville,05738,Open,Open,Regular School,Not applicable,PK,06,Elementary,033
+2024-2025,Albert D. Lawton School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS009,500039500115,Essex Junction,05452,Open,Open,Regular School,Not applicable,06,08,Middle,065
+2024-2025,Hiawatha Elementary School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS141,500039500117,Essex Junction,05452,Open,Open,Regular School,Not applicable,PK,03,Elementary,065
+2024-2025,Essex High School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS388,500039500120,Essex Junction,05452,Open,Open,Regular School,Not applicable,09,12,High,065
+2024-2025,Essex Middle School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS101,500039500121,Essex Junction,05452,Open,Open,Regular School,Not applicable,06,08,Middle,065
+2024-2025,The Center for Technology - Essex,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-VC006,500039500122,Essex Junction,05452,Open,Open,Career and Technical School,Not applicable,09,12,High,065
+2024-2025,Essex Elementary School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS099,500039500123,Essex Junction,05452,Open,Open,Regular School,Not applicable,PK,02,Elementary,065
+2024-2025,Westford Elementary School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS333,500039500373,Westford,05494,Open,Open,Regular School,Not applicable,PK,08,Elementary,065
+2024-2025,Founders Memorial School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS113,500039500403,Essex Junction,05452,Open,Open,Regular School,Not applicable,03,05,Elementary,065
+2024-2025,Summit Street School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS292,500039500452,Essex Junction,05452,Open,Open,Regular School,Not applicable,PK,03,Elementary,065
+2024-2025,Thomas Fleming School,Essex Westford Educational Community Unified Union SD #51,VT-U051,VT-U051-PS299,500039500453,Essex Junction,05452,Open,Open,Regular School,Not applicable,04,05,Elementary,065
+2024-2025,Champlain Valley Union High School,Champlain Valley Unified Union School District #56,VT-U056,VT-U056-PS066,500039600082,Hinesburg,05461,Open,Open,Regular School,Not applicable,09,12,High,014
+2024-2025,Charlotte Central School,Champlain Valley Unified Union School District #56,VT-U056,VT-U056-PS068,500039600084,Charlotte,05445,Open,Open,Regular School,Not applicable,PK,08,Elementary,014
+2024-2025,Hinesburg Community School,Champlain Valley Unified Union School District #56,VT-U056,VT-U056-PS143,500039600158,Hinesburg,05461,Open,Open,Regular School,Not applicable,PK,08,Elementary,014
+2024-2025,Williston Schools,Champlain Valley Unified Union School District #56,VT-U056,VT-U056-PS398,500039600243,Williston,05495,Open,Open,Regular School,Not applicable,PK,08,Elementary,014
+2024-2025,Shelburne Community School,Champlain Valley Unified Union School District #56,VT-U056,VT-U056-PS264,500039600284,Shelburne,05482,Open,Open,Regular School,Not applicable,PK,08,Elementary,014
+2024-2025,Green Mountain Technology and Career Center,Lamoille North Modified Union School District #058B,VT-U058B,VT-U058B-VC008,500039700106,Hyde Park,05655,Open,Open,Career and Technical School,Not applicable,09,12,High,025
+2024-2025,Lamoille Union High School,Lamoille North Modified Union School District #058B,VT-U058B,VT-U058B-PS158,500039700171,Hyde Park,05655,Open,Open,Regular School,Not applicable,09,12,High,025
+2024-2025,Lamoille Union Middle School,Lamoille North Modified Union School District #058B,VT-U058B,VT-U058B-PS404,500039700198,Hyde Park,05655,Open,Open,Regular School,Not applicable,07,08,Middle,025
+2024-2025,Ferrisburgh Central School,Addison Northwest Unified Union School District #54,VT-U054,VT-U054-PS108,500039800133,Ferrisburgh,05456,Open,Open,Regular School,Not applicable,PK,05,Elementary,002
+2024-2025,Vergennes Union Elementary School,Addison Northwest Unified Union School District #54,VT-U054,VT-U054-PS311,500039800349,Vergennes,05491,Open,Open,Regular School,Not applicable,PK,05,Elementary,002
+2024-2025,Vergennes Union High School,Addison Northwest Unified Union School District #54,VT-U054,VT-U054-PS312,500039800350,Vergennes,05491,Open,Open,Regular School,Not applicable,09,12,High,002
+2024-2025,Vergennes Union Middle School,Addison Northwest Unified Union School District #54,VT-U054,VT-U054-PS421,500039809276,Vergennes,05491,Open,Open,Regular School,Not applicable,06,08,Middle,002
+2024-2025,Bellows Free Academy (St. Albans),Maple Run Unified Union School District #57,VT-U057,VT-U057-PS406,500039900205,Saint Albans,05478,Open,Open,Regular School,Not applicable,09,12,High,023
+2024-2025,Northwest Technical Center,Maple Run Unified Union School District #57,VT-U057,VT-U057-VC003,500039900215,Saint Albans,05478,Open,Open,Career and Technical School,Not applicable,09,12,High,023
+2024-2025,St. Albans City Elementary School,Maple Run Unified Union School District #57,VT-U057,VT-U057-PS288,500039900304,Saint Albans,05478,Open,Open,Regular School,Not applicable,PK,08,Elementary,023
+2024-2025,St. Albans Town Educational Center,Maple Run Unified Union School District #57,VT-U057,VT-U057-PS289,500039900306,Saint Albans,05478,Open,Open,Regular School,Not applicable,PK,08,Elementary,023
+2024-2025,Fairfield Center School,Maple Run Unified Union School District #57,VT-U057,VT-U057-PS105,500039900432,Fairfield,05455,Open,Open,Regular School,Not applicable,PK,08,Elementary,023
+2024-2025,Randolph Union High School,Orange Southwest Unified Union School District #59,VT-U059,VT-U059-PS237,500040000042,Randolph,05060,Open,Open,Regular School,Not applicable,07,12,High,028
+2024-2025,Brookfield School,Orange Southwest Unified Union School District #59,VT-U059,VT-U059-PS047,500040000057,Brookfield,05036,Open,Open,Regular School,Not applicable,PK,06,Elementary,028
+2024-2025,Randolph Technical Career Center,Orange Southwest Unified Union School District #59,VT-U059,VT-U059-VC012,500040000098,Randolph,05060,Open,Open,Career and Technical School,Not applicable,09,12,High,028
+2024-2025,Braintree School,Orange Southwest Unified Union School District #59,VT-U059,VT-U059-PS038,500040000422,Braintree,05060,Open,Open,Regular School,Not applicable,PK,06,Elementary,028
+2024-2025,Randolph Elementary School,Orange Southwest Unified Union School District #59,VT-U059,VT-U059-PS359,500040000443,Randolph,05060,Open,Open,Regular School,Not applicable,PK,06,Elementary,028
+2024-2025,Eden Central School,Lamoille North Modified Union School District #058A,VT-U058A,VT-U058A-PS093,500040100111,Eden,05652,Open,Open,Regular School,Not applicable,PK,06,Elementary,025
+2024-2025,Hyde Park Elementary School,Lamoille North Modified Union School District #058A,VT-U058A,VT-U058A-PS145,500040100161,Hyde Park,05655,Open,Open,Regular School,Not applicable,PK,06,Elementary,025
+2024-2025,Johnson Elementary School,Lamoille North Modified Union School District #058A,VT-U058A,VT-U058A-PS153,500040100168,Johnson,05656,Open,Open,Regular School,Not applicable,PK,06,Elementary,025
+2024-2025,Waterville Elementary School,Lamoille North Modified Union School District #058A,VT-U058A,VT-U058A-PS325,500040100364,Waterville,05492,Open,Open,Regular School,Not applicable,PK,06,Elementary,025
+2024-2025,Bridport Central School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS043,500040200052,Bridport,05734,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Bingham Memorial School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS076,500040200095,Cornwall,05753,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Mary Hogan School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS179,500040200187,Middlebury,05753,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Middlebury Union High School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS180,500040200189,Middlebury,05753,Open,Open,Regular School,Not applicable,09,12,High,003
+2024-2025,Ripton Elementary School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS244,500040200259,Ripton,05766,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Shoreham Elementary School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS268,500040200288,Shoreham,05770,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Weybridge Elementary School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS336,500040200376,Middlebury,05753,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Salisbury Community School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS259,500040200445,Salisbury,05769,Open,Open,Regular School,Not applicable,PK,05,Elementary,003
+2024-2025,Middlebury Union Middle School,Addison Central Unified Union School District #55,VT-U055,VT-U055-PS366,500040200469,Middlebury,05753,Open,Open,Regular School,Not applicable,06,08,Middle,003
+2024-2025,Brookside Primary School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS390,500040300130,Waterbury,05676,Open,Open,Regular School,Not applicable,PK,04,Elementary,042
+2024-2025,Fayston Elementary School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS107,500040300132,Fayston,05673,Open,Open,Regular School,Not applicable,PK,06,Elementary,042
+2024-2025,Crossett Brook Middle School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS391,500040300146,Duxbury,05676,Open,Open,Regular School,Not applicable,05,08,Middle,042
+2024-2025,Harwood Union Middle/High School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS138,500040300148,Moretown,05660,Open,Open,Regular School,Not applicable,07,12,High,042
+2024-2025,Moretown Elementary School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS193,500040300202,Moretown,05660,Open,Open,Regular School,Not applicable,PK,06,Elementary,042
+2024-2025,Waitsfield Elementary School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS315,500040300353,Waitsfield,05673,Open,Open,Regular School,Not applicable,PK,06,Elementary,042
+2024-2025,Warren Elementary School,Harwood Unified Union School District #60,VT-U060,VT-U060-PS320,500040300360,Warren,05674,Open,Open,Regular School,Not applicable,PK,06,Elementary,042
+2024-2025,Northfield Middle/High School,Paine Mountain Union School District #68,VT-U068,VT-U068-PS211,500040800227,Northfield,05663,Open,Open,Regular School,Not applicable,06,12,High,068
+2024-2025,Williamstown Elementary School,Paine Mountain Union School District #68,VT-U068,VT-U068-PS343,500040800379,Williamstown,05679,Open,Open,Regular School,Not applicable,PK,05,Elementary,068
+2024-2025,Williamstown Middle/High School,Paine Mountain Union School District #68,VT-U068,VT-U068-PS344,500040800380,Williamstown,05679,Open,Open,Regular School,Not applicable,06,12,High,068
+2024-2025,Northfield Elementary School,Paine Mountain Union School District #68,VT-U068,VT-U068-PS210,500040800440,Northfield,05663,Open,Open,Regular School,Not applicable,PK,05,Elementary,068
+2024-2025,Middletown Springs Elementary School,Wells Spring Unified Union School District #69,VT-U069,VT-U069-PS182,500040900191,Middletown Springs,05757,Open,Open,Regular School,Not applicable,PK,06,Elementary,066
+2024-2025,Wells Village School,Wells Spring Unified Union School District #69,VT-U069,VT-U069-PS328,500040900367,Wells,05774,Open,Open,Regular School,Not applicable,PK,06,Elementary,066
+2024-2025,Montpelier High School,Montpelier Roxbury Unified Union School District #71,VT-U071,VT-U071-PS191,500041000199,Montpelier,05602,Open,Open,Regular School,Not applicable,09,12,High,069
+2024-2025,Main Street Middle School,Montpelier Roxbury Unified Union School District #71,VT-U071,VT-U071-PS173,500041000200,Montpelier,05602,Open,Open,Regular School,Not applicable,05,08,Middle,069
+2024-2025,Union Elementary School,Montpelier Roxbury Unified Union School District #71,VT-U071,VT-U071-PS308,500041000201,Montpelier,05602,Open,Open,Regular School,Not applicable,PK,04,Elementary,069
+2024-2025,Roxbury Village School,Montpelier Roxbury Unified Union School District #71,VT-U071,VT-U071-PS250,500041000265,Roxbury,05669,Closed,Closed,Regular School,Not applicable,M,M,Not reported,069
+2024-2025,Poultney Elementary School,Quarry Valley Unified Union School District #70,VT-U070,VT-U070-PS229,500041100244,Poultney,05764,Open,Open,Regular School,Not applicable,PK,06,Elementary,066
+2024-2025,Poultney High School,Quarry Valley Unified Union School District #70,VT-U070,VT-U070-PS230,500041100245,Poultney,05764,Open,Open,Regular School,Not applicable,07,12,High,066
+2024-2025,Proctor Elementary School,Quarry Valley Unified Union School District #70,VT-U070,VT-U070-PS232,500041100247,Proctor,05765,Open,Open,Regular School,Not applicable,PK,06,Elementary,066
+2024-2025,Proctor Junior/Senior High School,Quarry Valley Unified Union School District #70,VT-U070,VT-U070-PS233,500041100248,Proctor,05765,Open,Open,Regular School,Not applicable,07,12,High,066
+2024-2025,West Rutland School,Quarry Valley Unified Union School District #70,VT-U070,VT-U070-PS331,500041100370,West Rutland,05777,Open,Open,Regular School,Not applicable,PK,12,Other,066
+2024-2025,Waterford Elementary School,Caledonia Cooperative Unified School District #78,VT-U078,VT-U078-PS324,500041200363,Waterford,05819,Open,Open,Regular School,Not applicable,PK,08,Elementary,009
+2024-2025,Barnet Elementary School,Caledonia Cooperative Unified School District #78,VT-U078,VT-U078-PS018,500041200421,Barnet,05821,Open,Open,Regular School,Not applicable,PK,08,Elementary,009
+2024-2025,Walden School,Caledonia Cooperative Unified School District #78,VT-U078,VT-U078-PS316,500041200448,Walden,05873,Open,Open,Regular School,Not applicable,PK,08,Elementary,009
+2024-2025,Dorset Elementary School,Taconic and Green Regional School District #63,VT-U063,VT-U063-PS085,500041700104,Dorset,05251,Open,Open,Regular School,Not applicable,PK,08,Elementary,006
+2024-2025,Manchester Elementary/Middle School,Taconic and Green Regional School District #63,VT-U063,VT-U063-PS175,500041700185,Manchester Center,05255,Open,Open,Regular School,Not applicable,PK,08,Elementary,006
+2024-2025,Sunderland Elementary School,Taconic and Green Regional School District #63,VT-U063,VT-U063-PS293,500041700321,Arlington,05250,Open,Open,Regular School,Not applicable,PK,06,Elementary,006
+2024-2025,Flood Brook School,Taconic and Green Regional School District #63,VT-U063,VT-U063-PS111,500041700337,Londonderry,05148,Open,Open,Regular School,Not applicable,PK,08,Elementary,006
+2024-2025,Currier Memorial Union School,Taconic and Green Regional School District #63,VT-U063,VT-U063-PS079,500041700341,Danby,05739,Open,Open,Regular School,Not applicable,PK,05,Elementary,006
+2024-2025,Twin Valley Elementary School,Twin Valley Unified School District #75,VT-U075,VT-U075-PS083,500041800382,Wilmington,05363,Open,Open,Regular School,Not applicable,PK,05,Elementary,049
+2024-2025,Twin Valley Middle High School,Twin Valley Unified School District #75,VT-U075,VT-U075-PS411,500041800540,Whitingham,05361,Open,Open,Regular School,Not applicable,06,12,High,049
+2024-2025,Mettawee Community School,Mettawee School District #84,VT-U084,VT-U084-PS392,500041900177,West Pawlet,05775,Open,Open,Regular School,Not applicable,PK,06,Elementary,006
+2024-2025,Newark School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS201,500042100212,Newark,05871,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Sutton Village School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS294,500042100322,Sutton,05867,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Millers Run School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS184,500042100336,Sheffield,05866,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Burke Town School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS051,500042100424,West Burke,05871,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Concord Graded/Middle School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS074,500042100427,Concord,05824,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Lunenburg & Gilman Schools,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS168,500042100435,Gilman,05904,Open,Open,Regular School,Not applicable,PK,05,Elementary,067
+2024-2025,Lyndon Town School,Kingdom East Unified Union School District #64,VT-U064,VT-U064-PS170,500042100436,Lyndonville,05851,Open,Open,Regular School,Not applicable,PK,08,Elementary,067
+2024-2025,Ludlow Elementary School,Ludlow Mt. Holly Unified Union School District #83,VT-U083,VT-U083-PS167,500042200176,Ludlow,05149,Open,Open,Regular School,Not applicable,PK,06,Elementary,063
+2024-2025,Mt. Holly School,Ludlow Mt. Holly Unified Union School District #83,VT-U083,VT-U083-PS198,500042200209,Mount Holly,05758,Open,Open,Regular School,Not applicable,PK,06,Elementary,063
+2024-2025,Stockbridge Central School,Rochester Stockbridge Unified School District #81,VT-U081,VT-U081-PS285,500042300408,Stockbridge,05772,Open,Open,Regular School,Not applicable,PK,06,Elementary,030
+2024-2025,Rochester School,Rochester Stockbridge Unified School District #81,VT-U081,VT-U081-PS247,500042300549,Rochester,05767,Open,Open,Regular School,Not applicable,PK,06,Elementary,030
+2024-2025,Monkton Central School,Mt. Abraham Unified School District #61,VT-U061,VT-U061-PS189,500042500196,Monkton,05469,Open,Open,Regular School,Not applicable,PK,06,Elementary,001
+2024-2025,Beeman Elementary School,Mt. Abraham Unified School District #61,VT-U061,VT-U061-PS023,500042500211,New Haven,05472,Open,Open,Regular School,Not applicable,PK,06,Elementary,001
+2024-2025,Robinson School,Mt. Abraham Unified School District #61,VT-U061,VT-U061-PS246,500042500317,Starksboro,05487,Open,Open,Regular School,Not applicable,PK,06,Elementary,001
+2024-2025,Mt. Abraham Union High School,Mt. Abraham Unified School District #61,VT-U061,VT-U061-PS195,500042500338,Bristol,05443,Open,Open,Regular School,Not applicable,07,12,High,001
+2024-2025,Bristol Elementary School,Mt. Abraham Unified School District #61,VT-U061,VT-U061-PS045,500042500423,Bristol,05443,Open,Open,Regular School,Not applicable,PK,06,Elementary,001
+2024-2025,Bethel Elementary School,White River Unified School District #79,VT-U079,VT-U079-PS034,500042600036,Bethel,05032,Open,Open,Regular School,Not applicable,PK,05,Elementary,030
+2024-2025,White River Valley High School,White River Unified School District #79,VT-U079,VT-U079-PS417,500042600543,South Royalton,05068,Open,Open,Regular School,Not applicable,09,12,High,030
+2024-2025,White River Valley Middle School,White River Unified School District #79,VT-U079,VT-U079-PS416,500042600545,Bethel,05032,Open,Open,Regular School,Not applicable,06,08,Middle,030
+2024-2025,South Royalton Elementary School,White River Unified School District #79,VT-U079,VT-U079-PS274,500042600547,South Royalton,05068,Open,Open,Regular School,Not applicable,PK,05,Elementary,030
+2024-2025,Cavendish Town Elementary School,Green Mountain Unified School District #77,VT-U077,VT-U077-PS063,500042700081,Proctorsville,05153,Open,Open,Regular School,Not applicable,PK,06,Elementary,063
+2024-2025,Chester Andover Elementary School,Green Mountain Unified School District #77,VT-U077,VT-U077-PS070,500042700345,Chester,05143,Open,Open,Regular School,Not applicable,PK,06,Elementary,063
+2024-2025,Green Mountain Union High School,Green Mountain Unified School District #77,VT-U077,VT-U077-PS124,500042700348,Chester,05143,Open,Open,Regular School,Not applicable,07,12,High,063
+2024-2025,First Branch Elementary School,First Branch Unified School District #82,VT-U082,VT-U082-PS303,500042900330,Tunbridge,05077,Open,Open,Regular School,Not applicable,PK,04,Elementary,030
+2024-2025,First Branch Middle School,First Branch Unified School District #82,VT-U082,VT-U082-PS069,500042900550,Chelsea,05038,Open,Open,Regular School,Not applicable,05,08,Middle,030
+2024-2025,Washington Village School,Echo Valley Community Union School District #67,VT-U067,VT-U067-PS322,500043000548,Washington,05675,Open,Open,Regular School,Not applicable,PK,04,Elementary,068
+2024-2025,Orange Center School,Echo Valley Community Union School District #67,VT-U067,VT-U067-PS215,500043000551,East Barre,05649,Open,Open,Regular School,Not applicable,05,08,Middle,068
+2024-2025,Brattleboro Union High School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS040,500043100051,Brattleboro,05301,Open,Open,Regular School,Not applicable,09,12,High,048
+2024-2025,Oak Grove School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS383,500043100056,Brattleboro,05301,Open,Open,Regular School,Not applicable,PK,06,Elementary,048
+2024-2025,Green Street School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS385,500043100061,Brattleboro,05301,Open,Open,Regular School,Not applicable,PK,06,Elementary,048
+2024-2025,Academy School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS001,500043100079,Brattleboro,05301,Open,Open,Regular School,Not applicable,PK,06,Elementary,048
+2024-2025,Windham Regional Career Center,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-VC014,500043100102,Brattleboro,05301,Open,Open,Career and Technical School,Not applicable,09,12,High,048
+2024-2025,Guilford Central School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS128,500043100144,Guilford,05301,Open,Open,Regular School,Not applicable,PK,06,Elementary,048
+2024-2025,Putney Central School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS234,500043100249,Putney,05346,Open,Open,Regular School,Not applicable,PK,08,Elementary,048
+2024-2025,Dummerston Schools,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS087,500043100430,East Dummerston,05346,Open,Open,Regular School,Not applicable,PK,08,Elementary,048
+2024-2025,Brattleboro Area Middle School,Windham Southeast Unified Union School District #96,VT-U096,VT-U096-PS367,500043100485,Brattleboro,05301,Open,Open,Regular School,Not applicable,07,08,Middle,048
+2024-2025,Leland & Gray Union Middle & High School,West River Valley Union Education District #72B,VT-U072B,VT-U072B-PS161,500043200173,Townshend,05353,Open,Open,Regular School,Not applicable,06,12,High,046
+2024-2025,Swanton School,Missisquoi Valley School District #89,VT-U089,VT-U089-PS295,500043300049,Swanton,05488,Open,Open,Regular School,Not applicable,PK,06,Elementary,021
+2024-2025,Franklin Central School,Missisquoi Valley School District #89,VT-U089,VT-U089-PS115,500043300135,Franklin,05457,Open,Open,Regular School,Not applicable,PK,06,Elementary,021
+2024-2025,Missisquoi Valley Union High School,Missisquoi Valley School District #89,VT-U089,VT-U089-PS187,500043300195,Swanton,05488,Open,Open,Regular School,Not applicable,07,12,High,021
+2024-2025,Highgate Elementary School,Missisquoi Valley School District #89,VT-U089,VT-U089-PS142,500043300434,Highgate Center,05459,Open,Open,Regular School,Not applicable,PK,06,Elementary,021
+2024-2025,Bennington Elementary School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS029,500043400028,Bennington,05201,Open,Open,Regular School,Not applicable,PK,05,Elementary,005
+2024-2025,Molly Stark School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS188,500043400031,Bennington,05201,Open,Open,Regular School,Not applicable,PK,05,Elementary,005
+2024-2025,Monument Elementary School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS192,500043400032,Bennington,05201,Open,Open,Regular School,Not applicable,PK,05,Elementary,005
+2024-2025,Pownal Elementary School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS231,500043400246,Pownal,05261,Open,Open,Regular School,Not applicable,PK,06,Elementary,005
+2024-2025,Shaftsbury Elementary School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS262,500043400282,Shaftsbury,05262,Open,Open,Regular School,Not applicable,PK,06,Elementary,005
+2024-2025,Woodford Hollow School,Southwest Vermont Union Elementary School District #87,VT-U087,VT-U087-PS354,500043400393,Bennington,05201,Open,Open,Regular School,Not applicable,PK,06,Elementary,005
+2024-2025,Grand Isle School,Champlain Islands Unified Union School District #66,VT-U066,VT-U066-PS122,500043500140,Grand Isle,05458,Open,Open,Regular School,Not applicable,PK,06,Elementary,024
+2024-2025,North Hero School,Champlain Islands Unified Union School District #66,VT-U066,VT-U066-PS209,500043500221,North Hero,05474,Open,Open,Regular School,Not applicable,PK,06,Elementary,024
+2024-2025,Barton Graded School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS022,500043600025,Barton,05822,Open,Open,Regular School,Not applicable,PK,08,Elementary,034
+2024-2025,Brownington Central School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS049,500043600059,Brownington,05860,Open,Open,Regular School,Not applicable,PK,08,Elementary,034
+2024-2025,Glover Community School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS118,500043600137,Glover,05839,Open,Open,Regular School,Not applicable,PK,08,Elementary,034
+2024-2025,Irasburg Village School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS147,500043600163,Irasburg,05845,Open,Open,Regular School,Not applicable,PK,06,Elementary,034
+2024-2025,Orleans Elementary School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS217,500043600232,Orleans,05860,Open,Open,Regular School,Not applicable,PK,08,Elementary,034
+2024-2025,Albany Community School,Lake Region Union Elementary Middle School District,VT-U093,VT-U093-PS007,500043600420,Albany,05820,Open,Open,Regular School,Not applicable,PK,08,Elementary,034
+2024-2025,Bradford Elementary School,Oxbow Unified Union School District #91,VT-U091,VT-U091-PS037,500043700039,Bradford,05033,Open,Open,Regular School,Not applicable,PK,06,Elementary,027
+2024-2025,River Bend Career & Technical Center,Oxbow Unified Union School District #91,VT-U091,VT-U091-VC011,500043700118,Bradford,05033,Open,Open,Career and Technical School,Not applicable,09,12,High,027
+2024-2025,Newbury Elementary School,Oxbow Unified Union School District #91,VT-U091,VT-U091-PS202,500043700213,Newbury,05051,Open,Open,Regular School,Not applicable,PK,06,Elementary,027
+2024-2025,Oxbow Union High School,Oxbow Unified Union School District #91,VT-U091,VT-U091-PS220,500043709272,Bradford,05033,Open,Open,Regular School,Not applicable,07,12,High,027
+2024-2025,Hardwick Elementary School,Mountain View Union Elementary School District #94,VT-U094,VT-U094-PS131,500043800147,Hardwick,05843,Open,Open,Regular School,Not applicable,PK,06,Elementary,035
+2024-2025,Woodbury Elementary School,Mountain View Union Elementary School District #94,VT-U094,VT-U094-PS353,500043800392,Woodbury,05681,Open,Open,Regular School,Not applicable,PK,06,Elementary,035
+2024-2025,Lakeview Union School,Mountain View Union Elementary School District #94,VT-U094,VT-U094-PS126,500043800461,Greensboro,05841,Open,Open,Regular School,Not applicable,PK,03,Elementary,035
+2024-2025,Berlin Elementary School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS033,500043900035,Berlin,05602,Open,Open,Regular School,Not applicable,PK,06,Elementary,032
+2024-2025,Calais Elementary School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS056,500043900076,Plainfield,05667,Open,Open,Regular School,Not applicable,PK,06,Elementary,032
+2024-2025,East Montpelier Elementary School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS091,500043900110,East Montpelier,05651,Open,Open,Regular School,Not applicable,PK,06,Elementary,032
+2024-2025,Rumney Memorial School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS181,500043900190,Middlesex,05602,Open,Open,Regular School,Not applicable,01,06,Elementary,032
+2024-2025,U-32 Middle & High School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS305,500043900339,Montpelier,05602,Open,Open,Regular School,Not applicable,07,12,High,032
+2024-2025,Doty Memorial School,Washington Central Unified Union School District #92,VT-U092,VT-U092-PS357,500043900396,Worcester,05682,Open,Open,Regular School,Not applicable,PK,06,Elementary,032
+2024-2025,Benson Village School,Slate Valley Unified Union School District #62,VT-U062,VT-U062-PS031,500044000033,Benson,05743,Open,Open,Regular School,Not applicable,PK,06,Elementary,004
+2024-2025,Fair Haven Grade School,Slate Valley Unified Union School District #62,VT-U062,VT-U062-PS103,500044000126,Fair Haven,05743,Open,Open,Regular School,Not applicable,PK,06,Elementary,004
+2024-2025,Fair Haven Union Middle and High School,Slate Valley Unified Union School District #62,VT-U062,VT-U062-PS104,500044000127,Fair Haven,05743,Open,Open,Regular School,Not applicable,07,12,High,004
+2024-2025,Orwell Village School,Slate Valley Unified Union School District #62,VT-U062,VT-U062-PS218,500044000233,Orwell,05760,Open,Open,Regular School,Not applicable,PK,06,Elementary,004
+2024-2025,Castleton Elementary School,Slate Valley Unified Union School District #62,VT-U062,VT-U062-PS413,500044000542,Castleton,05735,Open,Open,Regular School,Not applicable,PK,06,Elementary,004
+2024-2025,Bakersfield School,Northern Mountain Valley Unified Union School District #85,VT-U085,VT-U085-PS015,500044100009,Bakersfield,05441,Open,Open,Regular School,Not applicable,PK,08,Elementary,020
+2024-2025,Berkshire Elementary School,Northern Mountain Valley Unified Union School District #85,VT-U085,VT-U085-PS032,500044100034,Richford,05476,Open,Open,Regular School,Not applicable,PK,08,Elementary,020
+2024-2025,Montgomery Elementary School,Northern Mountain Valley Unified Union School District #85,VT-U085,VT-U085-PS190,500044100197,Montgomery Center,05471,Open,Open,Regular School,Not applicable,PK,08,Elementary,020
+2024-2025,Sheldon Elementary School,Northern Mountain Valley Unified Union School District #85,VT-U085,VT-U085-PS266,500044100286,Sheldon,05483,Open,Open,Regular School,Not applicable,PK,08,Elementary,020
+2024-2025,Albert Bridge School (West Windsor),Mount Ascutney School District #86,VT-U086,VT-U086-PS008,500044200371,Brownsville,05037,Open,Open,Regular School,Not applicable,PK,06,Elementary,052
+2024-2025,Windsor School,Mount Ascutney School District #86,VT-U086,VT-U086-PS410,500044200539,Windsor,05089,Open,Open,Regular School,Not applicable,PK,12,Other,052
+2024-2025,Smilie Memorial Elementary School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS270,500044300038,Bolton,05676,Open,Open,Regular School,Not applicable,PK,04,Elementary,012
+2024-2025,Brewster Pierce School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS041,500044300160,Huntington,05462,Open,Open,Regular School,Not applicable,PK,04,Elementary,012
+2024-2025,Jericho Elementary School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS152,500044300167,Jericho,05465,Open,Open,Regular School,Not applicable,PK,04,Elementary,012
+2024-2025,Mt. Mansfield Union High School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS199,500044300210,Jericho,05465,Open,Open,Regular School,Not applicable,09,12,High,012
+2024-2025,Richmond Elementary School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS243,500044300258,Richmond,05477,Open,Open,Regular School,Not applicable,PK,04,Elementary,012
+2024-2025,Underhill Central School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS306,500044300333,Underhill Center,05490,Open,Open,Regular School,Not applicable,PK,04,Elementary,012
+2024-2025,Browns River Middle School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS050,500044300398,Jericho,05465,Open,Open,Regular School,Not applicable,05,08,Middle,012
+2024-2025,Camels Hump Middle School,Mount Mansfield Unified Union School District #401,VT-U401,VT-U401-PS058,500044300399,Richmond,05477,Open,Open,Regular School,Not applicable,05,08,Middle,012
+2024-2025,Enosburg Falls Middle/High School,Enosburgh-Richford Unified Union School District #88,VT-U088,VT-U088-PS098,500044400022,Enosburg Falls,05450,Open,Open,Regular School,Not applicable,06,12,High,020
+2024-2025,Cold Hollow Career Center,Enosburgh-Richford Unified Union School District #88,VT-U088,VT-U088-VC005,500044400089,Enosburg Falls,05450,Open,Open,Career and Technical School,Not applicable,09,12,High,020
+2024-2025,Enosburg Falls Elementary School,Enosburgh-Richford Unified Union School District #88,VT-U088,VT-U088-PS096,500044400113,Enosburg Falls,05450,Open,Open,Regular School,Not applicable,PK,05,Elementary,020
+2024-2025,Richford Elementary School,Enosburgh-Richford Unified Union School District #88,VT-U088,VT-U088-PS241,500044400255,Richford,05476,Open,Open,Regular School,Not applicable,PK,05,Elementary,020
+2024-2025,Richford Junior/Senior High School,Enosburgh-Richford Unified Union School District #88,VT-U088,VT-U088-PS242,500044400256,Richford,05476,Open,Open,Regular School,Not applicable,06,12,High,020
+2024-2025,Barre Town Elementary & Middle School,Barre Unified Union School District #97,VT-U097,VT-U097-PS020,500044500024,Barre,05641,Open,Open,Regular School,Not applicable,PK,08,Elementary,061
+2024-2025,Barre City Elementary/Middle School,Barre Unified Union School District #97,VT-U097,VT-U097-PS381,500044500055,Barre,05641,Open,Open,Regular School,Not applicable,PK,08,Elementary,061
+2024-2025,Spaulding Union High School,Barre Unified Union School District #97,VT-U097,VT-U097-PS276,500044500419,Barre,05641,Open,Open,Regular School,Not applicable,09,12,High,061
+2024-2025,Grafton Elementary School,Athens Grafton School District,VT-U095,VT-U095-PS120,500044600138,Grafton,05146,Open,Open,Regular School,Not applicable,PK,08,Elementary,047
+2024-2025,Dover Elementary School,River Valleys Unified School District #73,VT-U073,VT-U073-PS086,500044700105,East Dover,05341,Open,Open,Regular School,Not applicable,PK,06,Elementary,046
+2024-2025,Wardsboro Central School,River Valleys Unified School District #73,VT-U073,VT-U073-PS319,500044700359,Wardsboro,05355,Open,Open,Regular School,Not applicable,PK,06,Elementary,046
+2024-2025,Elmore School,Elmore-Morristown Unified Union School District #90,VT-U090,VT-U090-PS156,500044800112,Lake Elmore,05657,Open,Open,Regular School,Not applicable,01,03,Elementary,026
+2024-2025,Peoples Academy Middle School,Elmore-Morristown Unified Union School District #90,VT-U090,VT-U090-PS394,500044800157,Morrisville,05661,Open,Open,Regular School,Not applicable,05,08,Middle,026
+2024-2025,Peoples Academy,Elmore-Morristown Unified Union School District #90,VT-U090,VT-U090-PS224,500044800207,Morrisville,05661,Open,Open,Regular School,Not applicable,09,12,High,026
+2024-2025,Morristown Elementary School,Elmore-Morristown Unified Union School District #90,VT-U090,VT-U090-PS194,500044800438,Morrisville,05661,Open,Open,Regular School,Not applicable,PK,04,Elementary,026
+2024-2025,Jamaica Village School,West River Valley Union Education District #72A,VT-U072A,VT-U072A-PS149,500044900165,Jamaica,05343,Open,Open,Regular School,Not applicable,PK,PK,Prekindergarten,046
+2024-2025,Townshend Village School,West River Valley Union Education District #72A,VT-U072A,VT-U072A-PS301,500044900327,Townshend,05353,Open,Open,Regular School,Not applicable,PK,05,Elementary,046
+2024-2025,Newbrook Elementary School,West River Valley Union Education District #72A,VT-U072A,VT-U072A-PS408,500044900537,Newfane,05345,Open,Open,Regular School,Not applicable,PK,05,Elementary,046
+2024-2025,Barnard Academy,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS017,500045000011,Barnard,05031,Open,Open,Regular School,Not applicable,PK,06,Elementary,051
+2024-2025,Reading Elementary School,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS239,500045000253,Reading,05062,Open,Open,Regular School,Not applicable,PK,04,Elementary,051
+2024-2025,Killington Elementary School,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS267,500045000287,Killington,05751,Open,Open,Regular School,Not applicable,PK,06,Elementary,051
+2024-2025,Woodstock Elementary School,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS355,500045000394,Woodstock,05091,Open,Open,Regular School,Not applicable,PK,06,Elementary,051
+2024-2025,Woodstock Union Middle/High School,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS356,500045000395,Woodstock,05091,Open,Open,Regular School,Not applicable,07,12,High,051
+2024-2025,Prosper Valley School,Mountain Views Unified Union School District #76,VT-U076,VT-U076-PS409,500045000538,South Pomfret,05067,Open,Open,Regular School,Not applicable,05,06,Middle,051
+2024-2025,Alburgh Community Education Center,Alburgh School District,VT-T003,VT-T003-PS010,500177000004,Alburgh,05440,Open,Open,Regular School,Not applicable,PK,08,Elementary,024
+2024-2025,Arlington Memorial,Arlington School District,VT-T005,VT-T005-PS011,500183000005,Arlington,05250,Open,Open,Regular School,Not applicable,06,12,High,005
+2024-2025,Fisher School,Arlington School District,VT-T005,VT-T005-PS109,500183000006,Arlington,05250,Open,Open,Regular School,Not applicable,PK,05,Elementary,005
+2024-2025,Brighton Elementary School,Brighton School District,VT-T030,VT-T030-PS044,500261000054,Island Pond,05846,Open,Open,Regular School,Not applicable,PK,08,Elementary,031
+2024-2025,Burlington High School,Burlington School District,VT-T037,VT-T037-PS052,500282000063,Burlington,05408,Open,Open,Regular School,Not applicable,09,12,High,015
+2024-2025,C. P. Smith School,Burlington School District,VT-T037,VT-T037-PS080,500282000064,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Champlain School,Burlington School District,VT-T037,VT-T037-PS065,500282000065,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Edmunds Middle School,Burlington School District,VT-T037,VT-T037-PS095,500282000066,Burlington,05401,Open,Open,Regular School,Not applicable,06,08,Middle,015
+2024-2025,J. J. Flynn School,Burlington School District,VT-T037,VT-T037-PS155,500282000068,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Sustainability Academy at Lawrence Barnes,Burlington School District,VT-T037,VT-T037-PS159,500282000069,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Lyman C. Hunt Middle School,Burlington School District,VT-T037,VT-T037-PS169,500282000070,Burlington,05401,Open,Open,Regular School,Not applicable,06,08,Middle,015
+2024-2025,Edmunds Elementary School,Burlington School District,VT-T037,VT-T037-PS094,500282000071,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Integrated Arts Academy at H. O. Wheeler,Burlington School District,VT-T037,VT-T037-PS337,500282000073,Burlington,05401,Open,Open,Regular School,Not applicable,PK,05,Elementary,015
+2024-2025,Burlington Technical Center,Burlington School District,VT-T037,VT-T037-VC004,500282000080,Burlington,05401,Open,Open,Career and Technical School,Not applicable,09,12,High,015
+2024-2025,Cabot School,Cabot School District,VT-T038,VT-T038-PS055,500285000074,Cabot,05647,Open,Open,Regular School,Not applicable,PK,12,Other,009
+2024-2025,Cambridge Elementary School,Cambridge School District,VT-T040,VT-T040-PS057,500291000077,Jeffersonville,05464,Open,Open,Regular School,Not applicable,PK,06,Elementary,025
+2024-2025,Canaan Schools,Canaan School District,VT-T041,VT-T041-PS059,500294000426,Canaan,05903,Open,Open,Regular School,Not applicable,PK,12,Other,019
+2024-2025,Canaan High School CTE Program,Canaan School District,VT-T041,VT-T041-VC017,500294009275,Canaan,05903,Open,Open,Career and Technical School,Not applicable,09,12,High,019
+2024-2025,Charleston Elementary School,Charleston School District,VT-T044,VT-T044-PS067,500306000083,West Charleston,05872,Open,Open,Regular School,Not applicable,PK,08,Elementary,031
+2024-2025,Colchester High School,Colchester School District,VT-T050,VT-T050-PS072,500324000087,Colchester,05446,Open,Open,Regular School,Not applicable,09,12,High,007
+2024-2025,Colchester Middle School,Colchester School District,VT-T050,VT-T050-PS073,500324000088,Colchester,05446,Open,Open,Regular School,Not applicable,06,08,Middle,007
+2024-2025,Malletts Bay School,Colchester School District,VT-T050,VT-T050-PS174,500324000090,Colchester,05446,Open,Open,Regular School,Not applicable,03,05,Elementary,007
+2024-2025,Porters Point School,Colchester School District,VT-T050,VT-T050-PS227,500324000091,Colchester,05446,Open,Open,Regular School,Not applicable,PK,02,Elementary,007
+2024-2025,Union Memorial School,Colchester School District,VT-T050,VT-T050-PS309,500324000092,Colchester,05446,Open,Open,Regular School,Not applicable,PK,02,Elementary,007
+2024-2025,Coventry Village School,Coventry School District,VT-T054,VT-T054-PS077,500336000096,Coventry,05825,Open,Open,Regular School,Not applicable,PK,08,Elementary,031
+2024-2025,Craftsbury Schools,Craftsbury Town School District,VT-T055,VT-T055-PS078,500339000428,Craftsbury Common,05827,Open,Open,Regular School,Not applicable,PK,12,Other,035
+2024-2025,Danville School,Danville School District,VT-T057,VT-T057-PS082,500345000451,Danville,05828,Open,Open,Regular School,Not applicable,PK,12,Other,009
+2024-2025,Derby Elementary School,Derby School District,VT-T058,VT-T058-PS084,500348000429,Derby Line,05830,Open,Open,Regular School,Not applicable,PK,06,Elementary,031
+2024-2025,Bellows Free Academy Middle/High School (Fairfax),Fairfax School District,VT-T071,VT-T071-PS405,500393000204,Fairfax,05454,Open,Open,Regular School,Not applicable,07,12,High,022
+2024-2025,Bellows Free Academy Elementary (Fairfax),Fairfax School District,VT-T071,VT-T071-PS027,500393000206,Fairfax,05454,Open,Open,Regular School,Not applicable,PK,06,Elementary,022
+2024-2025,Fletcher Elementary School,Fletcher School District,VT-T077,VT-T077-PS110,500408000134,Cambridge,05444,Open,Open,Regular School,Not applicable,PK,06,Elementary,022
+2024-2025,Georgia Elementary & Middle School,Georgia School District,VT-T079,VT-T079-PS117,500414000136,Saint Albans,05478,Open,Open,Regular School,Not applicable,PK,08,Elementary,022
+2024-2025,Halifax West School,Halifax School District,VT-T090,VT-T090-PS129,500450000145,West Halifax,05358,Open,Open,Regular School,Not applicable,PK,08,Elementary,049
+2024-2025,Dothan Brook School,Hartford School District,VT-T093,VT-T093-PS378,500459000047,White River Junction,05001,Open,Open,Regular School,Not applicable,PK,05,Elementary,054
+2024-2025,Ottauquechee School,Hartford School District,VT-T093,VT-T093-PS380,500459000062,Quechee,05059,Open,Open,Regular School,Not applicable,PK,05,Elementary,054
+2024-2025,Hartford Area Career & Technology Center,Hartford School District,VT-T093,VT-T093-VC007,500459000093,White River Junction,05001,Open,Open,Career and Technical School,Not applicable,09,12,High,054
+2024-2025,Hartford Memorial Middle School,Hartford School District,VT-T093,VT-T093-PS135,500459000150,White River Junction,05001,Open,Open,Regular School,Not applicable,06,08,Middle,054
+2024-2025,Hartford High School,Hartford School District,VT-T093,VT-T093-PS134,500459000151,White River Junction,05001,Open,Open,Regular School,Not applicable,09,12,High,054
+2024-2025,White River School,Hartford School District,VT-T093,VT-T093-PS339,500459000153,White River Junction,05001,Open,Open,Regular School,Not applicable,PK,05,Elementary,054
+2024-2025,Hartland Elementary School,Hartland School District,VT-T094,VT-T094-PS137,500462000155,Hartland,05048,Open,Open,Regular School,Not applicable,PK,08,Elementary,052
+2024-2025,Jay/Westfield Joint Elementary School,Jay/Westfield Joint Elementary School District,VT-J105,VT-J105-PS374,500496000015,Jay,05859,Open,Open,Regular School,Not applicable,PK,06,Elementary,031
+2024-2025,Lake Region Union High School,Lake Region Union High School District #24,VT-U024,VT-U024-PS157,500505000170,Orleans,05860,Open,Open,Regular School,Not applicable,09,12,High,034
+2024-2025,Lincoln Community School,Lincoln Town School District,VT-T112,VT-T112-PS162,500516000174,Lincoln,05443,Open,Open,Regular School,Not applicable,PK,06,Elementary,070
+2024-2025,Lowell Graded School,Lowell School District,VT-T114,VT-T114-PS166,500522000175,Lowell,05847,Open,Open,Regular School,Not applicable,PK,08,Elementary,031
+2024-2025,Marlboro Elementary School,Marlboro School District,VT-T120,VT-T120-PS177,500540000186,Marlboro,05344,Open,Open,Regular School,Not applicable,PK,08,Elementary,046
+2024-2025,Milton Senior High School,Milton School District,VT-T126,VT-T126-PS186,500561000125,Milton,05468,Open,Open,Regular School,Not applicable,09,12,High,010
+2024-2025,Milton Middle School,Milton School District,VT-T126,VT-T126-PS185,500561000193,Milton,05468,Open,Open,Regular School,Not applicable,05,08,Middle,010
+2024-2025,Milton Elementary School,Milton School District,VT-T126,VT-T126-PS140,500561000437,Milton,05468,Open,Open,Regular School,Not applicable,PK,04,Elementary,010
+2024-2025,Mt. Anthony Senior Union High School,Mount Anthony Union High School District #14,VT-U014,VT-U014-PS196,500581000208,Bennington,05201,Open,Open,Regular School,Not applicable,09,12,High,005
+2024-2025,Mt. Anthony Union Middle School,Mount Anthony Union High School District #14,VT-U014,VT-U014-PS197,500581000463,Bennington,05201,Open,Open,Regular School,Not applicable,06,08,Middle,005
+2024-2025,Newport City Elementary School,Newport City School District,VT-T139,VT-T139-PS204,500600000439,Newport,05855,Open,Open,Regular School,Not applicable,PK,06,Elementary,031
+2024-2025,Newport Town School,Newport Town School District,VT-T140,VT-T140-PS205,500603000218,Newport Center,05857,Open,Open,Regular School,Not applicable,PK,06,Elementary,031
+2024-2025,Marion W. Cross School,Norwich School District,VT-T145,VT-T145-PS176,500618000230,Norwich,05055,Open,Open,Regular School,Not applicable,PK,06,Elementary,055
+2024-2025,Peacham Elementary School,Peacham School District,VT-T151,VT-T151-PS223,500639000237,Peacham,05862,Open,Open,Regular School,Not applicable,PK,06,Elementary,009
+2024-2025,Readsboro Elementary School,Readsboro School District,VT-T164,VT-T164-PS240,500678000254,Readsboro,05350,Open,Open,Regular School,Not applicable,PK,06,Elementary,049
+2024-2025,Bellows Falls Middle School,Rockingham School District,VT-T169,VT-T169-PS024,500693000262,Bellows Falls,05101,Open,Open,Regular School,Not applicable,05,08,Middle,047
+2024-2025,Central Elementary School,Rockingham School District,VT-T169,VT-T169-PS249,500693000263,Bellows Falls,05101,Open,Open,Regular School,Not applicable,PK,04,Elementary,047
+2024-2025,Saxton River Elementary School,Rockingham School District,VT-T169,VT-T169-PS260,500693000264,Saxtons River,05154,Open,Open,Regular School,Not applicable,PK,04,Elementary,047
+2024-2025,Rutland Intermediate School,Rutland City School District,VT-T173,VT-T173-PS382,500705000075,Rutland,05701,Open,Open,Regular School,Not applicable,03,06,Elementary,040
+2024-2025,Stafford Technical Center,Rutland City School District,VT-T173,VT-T173-VC013,500705000094,Rutland,05701,Open,Open,Career and Technical School,Not applicable,09,12,High,040
+2024-2025,Rutland Senior High School,Rutland City School District,VT-T173,VT-T173-PS253,500705000271,Rutland,05701,Open,Open,Regular School,Not applicable,09,12,High,040
+2024-2025,Northeast Primary School,Rutland City School District,VT-T173,VT-T173-PS255,500705000274,Rutland,05701,Open,Open,Regular School,Not applicable,PK,02,Elementary,040
+2024-2025,Northwest Primary School,Rutland City School District,VT-T173,VT-T173-PS256,500705000275,Rutland,05701,Open,Open,Regular School,Not applicable,PK,02,Elementary,040
+2024-2025,Rutland Middle School,Rutland City School District,VT-T173,VT-T173-PS365,500705000468,Rutland,05701,Open,Open,Regular School,Not applicable,07,08,Middle,040
+2024-2025,Rutland Town Elementary School,Rutland Town School District,VT-T174,VT-T174-PS258,500708000279,Rutland Town,05701,Open,Open,Regular School,Not applicable,PK,08,Elementary,066
+2024-2025,Sharon Elementary School,Sharon School District,VT-T184,VT-T184-PS263,500726000283,Sharon,05065,Open,Open,Regular School,Not applicable,PK,06,Elementary,030
+2024-2025,Chamberlin School,South Burlington School District,VT-T191,VT-T191-PS064,500747000291,South Burlington,05403,Open,Open,Regular School,Not applicable,PK,05,Elementary,016
+2024-2025,Orchard School,South Burlington School District,VT-T191,VT-T191-PS216,500747000292,South Burlington,05403,Open,Open,Regular School,Not applicable,PK,05,Elementary,016
+2024-2025,Rick Marcotte Central School,South Burlington School District,VT-T191,VT-T191-PS271,500747000293,South Burlington,05403,Open,Open,Regular School,Not applicable,PK,05,Elementary,016
+2024-2025,South Burlington High School,South Burlington School District,VT-T191,VT-T191-PS272,500747000294,South Burlington,05403,Open,Open,Regular School,Not applicable,09,12,High,016
+2024-2025,Frederick H. Tuttle Middle School,South Burlington School District,VT-T191,VT-T191-PS273,500747000295,South Burlington,05403,Open,Open,Regular School,Not applicable,06,08,Middle,016
+2024-2025,Folsom Education & Community Center,South Hero School District,VT-T192,VT-T192-PS112,500750000296,South Hero,05486,Open,Open,Regular School,Not applicable,PK,08,Elementary,024
+2024-2025,Riverside Middle School,Springfield School District,VT-T193,VT-T193-PS245,500753000298,Springfield,05156,Open,Open,Regular School,Not applicable,06,08,Middle,056
+2024-2025,Elm Hill School,Springfield School District,VT-T193,VT-T193-PS277,500753000299,Springfield,05156,Open,Open,Regular School,Not applicable,PK,02,Elementary,056
+2024-2025,Springfield High School,Springfield School District,VT-T193,VT-T193-PS278,500753000300,Springfield,05156,Open,Open,Regular School,Not applicable,09,12,High,056
+2024-2025,Union Street School,Springfield School District,VT-T193,VT-T193-PS280,500753000303,Springfield,05156,Open,Open,Regular School,Not applicable,03,05,Elementary,056
+2024-2025,St. Johnsbury School,Saint Johnsbury School District,VT-T179,VT-T179-PS400,500765000181,Saint Johnsbury,05819,Open,Open,Regular School,Not applicable,PK,12,Other,011
+2024-2025,Stamford Elementary School,Stamford School District,VT-T194,VT-T194-PS284,500768000316,Stramford,05352,Open,Open,Regular School,Not applicable,PK,08,Elementary,049
+2024-2025,Stowe Elementary School,Stowe Town School District,VT-T198,VT-T198-PS286,500780000318,Stowe,05672,Open,Open,Regular School,Not applicable,PK,05,Elementary,026
+2024-2025,Stowe Middle School,Stowe Town School District,VT-T198,VT-T198-PS419,500780000552,Stowe,05672,Open,Open,Regular School,Not applicable,06,08,Middle,026
+2024-2025,Stowe High School,Stowe Town School District,VT-T198,VT-T198-PS420,500780000553,Stowe,05672,Open,Open,Regular School,Not applicable,09,12,High,026
+2024-2025,Newton School,Strafford School District,VT-T199,VT-T199-PS206,500783000320,South Strafford,05070,Open,Open,Regular School,Not applicable,PK,08,Elementary,030
+2024-2025,Thetford Elementary School,Thetford School District,VT-T205,VT-T205-PS298,500801000325,Thetford,05074,Open,Open,Regular School,Not applicable,PK,06,Elementary,027
+2024-2025,Troy School,Troy School District,VT-T209,VT-T209-PS302,500813000328,North Troy,05859,Open,Open,Regular School,Not applicable,PK,08,Elementary,031
+2024-2025,Blue Mountain Union School,Blue Mountain Union School District #21,VT-U021,VT-U021-PS036,500822400334,Wells River,05081,Open,Open,Regular School,Not applicable,PK,12,Other,027
+2024-2025,Twinfield Union School,Twinfield Union School District #33,VT-U033,VT-U033-PS304,500822500335,Plainfield,05667,Open,Open,Regular School,Not applicable,PK,12,Other,009
+2024-2025,Waits River Valley Union School,Waits River Union High District #36,VT-U036,VT-U036-PS310,500824200340,East Corinth,05040,Open,Open,Regular School,Not applicable,PK,08,Elementary,027
+2024-2025,Hazen Union High School,Hazen Union High School District #26,VT-U026,VT-U026-PS139,500824300343,Hardwick,05843,Open,Open,Regular School,Not applicable,07,12,High,035
+2024-2025,Bellows Falls Union High School,Bellows Falls Union High School District #27,VT-U027,VT-U027-PS025,500824600346,Bellows Falls,05158,Open,Open,Regular School,Not applicable,09,12,High,047
+2024-2025,Vernon Elementary School,Vernon School District,VT-T214,VT-T214-PS313,500831000351,Vernon,05354,Open,Open,Regular School,Not applicable,PK,06,Elementary,048
+2024-2025,Weathersfield School,Weathersfield School District,VT-T227,VT-T227-PS407,500870000536,Ascutney,05030,Open,Open,Regular School,Not applicable,PK,08,Elementary,052
+2024-2025,Westminster Schools,Westminster School District,VT-T234,VT-T234-PS334,500897000460,Westminster,05158,Open,Open,Regular School,Not applicable,PK,06,Elementary,047
+2024-2025,Windham Elementary School,Windham School District,VT-T246,VT-T246-PS347,500927000384,Windham,05359,Closed,Closed,Regular School,Not applicable,M,M,Not reported,046
+2024-2025,Winooski Middle School,Winooski Incorporated School District,VT-T249,VT-T249-PS401,500936000183,Winooski,05404,Open,Open,Regular School,Not applicable,06,08,Middle,017
+2024-2025,J. F. Kennedy Elementary School,Winooski Incorporated School District,VT-T249,VT-T249-PS154,500936000388,Winooski,05404,Open,Open,Regular School,Not applicable,PK,05,Elementary,017
+2024-2025,Winooski High School,Winooski Incorporated School District,VT-T249,VT-T249-PS351,500936000389,Winooski,05404,Open,Open,Regular School,Not applicable,09,12,High,017
+2024-2025,Wolcott Elementary School,Wolcott School District,VT-T250,VT-T250-PS352,500939000391,Wolcott,05680,Open,Open,Regular School,Not applicable,PK,06,Elementary,035
+2024-2025,North Country Union Junior High School,North Country Union Junior High School District,VT-U022A,VT-U022A-PS364,500957000470,Derby,05829,Open,Open,Regular School,Not applicable,07,08,Middle,031
+2024-2025,North Country Career Center,North Country Union High School District,VT-U022B,VT-U022B-VC010,500960000107,Newport,05855,Open,Open,Career and Technical School,Not applicable,09,12,High,031
+2024-2025,North Country Union High School,North Country Union High School District,VT-U022B,VT-U022B-PS208,500960000220,Newport,05855,Open,Open,Regular School,Not applicable,09,12,High,031
+2024-2025,Central Vermont Career Center,Central Vermont Career Center,VT-TE004,VT-TE004-VC002,509996200119,Barre,05641,Open,Open,Career and Technical School,Not applicable,09,12,High,

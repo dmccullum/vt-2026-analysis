@@ -1,0 +1,1327 @@
+{
+    "Section A: Data on Cost Drivers": [
+        {
+            "Data Request": "A.1. AOE Budget Data",
+            "Scope / Timeframe": "FY25",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Interpreted this to mean district budget data. Able to provide Total Expenditures, Offsetting Revenues and Ed Spending by district for FY26.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.1-Budgets-and-Actuals.xlsx"
+        },
+        {
+            "Data Request": "A.2. AOE Budget Data",
+            "Scope / Timeframe": "FY26",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Interpreted this to mean district budget data. Able to provide Total Expenditures, Offsetting Revenues and Ed Spending by district.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.1-Budgets-and-Actuals.xlsx"
+        },
+        {
+            "Data Request": "A.3. Long-term tuition data",
+            "Scope / Timeframe": "Longitudinal",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Will provide SW1 tuition data for A.3 and F.19, F.20",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "A.4. Updated special education cost report",
+            "Scope / Timeframe": "Update to include last 5 years",
+            "Source(s)": "AOE",
+            "Content Type": "Testimony/Sept 1 Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Provided testimony in May and updated report will be available September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "A.5. Updated teacher and staff report",
+            "Scope / Timeframe": "FY25 data",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "A.6. Updated teacher and staff report",
+            "Scope / Timeframe": "FY26 data",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "No",
+            "Expected Delivery": "N/A"
+        },
+        {
+            "Data Request": "A.7. Spending on instruction (VT vs. neighboring NE states)",
+            "Scope / Timeframe": "2013, 2018, 2023",
+            "Source(s)": "AOE (using IES F33 data)",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Compared VT spending per pupil on instruction, student support and instructional support to NE states using available US Department of Education School District Finance Survey (F\u201333) data. ",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.7.-A.8.-VT-expenditures-compared-to-NE-states-FY13-FY18-FY23.xlsx"
+        },
+        {
+            "Data Request": "A.8. Spending on student support (VT vs. neighboring NE states)",
+            "Scope / Timeframe": "2013, 2018, 2023",
+            "Source(s)": "AOE (using IES F33 data)",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Compared VT spending per pupil on instruction, student support and instructional support to NE states using available US Department of Education School District Finance Survey (F\u201333) data. ",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.7.-A.8.-VT-expenditures-compared-to-NE-states-FY13-FY18-FY23.xlsx"
+        },
+        {
+            "Data Request": "A.9. School-based Medicaid claims total",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE / VDH / Districts",
+            "Content Type": "September Special Ed Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Will be included in September's updated Special Education report.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "A.10. School-based Medicaid reimbursements to districts",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE / VDH",
+            "Content Type": "September Special Ed Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Will be included in September's updated Special Education report.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "A.11. School-based Medicaid reimbursements to Designated Agencies (DAs)",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE / VDH",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "Not available"
+        },
+        {
+            "Data Request": "A.12. School-based Medicaid funds retained by VDH and AOE",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE / VDH",
+            "Content Type": "September Special Ed Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Will be included in September's updated Special Education report.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "A.13. Count of Medicaid-funded positions at AOE",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE",
+            "Content Type": "September Special Ed Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Will be included in September's updated Special Education report.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "A.14. Count of Medicaid-funded positions at VDH",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "VDH",
+            "Content Type": "September Special Ed Report",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "By 9/26",
+            "Notes": "AOE does not have this data available. We will need additional time to get data from AHS."
+        },
+        {
+            "Data Request": "A.15. Total Education Fund payments to DAs for school mental health",
+            "Scope / Timeframe": "Each of the last 5 years, by DA",
+            "Source(s)": "AOE / VDH",
+            "Content Type": "N/A",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "Not available from AOE"
+        },
+        {
+            "Data Request": "A.16. Associated Medicaid match for school mental health services",
+            "Scope / Timeframe": "Each of the last 5 years, by DA",
+            "Source(s)": "AOE / VDH",
+            "Content Type": "N/A",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "Not available from AOE"
+        },
+        {
+            "Data Request": "A.17. Total school expenditures on mental health (inclusive of DA spending)",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE / VDH",
+            "Content Type": "Explanation of current coding constraints/approximation",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "As part of the Listen and Learn Tour, AOE attempted to calculate the cost of mental health services in schools using district actual expenditures. AOE examined expenditures in FY20 and FY23, by looking at function categories that were most closely aligned with mental health services: 2110: Attendance and Social Work Services; 2120: Guidance Services; 2140: Psychological Services; and 2190: Other Support Services- Students. During regional planning sessions, the AOE shared a preliminary methodology for identifying the costs of mental health services and sought feedback from education leaders. Based on these conversations it was determined that more work (such as a new data collection) is required to arrive at an accurate cost estimate, as it is difficult to isolate mental health services from other student support services given the current accounting framework."
+        },
+        {
+            "Data Request": "A.18. Total spending on teacher health care from the Education Fund",
+            "Scope / Timeframe": "2015, 2020, 2025 (in FY25 $)",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "AOE only has Statbook expenditures. There is also a portion for VSTRS OPEB from Treasury. JFO would have those numbers?",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.18-Ed-Fund-Health-Costs.xlsx"
+        },
+        {
+            "Data Request": "A.19. Total spending on health-related services from the Education Fund",
+            "Scope / Timeframe": "2015, 2020, 2025 (in FY25 $)",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity",
+            "Notes": "Unclear what is meant by health-related services."
+        },
+        {
+            "Data Request": "A.20. Percent of nurse staffing at each school",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Only able to provide FTE at SU level.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "A.21. Estimated increase in total spending associated with inflation",
+            "Scope / Timeframe": "Last 5 years",
+            "Source(s)": "Unclear what spending ( BLS ECI)",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Nominal spending has been converted to FY25 real dollars, but this does not directly answer the question of the impact of inflation. Salaries, being the dominant expenditure, are usually contractually locked in for multiple years, only able to respond to inflationary pressures during negoatiations.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.1-Budgets-and-Actuals.xlsx"
+        },
+        {
+            "Data Request": "A.22. 10-year demographic projections (update of ACCD figure)",
+            "Scope / Timeframe": "Projections",
+            "Source(s)": "ACCD / DOL / ADS"
+        },
+        {
+            "Data Request": "A.23. 20-year demographic projections (update of ACCD figure)",
+            "Scope / Timeframe": "Projections",
+            "Source(s)": "ACCD / DOL / ADS"
+        }
+    ],
+    "Section B: Longitudinal District Condition Data": [
+        {
+            "Data Request": "B.1. Updated \"Act 46 background data sets\" Excel tool ",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/Link ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Interpreted this to mean the State Profile database.",
+            "Link": "https://education.vermont.gov/edu-state-profile-database-november-2024"
+        },
+        {
+            "Data Request": "B.2. Type of board (SU/SD or district)",
+            "Scope / Timeframe": "Current, by SU/SD & District",
+            "Source(s)": "AOE",
+            "Content Type": "Education Funding Report ",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "This information was included as part of the Vermont Funding System Explanation report.",
+            "Link": "https://education.vermont.gov/document/vermonts-education-funding-system-explained-and-compared-other-states"
+        },
+        {
+            "Data Request": "B.3. Number of board members",
+            "Scope / Timeframe": "Current, by SU/SD & District",
+            "Source(s)": "VSBA / Districts",
+            "Content Type": "Education Funding Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "This information was included as part of the Vermont Funding System Explanation report.",
+            "Link": "https://education.vermont.gov/document/vermonts-education-funding-system-explained-and-compared-other-states"
+        },
+        {
+            "Data Request": "B.4. Number of board member vacancies",
+            "Scope / Timeframe": "Current, by SU/SD & District",
+            "Source(s)": "VSBA / Districts",
+            "Content Type": "N/A",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information."
+        },
+        {
+            "Data Request": "B.5. Board member turnover rate",
+            "Scope / Timeframe": "Last 5 years, by SU/SD & District",
+            "Source(s)": "VSBA / Districts",
+            "Content Type": "N/A",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information."
+        },
+        {
+            "Data Request": "B.6. Board members per student",
+            "Scope / Timeframe": "Current, by SU/SD & District",
+            "Source(s)": "VSBA / Districts",
+            "Content Type": "Education Funding Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "This information was included as part of the Vermont Funding System Explanation report.",
+            "Link": "https://education.vermont.gov/document/vermonts-education-funding-system-explained-and-compared-other-states"
+        }
+    ],
+    "Section C: State Capacity to Support Change": [
+        {
+            "Data Request": "C.1. List of education acts, funding, tax policy, and standards passed, with implementation status",
+            "Scope / Timeframe": "Since 2018",
+            "Source(s)": "VSBA / AOE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "List of included Acts is representative but not exhaustive. A summary of status on each act will take additional time to deliver.",
+            "Link": [
+                "https://legislature.vermont.gov/assets/Legislative-Reports/edu-legislative-report-act-78-afterschool-2025.pdf",
+                "https://legislature.vermont.gov/assets/Legislative-Reports/edu-legislative-report-act46-report-and-recommendations.pdf",
+                "https://legislature.vermont.gov/assets/Legislative-Reports/edu-bouchey-legislative-report-local-foods-incentive-2024.pdf",
+                "https://education.vermont.gov/src/student-learning/read-vermont",
+                "https://legislature.vermont.gov/assets/Legislative-Reports/edu-legislative-report-act-166-upk-2025.pdf",
+                "https://legislature.vermont.gov/assets/Legislative-Reports/11-24-15-Act-44sec44highschoolcompletion.pdf"
+            ]
+        },
+        {
+            "Data Request": "C.2. Status of a single statewide financial system",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE / SBE",
+            "Content Type": "2025 SSDDMS Testimony provided",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Previous 2025 AOE testimony to Energy and  Digital Infrastructure House Committee",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/C.2-and-C.3-SSDDMS-and-UCOA-testimony-20250314.pdf"
+        },
+        {
+            "Data Request": "C.3. Status of a statewide chart of accounts",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE / SBE",
+            "Content Type": "Testimony provided",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "UCOA Handbook is provided, and in the SSDDMS testimony (C.2.), Slide 10, has a UCOA update.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/C.2-and-C.3-SSDDMS-and-UCOA-testimony-20250314.pdf"
+        },
+        {
+            "Data Request": "C.4. Status of a single statewide student information system",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE / SBE",
+            "Content Type": "Testimony provided",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Status: None. LEAs turned down the option to do a Statewide SIS. Most (~38 of 52 SUs) use PowerSchool",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/C.4.-Handbook-of-Financial-Accounting.pdf"
+        },
+        {
+            "Data Request": "C.5. Assessment of recent school facilities and safety legislation (Acts 72, 74, 166, 29, 78)",
+            "Scope / Timeframe": "Analysis of 2021-2023 Acts",
+            "Source(s)": "AOE",
+            "Content Type": "Construction Working Group Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Have included the 2024 School Construction Aid Task Force Report.",
+            "Link": "https://legislature.vermont.gov/assets/Legislative-Reports/edu-legislative-report-school-construction-aid-taskforce-2024-1.pdf"
+        },
+        {
+            "Data Request": "C.6. Total state funding to AOE (inflation-adjusted)",
+            "Scope / Timeframe": "2000, 2005, 2015, 2020, 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/C.6-Total-State-funding-to-AOE-(inflation-adjusted)-General-Fund-only.xlsx"
+        },
+        {
+            "Data Request": "C.7. Count and list of all AOE state-funded positions with stated purpose",
+            "Scope / Timeframe": "2000, 2005, 2015, 2020, 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "The data related to staff funding source will be compiled and available by 9/26/25. The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/AOE-Org-Chart_Post-Reorg_09.26.25_Simple-Formatting.pdf"
+        },
+        {
+            "Data Request": "C.8. Count and list of all AOE federally funded positions with stated purpose",
+            "Scope / Timeframe": "2000, 2005, 2015, 2020, 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "The data related to staff funding source will be compiled and available by 9/26/25. The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/AOE-Org-Chart_Post-Reorg_09.26.25_Simple-Formatting.pdf"
+        },
+        {
+            "Data Request": "C.9. Count and list of all school-based Medicaid-funded positions at AOE and VDH",
+            "Scope / Timeframe": "2000, 2005, 2015, 2020, 2025",
+            "Source(s)": "AOE / VDH",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "By September 26",
+            "Notes": "AOE does not have this data available. We will need additional time to get data from AHS."
+        },
+        {
+            "Data Request": "C.10. Count/list of AOE positions with experience in school governance and mergers",
+            "Scope / Timeframe": "2015 and 2025",
+            "Source(s)": "AOE",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity",
+            "Notes": "The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September."
+        },
+        {
+            "Data Request": "C.11. Count of state-funded AOE positions for education quality and teaching improvement",
+            "Scope / Timeframe": "2015 and 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/AOE-Org-Chart_Post-Reorg_09.26.25_Simple-Formatting.pdf"
+        },
+        {
+            "Data Request": "C.12. Count of state-funded AOE positions for student pathways",
+            "Scope / Timeframe": "2015 and 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/AOE-Org-Chart_Post-Reorg_09.26.25_Simple-Formatting.pdf"
+        },
+        {
+            "Data Request": "C.13. Count of state-funded AOE positions focused on student support",
+            "Scope / Timeframe": "2015 and 2025",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "The Agency is realigning to better support areas of strategic importance and deliver on critical priorities. Information regarding this realignment will be made public in in the latter half of September.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-C--State-Capacity-to-Support-Change/AOE-Org-Chart_Post-Reorg_09.26.25_Simple-Formatting.pdf"
+        }
+    ],
+    "Section D: Mapping Tasks": [
+        {
+            "Data Request": "D.1. Map where students live (deidentified) and where they attend school",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE/ADS",
+            "Content Type": "Link",
+            "Availability": "Yes (alternative)",
+            "Expected Delivery": "Included",
+            "Notes": "ADM by town is assigned to e-911 address and represented by drive time (see Drive Time Mapper)",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.2. Map of optimal locations for middle and high schools",
+            "Scope / Timeframe": "Analysis",
+            "Source(s)": "ADS",
+            "Content Type": "Link",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.3. Map of school buildings with their facility quality ratings",
+            "Scope / Timeframe": "Most recent ratings",
+            "Source(s)": "ADS (Data from AOE)",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.4. Overlay map of DA boundaries with school enrollment origins",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "ADS (Data from AOE/VDH)",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.5. Map of SU/SD boundaries and DA locations",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "ADS (Data from AOE/VDH)",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.6. Map of CTE regions (including comprehensive high schools)",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "ADS",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.7. Map of student density (ADM/mi2) and population density by school district",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "ADS",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "D.8. Map of job density and commuting sheds",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "ADS",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "School Explorer map",
+            "Link": "https://map.vermont.gov/education/"
+        }
+    ],
+    "Section E: Analysis & Reporting": [
+        {
+            "Data Request": "E.1. Report on Act 46 local decision criteria and the State Board\u2019s final plan",
+            "Scope / Timeframe": "Existing documents",
+            "Source(s)": "AOE / SBE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://education.vermont.gov/act-46-2015"
+        },
+        {
+            "Data Request": "E.2. Report on prior analysis regarding what constitutes \"geographic isolation\"",
+            "Scope / Timeframe": "Existing documents",
+            "Source(s)": "AOE / SBE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://legislature.vermont.gov/assets/Legislative-Reports/edu-legislative-report-pupil-weighting-factors-2019.pdf"
+        },
+        {
+            "Data Request": "E.3. Explanation of how AOE identifies economic disadvantage for setting the tax rate",
+            "Scope / Timeframe": "Current methodology",
+            "Source(s)": "AOE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://legislature.vermont.gov/statutes/section/16/133/04010"
+        },
+        {
+            "Data Request": "E.4. Explanation of how AOE identifies economic disadvantage for reporting assessment data",
+            "Scope / Timeframe": "Current methodology",
+            "Source(s)": "AOE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://education.vermont.gov/document/vermont-essa-state-plan"
+        },
+        {
+            "Data Request": "E.5. Explanation of how AOE identifies economic disadvantage for allocating federal dollars to public districts",
+            "Scope / Timeframe": "Current methodology",
+            "Source(s)": "AOE",
+            "Content Type": "GMS",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "One thing we would want to make clear to the committee is that federal education funds must always be supplemental, and can only be used to support activities that would not otherwise be provided by the LEA in the absence of these federal funds. The amounts and availability of these grant funds are subject to change based on Congressional actions and cannot be predicted with certainty. Therefore, district configuration decisions should be made without reliance on federal funds.\nPublic Schools:\n\u2022\tTitle IA allocation: Below is a general overview of the poverty data that is used for Title IA funding and how LEAs then use those funds to support students in their eligible schools. \no\tThe Census Bureau uses statistical modeling (review their methodology on the census webpage) to estimate populations at the federal poverty level for each LEA in the state. US Ed uses these Census Bureau poverty estimates to determine eligibility and allocations for the Title I, part A program for each LEA. Currently, all LEAs in Vermont are receiving some Title IA funds. Title I, part A allocations are made up of four individual formula grants. LEAs with larger census poverty rates are eligible for more formula grants. LEAs with larger enrollments receive larger amounts within the formula grants for which they are eligible.\no\tOnce eligible VT LEAs receive their allocations, they will determine which of their public schools are eligible to be served with Title IA dollars based on the low-income rates of students enrolled in their schools. The determination of which schools are eligible for Title IA services is based on the percentage of their students that are from families at or below 185% of the federal poverty level. This is determined based on data sources such as Medicaid direct certification data, FRL or Household Income forms, etc. LEAs have the authority to distribute their Title IA dollars to all eligible public schools or to concentrate their funds at the schools with the highest poverty rates. \n\n\u2022\tTitle IIA & IVA allocations\no\tAll VT LEAs receive a Title II, part A allocation which is based in 80% on their Census Bureau poverty estimates, and 20% on their enrollment size. \no\tLEAs who received a Title I, part A allocation in the prior year will receive a Title IV, part A allocation in the current year that is proportional to the LEA\u2019s prior year Title IA allocation.",
+            "Link": "https://education.vermont.gov/student-support/federal-programs/consolidated-federal-programs"
+        },
+        {
+            "Data Request": "E.6. Explanation of how AOE identifies economic disadvantage for allocating federal dollars to private schools",
+            "Scope / Timeframe": "Current methodology",
+            "Source(s)": "AOE",
+            "Content Type": "GMS",
+            "Availability": "Yes",
+            "Expected Delivery": "Included in notes",
+            "Notes": "Independent Schools:\nLEAs must also serve eligible independent schools with Title funds. The list of eligible approved or recognized non-profit independent schools can be found here.  \n\u2022\tTitle IA equitable services: For Title IA services, LEAs consult with independent school leaders to determine which, if any, of their residents (living in public Title I school attendance areas) are attending an independent school and which of those students are considered low-income. The ESEA permits an LEA to use any or a combination of the following data sources to qualify students attending Independent Schools as low-income: \n\uf0a7\tThe same measure of poverty used to count public school children (i.e. Household income form)\n\uf0a7\tComparable poverty data from a survey\n\uf0a7\tComparable poverty data from a different source\n\uf0a7\tProportionality\n\uf0a7\tAn equated measure\no\tThe LEA has the final authority to decide which method(s) it will use.\n\u2022\tTitle IIA and IVA equitable services: \no\tFor Titles IIA and IVA, the proportion of the LEA\u2019s allocation that must be reserved for services to independent schools is based on the total enrollment of the independent schools within their geographic boundaries (refer to the list of approved or recognized independent schools). ",
+            "Link": "https://education.vermont.gov/student-support/federal-programs/consolidated-federal-programs"
+        }
+    ],
+    "Section F: Statewide Data": [
+        {
+            "Data Request": "F.1. Debt outstanding and projected annual service costs",
+            "Scope / Timeframe": "Present & projected 20 years - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Districts report debt information, but it has not been publicly reported or vetted. AOE does not collect debt service schedules.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.128-Capital-Debt-Reserves.xlsx"
+        },
+        {
+            "Data Request": "F.2. Reserve Accounts and reserve account balances",
+            "Scope / Timeframe": "Present - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Districts report this information, but it has not been publicly reported or vetted",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.128-Capital-Debt-Reserves.xlsx"
+        },
+        {
+            "Data Request": "F.3. Teacher salary grid and # of teachers on each cell",
+            "Scope / Timeframe": "Present through end of contracts - District",
+            "Source(s)": "Districts",
+            "Content Type": "Excel/link",
+            "Availability": "Alternative available",
+            "Expected Delivery": "Included",
+            "Notes": "Unclear if the request is for district specific salary schedules/step grids, which AOE does not have access to. As an alternative, AOE can provide FTE and average salary data from the Teacher-Staff Surveys.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.4. Support staff salary grid and # of staff on each cell",
+            "Scope / Timeframe": "Present through end of contracts - District",
+            "Source(s)": "Districts",
+            "Content Type": "Excel/link",
+            "Availability": "Alternative available",
+            "Expected Delivery": "Included",
+            "Notes": "Unclear if the request is for district specific salary schedules/step grids, which AOE does not have access to. As an alternative, AOE can provide FTE and average salary data from the Teacher-Staff Surveys.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.5. Administrative salary grid and # of staff on each cell",
+            "Scope / Timeframe": "Present through end of contracts - District",
+            "Source(s)": "Districts",
+            "Content Type": "Excel/link",
+            "Availability": "Alternative available",
+            "Expected Delivery": "Included",
+            "Notes": "Unclear if the request is for district specific salary schedules/step grids, which AOE does not have access to. As an alternative, AOE can provide FTE and average salary data from the Teacher-Staff Surveys.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.6. Co-curricular salary grid and # of coaches/advisors on each cell",
+            "Scope / Timeframe": "Present through end of contracts - District",
+            "Source(s)": "Districts",
+            "Content Type": "Excel/link",
+            "Availability": "Alternative available",
+            "Expected Delivery": "Included",
+            "Notes": "Unclear if the request is for district specific salary schedules/step grids, which AOE does not have access to. As an alternative, AOE can provide FTE and average salary data from the Teacher-Staff Surveys.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.7. Approved budget, broken out by major funding source",
+            "Scope / Timeframe": "Last 5 years, incl. FY26 - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Budget data is not disaggregated by funding source, but actual revenue data is. FY25 and FY26 not yet available.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.1-Budgets-and-Actuals.xlsx"
+        },
+        {
+            "Data Request": "F.8. Capital expenditures",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Annual capital expenditures available. FY25 and FY26 not available yet.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.128-Capital-Debt-Reserves.xlsx"
+        },
+        {
+            "Data Request": "F.9. Student Average Daily Membership (ADM)",
+            "Scope / Timeframe": "Last 10 years, incl. FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "ADM can either be single year, or long-term ADM which was used for funding. Long-term ADM is the average of the prior two years plus state placed students. Note, that districts have the ability to correct ADM data for a period of time, so single year counts may be updated for LT ADM calculations.",
+            "Link": [
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.9.-F.40.-Single-year-ADM-by-grade-for-towns-and-districts-FY20-FY24-and-change-over-period.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F9.-F.10.-LT-ADM-FY20-FY24-and-change-over-period.xlsx"
+            ]
+        },
+        {
+            "Data Request": "F.10. Students enrolled",
+            "Scope / Timeframe": "Last 10 years, incl. FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included through SY23 - SY24 to be added by Friday Sept 5",
+            "Notes": "Provided school-level 10 year enrollment data through SY23; SY24 enrollment to be added",
+            "Link": [
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.10.-10-Year-Enrollment---School-Level.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F9.-F.10.-LT-ADM-FY20-FY24-and-change-over-period.xlsx"
+            ]
+        },
+        {
+            "Data Request": "F.11. Student-teacher ratio",
+            "Scope / Timeframe": "Last 10 years, incl. FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded FY20-25 as A.5. Also provided NCES data as F.11",
+            "Notes": "Recent year available in maps; additional years provided.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.11-NCES-Student-Teacher-Ratios-10-years.xlsx"
+        },
+        {
+            "Data Request": "F.12. Student-staff ratio",
+            "Scope / Timeframe": "Last 10 years, incl. FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded FY20-25 as A.5",
+            "Notes": "Recent year available in maps; additional years provided.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.13. Number of students in each category identified for weighting in H.454",
+            "Scope / Timeframe": "FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "District-level data is provided for all weighting categories other than special education. Due to suppression issues, special education student counts disaggregated by category can only be provided at the state level without suppression.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F13.-State-special-education-student-counts.xlsx"
+        },
+        {
+            "Data Request": "F.14. List of job titles and number of employees by title",
+            "Scope / Timeframe": "FY25 - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded FY20-25 as A.5",
+            "Notes": "AOE does not collect district-specific job titles. Districts report staff data using the AOE general categories.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.15. Classes offered",
+            "Scope / Timeframe": "Last school year - School (Elem, Mid, High)",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded for SY24",
+            "Notes": "This data is collected but not reported consistently by districts; courses offered for SY24 will be provided.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.15-Courses_Offered_By_School_SY24.xlsx"
+        },
+        {
+            "Data Request": "F.16. Co-curriculars offered",
+            "Scope / Timeframe": "Last school year - School (Elem, Mid, High)",
+            "Source(s)": "AOE",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information."
+        },
+        {
+            "Data Request": "F.17. Grades operated and number of students per grade",
+            "Scope / Timeframe": "Last school year - School & District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Grades operated is provided by school, and ADM per grade is provided by district",
+            "Link": [
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.17.-F.18.-District-Level-Data.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.17.-Public-School-Locations-and-Grades---School-Level.xlsx"
+            ]
+        },
+        {
+            "Data Request": "F.18. Grades tuitioned and number of students per grade",
+            "Scope / Timeframe": "Last school year - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Operation status included",
+            "Notes": "Tuition status is provided by district, students tuitioned is not available by grade.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.17.-F.18.-District-Level-Data.xlsx"
+        },
+        {
+            "Data Request": "F.19. For sending districts: number of students sent to each receiving school",
+            "Scope / Timeframe": "By grade, last 5 years, incl. FY25 - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded - see A.3",
+            "Notes": "SW1 data - see A.3",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "F.20. For receiving public districts: number of tuition students from each sending district",
+            "Scope / Timeframe": "By grade, last 5 years, incl. FY25 - District",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded - see A.3",
+            "Notes": "SW1 data - see A.3",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "F.21. For receiving private schools: number of tuition students from each sending district",
+            "Scope / Timeframe": "By grade, last 5 years, incl. FY25 - Private School",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "To determine eligiblity to receive public tuition under Act 73, approved independent schools that met the geographic test were asked to complete an additional data certification of the number of publicy tuitioned students in FY24.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "F.22. Total grand list, tax rate, CLA, and balance of homestead/non-homestead properties",
+            "Scope / Timeframe": "Current budget year - Town",
+            "Source(s)": "Tax",
+            "Content Type": "Link",
+            "Availability": "Yes (from Tax Department)",
+            "Expected Delivery": "N/A",
+            "Notes": "Data will be provided by the Tax Department."
+        },
+        {
+            "Data Request": "F.23. Map and address of current CTE centers",
+            "Scope / Timeframe": "Current - CTE Centers",
+            "Source(s)": "ADS",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.23.-CTE-Center-Locations.xlsx"
+        },
+        {
+            "Data Request": "F.24. CTE Enrollment by grade, program, and sending school",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - CTE Centers",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "CTE Enrollment by grade, program, and sending school SY21 - SY25 (Note- This CTE Data does not include adult students)",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.24-CTE-Enrollments.xlsx"
+        },
+        {
+            "Data Request": "F.25. CTE program offerings",
+            "Scope / Timeframe": "Current - CTE Centers",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Upcoming School Year list of CTE program offerings",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.25-CTE-Program-Offerings-SY26.xlsx"
+        },
+        {
+            "Data Request": "F.26. CTE program capacity",
+            "Scope / Timeframe": "Current - CTE Centers",
+            "Source(s)": "AOE",
+            "Availability": "Currently unavailable",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect program capacity for CTE centers."
+        },
+        {
+            "Data Request": "F.27. Map of all current schools and district boundaries",
+            "Scope / Timeframe": "FY20 & FY25 - AOE",
+            "Source(s)": "ADS (Data from AOE)",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "F.28. Travel time between each school and nearest school serving the same grades",
+            "Scope / Timeframe": "Current - Analyst / Mapping Specialist",
+            "Source(s)": "ADS",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "F.29. Facility condition rating from prior study",
+            "Scope / Timeframe": "Most recent - AOE / School",
+            "Source(s)": "ADS (Data from AOE)",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/"
+        },
+        {
+            "Data Request": "F.30. Date of most recent renovation",
+            "Scope / Timeframe": "Most recent - School",
+            "Source(s)": "AOE",
+            "Content Type": "Link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Note: this is from a point in time facilities assessment in 2022 and will not include any renovations completed since the assessment. Future state, this data will be updated on a rolling cadence.",
+            "Link": "https://education.vermont.gov/facilities"
+        },
+        {
+            "Data Request": "F.31. Estimated capacity and current enrollment",
+            "Scope / Timeframe": "Most recent - School",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes (with caveats)",
+            "Expected Delivery": "Included",
+            "Notes": "The enrollment data is from 2023 and the capacity calculation being calculated is a schools GSF divided by the enrollment.\u00a0 This GSF/student figure does not reflect maximum potential capacity(number of student seats), Building Capacity (facilities infrastructure capacity), Functional Capacity (schedule flexibility/requirements), Program Capacity (curriculum & program offerings).\u00a0",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.31.-Facilities-Data-in-support-of-Redistricting-Task-Force.xlsx"
+        },
+        {
+            "Data Request": "F.32. Number of students on IEPs",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Content Type": "Special Education Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "F.33. Number of students being educated in an alternative setting",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Content Type": "Special Education Report",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "F.34. Cost of contracts with outside service providers",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity"
+        },
+        {
+            "Data Request": "F.35. Number of employees dedicated primarily to special education",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "By 9/5",
+            "Notes": "This data is available in aggregate by SU/SD, on FTE basis.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F35---Number-of-employees-dedicated-primarily-to-special-education/SY20-24-Special-Education-Teachers_Paras_Related-Staff-FTEs.xlsx"
+        },
+        {
+            "Data Request": "F.36. Total cost of special education services",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Does not include costs incurred by Designated Agencies",
+            "Link": "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Education/Special%20Education/W~Zoie%20Saunders~Special%20Education%20Spending%20and%20Education%20Service%20Delivery~5-9-2025.pdf"
+        },
+        {
+            "Data Request": "F.37. Total reimbursement by source for special education services",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity",
+            "Notes": "Need clarity on \"source\""
+        },
+        {
+            "Data Request": "F.38. Status of implementation of MTSS",
+            "Scope / Timeframe": "Current - District & SU",
+            "Source(s)": "AOE",
+            "Content Type": "Special Education Report",
+            "Availability": "Yes",
+            "Expected Delivery": "By 9/26",
+            "Notes": "Explanation included in forthcoming Special Education report.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/edu-act-73-special-education-report-2025.pdf"
+        },
+        {
+            "Data Request": "F.39. Percent of total students (ADM) with an IEP",
+            "Scope / Timeframe": "Last 5 years, incl. FY25 - District & SU",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "SY20-23 included; SY24 to be added",
+            "Notes": "Available at SU level for SY20-23 (issues of suppression at levels lower than SU/SD)",
+            "Link": "https://education.vermont.gov/edu-state-profile-database-november-2024"
+        },
+        {
+            "Data Request": "F.40. Five-year change in ADM by district and grade",
+            "Scope / Timeframe": "Last 5 years - AOE",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.9.-F.40.-Single-year-ADM-by-grade-for-towns-and-districts-FY20-FY24-and-change-over-period.xlsx"
+        },
+        {
+            "Data Request": "F.41. Five-year turnover rate by SU/SD in principals, business managers, superintendents, and teachers",
+            "Scope / Timeframe": "Last 5 years - SU/SD",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "N/A",
+            "Notes": "There is retention data available that measures retention after three years, but the field does not believe it is an accurate reflection of turnover",
+            "Link": [
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F41/VTAS_Teacher_Turnover_2020.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F41/VTAS_Teacher_Turnover_2021.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F41/VTAS_Teacher_Turnover_2022.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F41/VTAS_Teacher_Turnover_2023.xlsx",
+                "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F41/VTAS_Teacher_Turnover_2024.xlsx"
+            ]
+        },
+        {
+            "Data Request": "F.42. By SU/SD, SU/SD (excluding building level costs) cost per ADM",
+            "Scope / Timeframe": "Current - SU/SD",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Providing data by LEA and by Location code.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.1-Budgets-and-Actuals.xlsx"
+        },
+        {
+            "Data Request": "F.43. By SU/SD, building level principal/head cost per ADM",
+            "Scope / Timeframe": "Current - SU/SD (or School)",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Embedded in Teacher Staff data",
+            "Notes": "Statbook data has a Function code for Office of the Principal which may include all school admin - will vary by district.\nTeacher Staff Survey has Principals listed individually by school.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.5-Teacher-Staff-Report-FY20-FY25.xlsx"
+        },
+        {
+            "Data Request": "F.44. Student performance (math scale score N and average) by district size and school size",
+            "Scope / Timeframe": "Current - SU/SD",
+            "Source(s)": "AOE",
+            "Content Type": "Excel/link",
+            "Availability": "Yes",
+            "Expected Delivery": "TBD",
+            "Notes": "At school level, data suppression will impact availability of data. The AOE interprets \"district\" as meaning SU/SD for the purposes of this request. An analysis for FY 23 is avaiable through the AOE's State Profile Report and State Profile Report Database (links in Column H)",
+            "Link": "https://education.vermont.gov/documents/edu-listen-and-learn-state-education-profile-report-updated-2024"
+        },
+        {
+            "Data Request": "F.45. CTE Centers by Districts and Towns Served",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.45.-CTE-Centers-by-Districts-and-Towns-Served.xlsx"
+        },
+        {
+            "Data Request": "F.46. CTE Perkins Allocations",
+            "Scope / Timeframe": "FY26",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.46-CTE-Perkins-Allocations.xlsx"
+        },
+        {
+            "Data Request": "F.47 School Closures Since 2020",
+            "Scope / Timeframe": "Last five years",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-F--Statewide-Data/F.47.-School-Closures-Since-2020.xlsx"
+        }
+    ],
+    "Section G: Data on Approved Independent Schools": [
+        {
+            "Data Request": "G.1. FY24 tuition data for publicly funded students",
+            "Scope / Timeframe": "FY24 (existing document)",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Will provide SW1 data (see A.3)",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "G.2. Number and percent of all tuitioned students by destination (out-of-state private, historical academies, other private, public)",
+            "Scope / Timeframe": "Most recent year",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Will provide SW1 data (see A.3)",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "G.3. Number and percent of tuitioned students with disabilities by destination",
+            "Scope / Timeframe": "Most recent year",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Included",
+            "Notes": "Data provided is on students with IEPs for SY24.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.3-and-G.4-Tuitioned-and-Public-School-Students-IEP_FRL_Data.xlsx"
+        },
+        {
+            "Data Request": "G.4. Number and percent of tuitioned students who are economically disadvantaged by destination",
+            "Scope / Timeframe": "Most recent year",
+            "Source(s)": "AOE",
+            "Notes": "Data provided is on students eligible for free or reduced-price lunches by National School Lunch program criteria for SY24 (labeled FRL).",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.3-and-G.4-Tuitioned-and-Public-School-Students-IEP_FRL_Data.xlsx"
+        },
+        {
+            "Data Request": "G.5. Student performance (math scale score N and average) for all publicly supported students",
+            "Scope / Timeframe": "Two most recent years, Gr 4, 8, 9",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded 9/26",
+            "Notes": "State Level: student performance on grade 4, 8, and 9 math state assessment for publicly funded students in independent schools \nState Level: student performance on grade 4, 8, and 9 math state assessment for students in public schools (excluding publicly funded students in independent schools which will differ from what is currently reported and will result in changes to the overall results) ",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.5-G.7_State-Assessment-Results.xlsx"
+        },
+        {
+            "Data Request": "G.6. Student performance (math scale score N and average) for economically disadvantaged subgroup",
+            "Scope / Timeframe": "Two most recent years, Gr 4, 8, 9",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded 9/26",
+            "Notes": "State Level: student performance on grade 4, 8, and 9 math state assessment for publicly funded students in independent schools \nState Level: student performance on grade 4, 8, and 9 math state assessment for students in public schools (excluding publicly funded students in independent schools which will differ from what is currently reported and will result in changes to the overall results) ",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.5-G.7_State-Assessment-Results.xlsx"
+        },
+        {
+            "Data Request": "G.7. Student performance (math scale score N and average) for students with disabilities subgroup",
+            "Scope / Timeframe": "Two most recent years, Gr 4, 8, 9",
+            "Source(s)": "AOE",
+            "Availability": "Yes",
+            "Expected Delivery": "Uploaded 9/26",
+            "Notes": "State Level: student performance on grade 4, 8, and 9 math state assessment for publicly funded students in independent schools \nState Level: student performance on grade 4, 8, and 9 math state assessment for students in public schools (excluding publicly funded students in independent schools which will differ from what is currently reported and will result in changes to the overall results) ",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.5-G.7_State-Assessment-Results.xlsx"
+        },
+        {
+            "Data Request": "G.8. Contributions per enrolled student (from 990) and as a percent of total revenue",
+            "Scope / Timeframe": "Most recent 990",
+            "Source(s)": "AOE",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity"
+        },
+        {
+            "Data Request": "G.9. Title dollars per enrolled student, and method for estimating eligible students",
+            "Scope / Timeframe": "FY25",
+            "Source(s)": "AOE",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "There is no standard figure for Title dollars per enrolled students. It depends on LEA allocation amounts and what schools they decide to serve with their Title dollars. They have options regarding whether to concentrate the dollars or spread more widely. However, different metrics of \"disadvantage\" are used by USED to determine state and LEA allocations and LEAs to determine which schools and students may be served (Census vs. FRL data).",
+            "Link": "https://education.vermont.gov/student-support/federal-programs/consolidated-federal-programs"
+        },
+        {
+            "Data Request": "G.10. Number of VT publicly-funded students by year",
+            "Scope / Timeframe": "Last 5 years",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Will provide SW1 data (see A.3)",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "G.11. Tuition for the last five years, and comparison of tuition for publicly vs. privately funded students",
+            "Scope / Timeframe": "Last 5 years",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included (see A.3 file)",
+            "Notes": "Readily available reports around announced tuition but may not be representative of the full costs.  Additional review would be required to compare publicly funded vs. privately funded. SW1 has been provided. Further comparisons will require more time.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-A--Data-on-Cost-Drivers/A.3-Long-Term-Tuition-data.xlsx"
+        },
+        {
+            "Data Request": "G.12. Admissions practices: requirements beyond name and contact information",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "Approved schools comply with SBE rules",
+            "Notes": "Under review in compliance with updated state board rules"
+        },
+        {
+            "Data Request": "G.13. Additional state contribution for pensions and retired teacher health care",
+            "Scope / Timeframe": "Each of the last 5 years",
+            "Source(s)": "AOE",
+            "Availability": "Need further clarity",
+            "Expected Delivery": "Need further clarity"
+        },
+        {
+            "Data Request": "G.14. Administrative compensation",
+            "Scope / Timeframe": "Most recent 990",
+            "Source(s)": "AOE",
+            "Availability": "Data is publicly available, but not collected or reported by the AOE",
+            "Expected Delivery": "N/A"
+        },
+        {
+            "Data Request": "G.15. Average number of students per grade and average class size",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "No, data are not collected in this way for independent or public schools. However, a recent certification can provide enrollment by grade level for independent schools eligible to receive public tuition per Act 73 criteria. "
+        },
+        {
+            "Data Request": "G.16. Number of students participating in CTE",
+            "Scope / Timeframe": "Avg of last 3 years",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Provided for independent schools eligible to receive public tuition under Act 73.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.16-G.17-G.18-CTE-Early-College-Dual-Enrollment-Independent-Schools.xlsx"
+        },
+        {
+            "Data Request": "G.17. Number of students participating in early college",
+            "Scope / Timeframe": "Avg of last 3 years",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Provided for independent schools eligible to receive public tuition under Act 73.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.16-G.17-G.18-CTE-Early-College-Dual-Enrollment-Independent-Schools.xlsx"
+        },
+        {
+            "Data Request": "G.18. Number of students participating in dual enrollment",
+            "Scope / Timeframe": "Avg of last 3 years",
+            "Source(s)": "AOE",
+            "Availability": "Yes (forthcoming)",
+            "Expected Delivery": "Included",
+            "Notes": "Provided for independent schools eligible to receive public tuition under Act 73.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-G--Data-on-Approved-Private-Independent-Schools/G.16-G.17-G.18-CTE-Early-College-Dual-Enrollment-Independent-Schools.xlsx"
+        },
+        {
+            "Data Request": "G.19. Number of students participating in Advanced courses",
+            "Scope / Timeframe": "Avg of last 3 years",
+            "Source(s)": "AOE",
+            "Availability": "No   ",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information."
+        },
+        {
+            "Data Request": "G.20. Cohort survival: proportion of students who enrolled 5 years ago and completed 4 years later",
+            "Scope / Timeframe": "Recent cohort",
+            "Source(s)": "AOE",
+            "Availability": "No   ",
+            "Expected Delivery": "N/A",
+            "Notes": "4-year adjusted-cohort graduation rate available for public schools only. "
+        },
+        {
+            "Data Request": "G.21. Course catalog or list of all courses offered",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "No   ",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information for independent schools."
+        },
+        {
+            "Data Request": "G.22. By building, the FTE level of nurse access",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "No   ",
+            "Expected Delivery": "N/A",
+            "Notes": "A tab was added to the Teacher Staff report already provided that highlights the FTE data AOE collects related to Nursing staff."
+        },
+        {
+            "Data Request": "G.23. By building, the level of mental health clinician access",
+            "Scope / Timeframe": "Current",
+            "Source(s)": "AOE",
+            "Availability": "No",
+            "Expected Delivery": "N/A",
+            "Notes": "AOE does not collect this information."
+        }
+    ],
+    "Section H: Updating of quality and efficiency data": [
+        {
+            "Data Request": "H.1. Principal characteristics comparison (principals in last 5 yrs, avg salary, per-student salary) by Economic Disadvantage status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data.",
+            "Link": "https://map.vermont.gov/education/redistricting-data-requests/Section-H--Updating-of-Quality-and-Efficiency-Data/H.1-19-Master-Strategic-Planning-Data_2024.xlsx"
+        },
+        {
+            "Data Request": "H.2. Principal characteristics comparison (as above) by Racial Minority concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data."
+        },
+        {
+            "Data Request": "H.3. Principal characteristics comparison (as above) by Students with Disabilities (SWD) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and child count data."
+        },
+        {
+            "Data Request": "H.4. Principal characteristics comparison (as above) by English Learner (EL) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and EL data."
+        },
+        {
+            "Data Request": "H.5. Principal characteristics comparison (as above) by Grade Level (e.g., Elem/Mid/High).",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data."
+        },
+        {
+            "Data Request": "H.6. Principal characteristics comparison (as above) by Small/Sparse School status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and AOE is working to determine the availability of a source for small/sparse school status."
+        },
+        {
+            "Data Request": "H.7. Teacher characteristics comparison (% 1st yr, not HQT, provisional, avg salary, per-student salary) by Economic Disadvantage status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data. Measures of teacher experience and effectiveness are available in Educator Qualifications and Progress on Educator Equity.",
+            "Link": "https://education.vermont.gov/educator-qualifications-and-progress-educator-equity-0"
+        },
+        {
+            "Data Request": "H.8. Teacher characteristics comparison (as above) by Racial Minority concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data. Measures of teacher experience and effectiveness are available in Educator Qualifications and Progress on Educator Equity."
+        },
+        {
+            "Data Request": "H.9. Teacher characteristics comparison (as above) by Students with Disabilities (SWD) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and child count data."
+        },
+        {
+            "Data Request": "H.10. Teacher characteristics comparison (as above) by English Learner (EL) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and EL data."
+        },
+        {
+            "Data Request": "H.11. Teacher characteristics comparison (as above) by Grade Level (e.g., Elem/Mid/High).",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, and student census data."
+        },
+        {
+            "Data Request": "H.12. Teacher characteristics comparison (as above) by Small/Sparse School status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "This request requires combination of multiple disaparate data sources. It involves educator licensing data, teacher-staff Survey data, student census data, and AOE is working to determine the availability of a source for small/sparse school status."
+        },
+        {
+            "Data Request": "H.13. 1st Year Teacher % by region (City, Town, Rural), compared by Economic Disadvantage status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data, student census data, and AOE is working to determine the availability of a source for city/town/rural designation."
+        },
+        {
+            "Data Request": "H.14. 1st Year Teacher % by region, compared by Racial Minority concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data and student census data."
+        },
+        {
+            "Data Request": "H.15. 1st Year Teacher % by region, compared by Students with Disabilities (SWD) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data, student census data, and child count."
+        },
+        {
+            "Data Request": "H.16. 1st Year Teacher % by region, compared by English Learner (EL) concentration.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data, student census data, and EL data."
+        },
+        {
+            "Data Request": "H.17. 1st Year Teacher % by region, compared by Grade Level (e.g., Elem/Mid/High).",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data and student census data."
+        },
+        {
+            "Data Request": "H.18. 1st Year Teacher % by region, compared by Small/Sparse School status.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided",
+            "Notes": "AOE collects data on teacher experience in Vermont only. This request involves the combination of educator licensing data, student census data, and AOE is working to determine the availability of a source for small/sparse school status."
+        },
+        {
+            "Data Request": "H.19. Reference data: Number of students and schools in each category used for H.1-H.18 comparisons.",
+            "Scope / Timeframe": "Current Data",
+            "Availability": "See H.1 note",
+            "Expected Delivery": "Alternative provided"
+        }
+    ]
+}
