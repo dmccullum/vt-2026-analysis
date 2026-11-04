@@ -364,12 +364,10 @@
     wrap.innerHTML = `<div class="card chart" style="margin-top:12px"><h3>House seats won, 2000–2026</h3><svg id="hist"></svg><div class="legendrow"><span><i style="background:var(--dem)"></i>Democratic</span><span><i style="background:var(--prog)"></i>Progressive</span><span><i style="background:var(--ind)"></i>Independent / other</span><span><i style="background:var(--rep)"></i>Republican</span></div></div>
       <div class="card chart" style="margin-top:12px"><h3>Republican share of the governor's vote, same years</h3><svg id="histGov"></svg></div>
       <p class="note">Seat counts before 2026 were compiled from Wikipedia, the Vermont party-strength table, and Ballotpedia (some years come from a single source). Legislators with fusion labels are counted under their first-listed party. The 2026 numbers come from this analysis and are unofficial.</p>`;
-    const svg = $("hist"), W = 760, Hh = 220, L = 34, R = 10, T = 8, B = 22, n = rows.length, bw = (W - L - R) / n;
+    const svg = $("hist"), W = 760, Hh = 220, L = 34, R = 78, T = 8, B = 22, n = rows.length, bw = (W - L - R) / n;
     svg.setAttribute("viewBox", `0 0 ${W} ${Hh}`);
     const y = lin(0, 150, Hh - B, T);
     [0, 50, 100, 150].forEach((v) => { el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), class: "grid" }, svg); el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg, v); });
-    el("line", { x1: L, x2: W - R, y1: y(100), y2: y(100), class: "zero", "stroke-dasharray": "4 3" }, svg);
-    el("text", { x: W - R, y: y(100) - 4, "text-anchor": "end", class: "axis-l" }, svg, "Two-thirds");
     rows.forEach((r, i) => {
       const x0 = L + i * bw + 3, w = bw - 6; let acc = 0;
       el("text", { x: x0 + w / 2, y: Hh - 6, "text-anchor": "middle", style: r.y === 2026 ? "font-weight:700;fill:var(--ink)" : "" }, svg, String(r.y).slice(2) === "00" ? "2000" : "'" + String(r.y).slice(2));
@@ -382,6 +380,10 @@
       hit.addEventListener("mousemove", (e) => showTip(`<div class="tt-h"><b>${r.y}</b><span>Gov: ${r.w}</span></div>${row("Democratic", r.hD, "d")}${row("Progressive", r.hP || 0, "p")}${row("Independent / other", r.hI || 0)}${row("Republican", r.hR, "r")}${row("Gov. R share", r.gR != null ? r.gR.toFixed(1) + "%" : "–", "r")}`, e));
       hit.addEventListener("mouseleave", hideTip);
     });
+    // two-thirds threshold drawn over the bars, labeled in the right margin
+    el("line", { x1: L, x2: W - R + 4, y1: y(100), y2: y(100), stroke: css("--ink"), "stroke-width": 1.25, "stroke-dasharray": "4 3", "pointer-events": "none" }, svg);
+    el("text", { x: W - R + 8, y: y(100) - 2, class: "axis-l" }, svg, "Two-thirds");
+    el("text", { x: W - R + 8, y: y(100) + 11, style: "font-size:10px" }, svg, "100 seats");
     const g = $("histGov"), Hg = 120; g.setAttribute("viewBox", `0 0 ${W} ${Hg}`);
     const yg = lin(20, 80, Hg - 18, 8);
     [20, 50, 80].forEach((v) => { el("line", { x1: L, x2: W - R, y1: yg(v), y2: yg(v), class: v === 50 ? "zero" : "grid" }, g); el("text", { x: L - 6, y: yg(v) + 4, "text-anchor": "end" }, g, v + "%"); });
