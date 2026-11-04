@@ -88,8 +88,16 @@
   svg .lab-strong { fill: var(--ink); font: 700 12px var(--display); }
   .controls { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin: 0 0 8px; }
   .controls .cl { font: 700 var(--t-label) var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-  .seg { display: inline-flex; flex-wrap: wrap; padding: 2px; border-radius: var(--r-ctl); background: var(--panel2); }
-  .seg button { border: 0; background: none; cursor: pointer; height: 28px; padding: 0 10px; border-radius: var(--r-tag); font: 700 var(--t-meta)/1 var(--display); color: var(--muted); }
+  .seg { display: inline-grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 2px; border-radius: var(--r-ctl); background: var(--panel2); max-width: 100%; }
+  .seg button { border: 0; background: none; cursor: pointer; min-height: 28px; padding: 5px 12px; border-radius: var(--r-tag); font: 700 var(--t-meta)/1.2 var(--display); color: var(--muted); }
+  .ctlrow { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; }
+  .ctlrow .cl { width: 64px; flex: none; }
+  @media (max-width: 640px) {
+    .seg { display: grid; width: 100%; }
+    .seg button { padding: 5px 6px; }
+    .ctlrow { flex-direction: column; align-items: stretch; gap: 4px; }
+    .ctlrow .cl { width: auto; }
+  }
   .seg button:hover { color: var(--ink); }
   .seg button[aria-pressed="true"] { background: var(--primary); color: #fff; }
   select { height: 32px; padding: 0 8px; border: 1px solid var(--line); border-radius: var(--r-ctl); background: var(--bg); font: 600 var(--t-meta) var(--display); }
@@ -161,7 +169,7 @@
   <div class="two">
     <figure class="card chart map" style="margin:0">
       <div class="controls"><div class="seg" id="mapMode">
-        <button data-m="swing" aria-pressed="true">Change since 2024</button><button data-m="res">vs. statewide trend</button><button data-m="cross">Scott vs. other Republicans</button></div></div>
+        <button data-m="swing" aria-pressed="true">Change since 2024</button><button data-m="res">vs. statewide trend</button><button data-m="cross">vs. other Republicans</button></div></div>
       <svg id="map"></svg>
       <figcaption class="note" id="mapNote"></figcaption>
     </figure>
@@ -179,8 +187,10 @@
     <p class="note" id="eiNote"></p>
   </div>
   <div class="card chart" style="margin-top:12px">
-    <div class="controls"><span class="cl">Compare</span><div class="seg" id="gridPair"><button data-g="inc3_ba3" aria-pressed="true">Income × education</button><button data-g="den3_ba3">Density × education</button><button data-g="den3_inc3">Density × income</button></div>
-      <span class="cl">Measure</span><div class="seg" id="gridMetric"><button data-k="swing" aria-pressed="true">Gain vs. 2024 Democrat</button><button data-k="janoo">Janoo's share</button><button data-k="vs_ticket">vs. other Democrats</button></div></div>
+    <div class="controls" style="display:block">
+      <div class="ctlrow"><span class="cl">Compare</span><div class="seg" id="gridPair"><button data-g="inc3_ba3" aria-pressed="true">Income × education</button><button data-g="den3_ba3">Density × education</button><button data-g="den3_inc3">Density × income</button></div></div>
+      <div class="ctlrow"><span class="cl">Measure</span><div class="seg" id="gridMetric"><button data-k="janoo" aria-pressed="true">Janoo's share</button><button data-k="swing">Gain vs. 2024</button><button data-k="vs_ticket">vs. other Dems.</button></div></div>
+    </div>
     <h3 id="gridTitle">Janoo's gain over the 2024 Democrat</h3>
     <p class="note" id="gridSpread" style="margin:0 0 6px;color:var(--ink2)"></p>
     <svg id="grid" style="max-width:600px"></svg>
