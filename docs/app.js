@@ -255,7 +255,7 @@
   const MET = { swing: ["Gain vs. 2024 Democrat", (v) => pts(v)], janoo: ["Janoo's share", (v) => pct(v)], vs_ticket: ["Janoo vs. other Democrats", (v) => pts(v)] };
   function renderGrid() {
     const C = D.controls; if (!C) return;
-    const gk = "den3_ba3", mk = "swing", G = GRID[gk], cells = C.grids[gk];
+    const gk = pressed("gridPair").g, mk = "swing", G = GRID[gk], cells = C.grids[gk];
     const svg = $("grid"), W = 440, L = 96, T = 40, cw = (W - L) / 3, ch = 64, H = T + 3 * ch + 8;
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
     const vals = Object.values(cells).map((c) => c[mk]), lo = Math.min(...vals), hi = Math.max(...vals);
@@ -276,7 +276,14 @@
         hit.addEventListener("mouseleave", hideTip);
       });
     });
-    $("gridNote").textContent = `Read across a row to compare towns of similar density with more or fewer graduates; read down a column to compare towns with similar education and different density. Density groups: under 50, 50–200, and over 200 people per square mile. Education groups each hold a third of the vote. Darker cells moved more. Cells with fewer than 5 towns are dashed.`;
+    const val = (r, c) => { const x = cells[`${r}|${c}`]; return x && x.towns >= 5 ? x[mk] : NaN; };  // skip cells with too few towns
+    const colEff = G.rows.map((r) => val(r, G.cols[2]) - val(r, G.cols[0])).filter(Number.isFinite);
+    const rowEff = G.cols.map((c) => val(G.rows[2], c) - val(G.rows[0], c)).filter(Number.isFinite);
+    const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
+    const lc = (x) => x.toLowerCase();
+    $("gridTitle").textContent = `Janoo's gain over the 2024 Democrat, by ${lc(G.rl)} and ${lc(G.cl)}`;
+    $("gridSpread").innerHTML = `Moving across a row (${lc(G.cl)}, lowest to highest group): <b>${pts(avg(colEff))} pts</b> on average. Moving down a column (${lc(G.rl)}, lowest to highest group): <b>${pts(avg(rowEff))} pts</b>. Cells with fewer than 5 towns are left out of these averages.`;
+    $("gridNote").textContent = `Each cell is the vote-weighted average for its towns. Density groups: under 50, 50–200, and over 200 people per square mile. Education and income groups each hold a third of the vote. Darker cells moved more. Cells with fewer than 5 towns are dashed.`;
   }
   function renderControls() {
     const C = D.controls; if (!C) return;
@@ -408,7 +415,7 @@
 
   // ---------- wire up
   const renderAll = () => { renderOffices(); renderMap(pressed("mapMode").m); renderEduInc(); renderEduIncBars(); renderGrid(); renderControls(); renderSchools(); renderOvertime(); renderStrip(); renderHistory(); renderWar(); };
-  seg("mapMode", (d) => renderMap(d.m));
+  seg("mapMode", (d) => renderMap(d.m)); seg("gridPair", renderGrid);
    seg("otGroup", renderOvertime); seg("warLevel", renderWar); seg("warSide", renderWar);
   
   $("theme").addEventListener("click", () => {
